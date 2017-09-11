@@ -25,7 +25,7 @@ Data pipeline / workflow
    - very generic component with little custom functionality
 
 4. front end app (flask)
-   - html content for veiwing
+   - html content for viewing
    - end-user API(s)
 
 5. end-user examples/solutions
