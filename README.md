@@ -52,4 +52,6 @@ What is happing now in the project
 
 - [ ] **github org migration** - moving various repos to here, adjusting frontend app and urls in access examples
 
+TODO (EP): provide links to issues/repos 
+
 
