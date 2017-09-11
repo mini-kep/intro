@@ -21,18 +21,18 @@ Data pipeline / workflow
    - upload to database
 
 3. database 
-  - flask app with RESTful API on top of SQLAlchemy with Postgres backend 
-  - very generic component with little custom functionality
+   - flask app with RESTful API on top of SQLAlchemy with Postgres backend 
+   - very generic component with little custom functionality
 
 4. front end app (flask)
-  - html content for veiwing
-  - end-user API(s)
+   - html content for veiwing
+   - end-user API(s)
 
 5. end-user examples/solutions
-  - data access examples for end-user API
-  - charting macroeconimic data
-  - models in jupiter notebooks
-  - *'maas'* - forecasting model as a service (experimental)
+   - data access examples for end-user API
+   - charting macroeconimic data
+   - models in jupiter notebooks
+   - *'maas'* - forecasting model as a service (experimental)
 
 
 What is happing now in the project
