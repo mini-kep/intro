@@ -2,7 +2,7 @@ Why another database for macroeconomic data?
 ============================================
 
 - Machine-readable datafeeds for economic data are growing (FRED, quandl, World Bank, EIA among others), yet some data is left behind
-- Russian macroeconomic statistics seems very fragmented (Word, Excel) and this is a roadblock to cool reproducible analysis and reliable inputs for business planning, also escalates costs of modelling/forecasting      
+- Russian macroeconomic statistics seems very fragmented (HTML, Word, Excel, wierd 'open-data' sites) - and this is a roadblock to cool reproducible analysis and reliable inputs for business planning. Dirty historic data also escalates costs of modelling/forecasting.      
 - ```mini-kep``` aims to fill this gap by providing public API for macroeconomic data and examples of economic research/business planning/marketing problems solved using python pandas or R.
 - May also apply to other countries macroeconomic data, or other (microeconomic / 'real world') datasets 
 
@@ -47,6 +47,8 @@ What is happing now in the project
 - [ ] **variable descriptions** - need to tell what ```GDP_yoy``` means. Will involve varname-description, units-description and section-varname dictionaries. 
 
 - [ ] **charts** - making standartised charts for fronends and user notebooks and injecting them across project
+
+- [ ] **parser template** - component (1) needs standartisation on output, interface and some of internal structure
 
 - [ ] **database** - making component (3) for the project based, with unit tests from a start. Doing component (2) after/with that. 
 
