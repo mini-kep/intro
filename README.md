@@ -88,8 +88,8 @@ All pipeline [mocked here](https://github.com/mini-kep/db/blob/master/pipeline.p
 
 As of now:
 - the app just relays three CSV from 'kep' parser: end user API not implemented + no database layer
-- most work was done around 'kep' parser (> 700 commits): need to model other parsers + extract reposnibilitites from there (naming, charting, seasonality, etc)
-- much time goes to ETL work, not end use examples
+- most work was done around 'kep' parser (> 700 commits): need to model other parsers + extract reposnibilitites from 'kep' (naming, charting, seasonality, etc)
+- much time goes to ETL work, not end use examples, shodl be other way around to prove profit to end user
 
 # Dev notes
 
