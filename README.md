@@ -15,6 +15,21 @@ Why another database for macroeconomic data?
   and examples of problems solved in economic research/business planning/marketing 
   (using python pandas or R).
 
+User case
+=========
+
+Jane is well-versed in using FRED or quandl, and for Russian or custom statistics she wants:
+
+- a clean dataset with newest data from different sources at one place 
+- browse what data is available
+- read this dataframe as pd.DataFrame on a local machine
+
+Also she finds it useful to:
+- see others people code to use this data
+- make a dashboard for indicators that interest her (boss)
+- something else?
+
+
 Data pipeline / workflow 
 ========================
 
