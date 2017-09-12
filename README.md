@@ -69,9 +69,9 @@ Data pipeline / workflow
 
 All pipeline [mocked here](https://github.com/mini-kep/db/blob/master/pipeline.py) *TODO: move to intro*
 
-## Dev notes
+# Dev notes
 
-0. Naming convention: 
+####  Naming convention: 
    - used in 'kep' parser specification extensively
    - descrition/tree dictionaries:
       - [ ] varname-description
@@ -88,22 +88,30 @@ All pipeline [mocked here](https://github.com/mini-kep/db/blob/master/pipeline.p
 
 
 #### Scheduler: 
-- discussed, does not exist
-- needs parser json (2) + db (3) + scheduling rules 
+   - discussed, does not exist
+   - needs parser json (2) + db (3) + scheduling rules 
+
+#### charts
+
+> making standartised charts for fronends and user notebooks and injecting them across project
 
 
-#### other notes:
+#### Dataset basis
 
-- [ ] **dataset basis** - what is the minimum number of variables to keep in basis to reproduce end-user dataset (involves levelising rates and separating nominal and real variables), abstracting form rounding error and annual revisions; will be an input to seasonal adjustment and API interface planning, see below
+> what is the minimum number of variables to keep in basis to reproduce end-user dataset (involves levelising rates and 
+> separating nominal and real variables), abstracting form rounding error and annual revisions; will be an input to seasonal 
+> adjustment and API interface planning, see below
 
-- [ ] **seasonal adjustment**, or *sa* - explore techniques and establish own procedure (and variable naming + point of injection in dataflow) to 
+#### seasonal adjustment
+> explore techniques and establish own procedure (and variable naming + point of injection in dataflow) to 
 
-- [ ] **charts** - making standartised charts for fronends and user notebooks and injecting them across project
 
-- [ ] **github org migration** - moving various repos to here, adjusting frontend app and urls in access examples. See [issues](https://github.com/mini-kep/intro/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20migration)
 
-Notes:
-======
+#### github org migration
+moving various repos to here, adjusting frontend app and urls in access examples. See [issues](https://github.com/mini-kep/intro/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20migration)
+
+Other notes
+===========
 
 - *'maas'* - forecasting model as a service (experimental)
 
