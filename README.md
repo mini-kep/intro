@@ -43,7 +43,6 @@ Data pipeline / workflow
    - data access examples for end-user API
    - [charting macroeconimic data](https://github.com/mini-kep/user-charts)
    - models in jupiter notebooks
-   - *'maas'* - forecasting model as a service (experimental)
 
 Component status (2017-09-12)
 ==============================
@@ -87,3 +86,5 @@ All pipeline [mocked here](https://github.com/mini-kep/db/blob/master/pipeline.p
 - [ ] **charts** - making standartised charts for fronends and user notebooks and injecting them across project
 
 - [ ] **github org migration** - moving various repos to here, adjusting frontend app and urls in access examples. See [issues](https://github.com/mini-kep/intro/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20migration)
+
+- *'maas'* - forecasting model as a service (experimental)
