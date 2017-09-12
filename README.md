@@ -1,17 +1,17 @@
 Why another database for macroeconomic data?
 ============================================
 
-- Machine-readable datafeeds for economic data are growing ([FRED](https://research.stlouisfed.org/docs/api/fred/) 
-  ,  [quandl](https://blog.quandl.com/api-for-economic-data) 
-  ,  [OECD](https://data.oecd.org/api) 
-  ,  [World Bank](https://datahelpdesk.worldbank.org/knowledgebase/topics/125589) 
-  ,  [EIA](https://www.eia.gov/opendata/)), but some data is left in the dark.
+- Machine-readable datafeeds for economic data are growing ([FRED](https://research.stlouisfed.org/docs/api/fred/), 
+  [quandl](https://blog.quandl.com/api-for-economic-data), 
+  [OECD](https://data.oecd.org/api), 
+  [World Bank](https://datahelpdesk.worldbank.org/knowledgebase/topics/125589), 
+  [EIA](https://www.eia.gov/opendata/)), but some data is left in the dark.
 
 - Russian macroeconomic statistics seems very fragmented (HTML, Word, Excel are common dessimination formats). This is a roadblock to reproducible analysis as dirty data escalates costs of modelling/forecasting.      
 
-- ```mini-kep``` aims to remove this roadblock by providing public API for macroeconomic data and examples of problems solved  in economic research/business planning/marketing (using python pandas or R).
-
-- This pipeline may also apply to other countries macroeconomic data, or other kinds datasets (eg firm-level data, consumer behaviour, etc). 
+- ```mini-kep``` aims to remove this roadblock by providing 
+  [public API for macroeconomic data](http://mini-kep.herokuapp.com/) and examples of problems solved 
+  in economic research/business planning/marketing (using python pandas or R).
 
 Data pipeline / workflow 
 ========================
@@ -58,10 +58,10 @@ All pipeline [mocked here](https://github.com/mini-kep/db/blob/master/pipeline.p
       - [ ] section-varname    
 
 1. Parsers:
-- tasks:
   - [ ] [migrate parsers to github organisation](https://github.com/mini-kep/intro/issues/4) 
   - [ ] common parser interface 
   - [ ] common components (eg. download)
+  - [ ] description template
   - [ ] API keys(?)
 
 2. Scheduler: 
@@ -87,4 +87,9 @@ All pipeline [mocked here](https://github.com/mini-kep/db/blob/master/pipeline.p
 
 - [ ] **github org migration** - moving various repos to here, adjusting frontend app and urls in access examples. See [issues](https://github.com/mini-kep/intro/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20migration)
 
+Notes:
+======
+
 - *'maas'* - forecasting model as a service (experimental)
+
+- This pipeline may also apply to other countries macroeconomic data, or other kinds datasets (eg firm-level data, consumer behaviour, etc). 
