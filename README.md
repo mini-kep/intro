@@ -84,16 +84,23 @@ Data pipeline / workflow
 
 All pipeline [mocked here](https://github.com/mini-kep/db/blob/master/pipeline.py) *TODO: move to intro*
 
+# Simple truths
+
+As of now:
+- the app just relays three CSV from 'kep' parser: end user API not implemented + no database layer
+- most work was done around 'kep' parser (> 700 commits): need to model other parsers + extract reposnibilitites from there (naming, charting, seasonality, etc)
+- much time goes to ETL work, not end use examples
+
 # Dev notes
 
-####  Naming convention: 
+#### naming convention: 
    - used in 'kep' parser specification extensively
    - descrition/tree dictionaries:
       - [ ] varname-description
       - [ ] units-description 
       - [ ] section-varname    
 
-#### Parsers: migrate after templating
+#### parsers: migrate after templating
   - [ ] make list of parsers 
   - [ ] common parser interface 
   - [ ] common components (eg. download)
@@ -102,7 +109,7 @@ All pipeline [mocked here](https://github.com/mini-kep/db/blob/master/pipeline.p
   - [ ] [migrate parsers to github organisation](https://github.com/mini-kep/intro/issues/4) 
 
 
-#### Scheduler: 
+#### scheduler: 
    - discussed, does not exist
    - needs parser json (2) + db (3) + scheduling rules 
 
@@ -111,19 +118,20 @@ All pipeline [mocked here](https://github.com/mini-kep/db/blob/master/pipeline.p
 > making standartised charts for fronends and user notebooks and injecting them across project
 
 
-#### Dataset basis
+#### dataset basis
 
 > what is the minimum number of variables to keep in basis to reproduce end-user dataset (involves levelising rates and 
 > separating nominal and real variables), abstracting form rounding error and annual revisions; will be an input to seasonal 
 > adjustment and API interface planning, see below
 
 #### seasonal adjustment
-> explore techniques and establish own procedure (and variable naming + point of injection in dataflow) to 
-
+> explore techniques and establish own procedure + variable naming + point of injection in dataflow 
 
 
 #### github org migration
-moving various repos to here, adjusting frontend app and urls in access examples. See [issues](https://github.com/mini-kep/intro/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20migration)
+
+See [issues](https://github.com/mini-kep/intro/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20migration)
+about moving various repos to here, adjusting frontend app and urls in access examples. 
 
 Other notes
 ===========
