@@ -13,14 +13,12 @@ Why another database for macroeconomic data?
 
 - This pipeline may also apply to other countries macroeconomic data, or other kinds datasets (eg firm-level data, consumer behaviour, etc). 
 
-- Please share your view on this.
-
 Data pipeline / workflow 
 ========================
 
 0. Common namespace
-  - convention on how to name variables 
-  - convention on how to refer to original data sources  
+   - convention on how to name variables 
+   - convention on how to refer to original data sources
 
 1. parsers on static files or other APIs
    - download data
@@ -50,9 +48,15 @@ Data pipeline / workflow
 Component status (2017-09-12)
 ==============================
 
+All pipeline [mocked here](https://github.com/mini-kep/db/blob/master/pipeline.py)
+
 0. Naming convention
-- undocumented
-- used in 'kep' parser specification extensively
+   - undocumented
+   - used in 'kep' parser specification extensively
+   - descrition/tree dictionaries:
+      - [ ] varname-description
+      - [ ] units-description 
+      - [ ] section-varname    
 
 1. Parsers:
 - tasks:
@@ -62,30 +66,24 @@ Component status (2017-09-12)
   - [ ] API keys(?)
 
 2. Scheduler: 
-- discussed, does not exist, has [local mock]()
+- discussed, does not exist
 - needs parser json (2) + db (3) + scheduling rules 
 
 3. Database:
 - repo: <https://github.com/mini-kep/db/>
 
-4. front end app
+4. Front end app
 - app: <https://github.com/epogrebnyak/mini-kep-app>
 - code: <https://github.com/epogrebnyak/mini-kep/frontend-app>
 - issues: <https://github.com/epogrebnyak/mini-kep/frontend-app/issues>
 
 
-#### Other comments 2017-09-11:
+#### Other:
 
 - [ ] **dataset basis** - what is the minimum number of variables to keep in basis to reproduce end-user dataset (involves levelising rates and separating nominal and real variables), abstracting form rounding error and annual revisions; will be an input to seasonal adjustment and API interface planning, see below
 
 - [ ] **seasonal adjustment**, or *sa* - explore techniques and establish own procedure (and variable naming + point of injection in dataflow) to 
 
-- [ ] **variable descriptions** - need to tell what ```GDP_yoy``` means. Will involve varname-description, units-description and section-varname dictionaries. 
-
 - [ ] **charts** - making standartised charts for fronends and user notebooks and injecting them across project
 
 - [ ] **github org migration** - moving various repos to here, adjusting frontend app and urls in access examples. See [issues](https://github.com/mini-kep/intro/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20migration)
-
-
-
-
