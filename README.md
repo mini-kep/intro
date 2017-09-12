@@ -1,13 +1,26 @@
 Why another database for macroeconomic data?
 ============================================
 
-- Machine-readable datafeeds for economic data are growing (FRED, quandl, World Bank, EIA among others), yet some data is left behind
-- Russian macroeconomic statistics seems very fragmented (HTML, Word, Excel, wierd 'open-data' sites) - and this is a roadblock to cool reproducible analysis and reliable inputs for business planning. Dirty historic data also escalates costs of modelling/forecasting.      
-- ```mini-kep``` aims to fill this gap by providing public API for macroeconomic data and examples of economic research/business planning/marketing problems solved using python pandas or R.
-- May also apply to other countries macroeconomic data, or other (microeconomic / 'real world') datasets 
+- Machine-readable datafeeds for economic data are growing ([FRED](https://research.stlouisfed.org/docs/api/fred/) 
+  ,  [quandl](https://blog.quandl.com/api-for-economic-data) 
+  ,  [OECD](https://data.oecd.org/api) 
+  ,  [World Bank](https://datahelpdesk.worldbank.org/knowledgebase/topics/125589) 
+  ,  [EIA](https://www.eia.gov/opendata/)), but some data is left in the dark.
+
+- Russian macroeconomic statistics seems very fragmented (HTML, Word, Excel are common dessimination formats). This is a roadblock to reproducible analysis as dirty data escalates costs of modelling/forecasting.      
+
+- ```mini-kep``` aims to remove this roadblock by providing public API for macroeconomic data and examples of problems solved  in economic research/business planning/marketing (using python pandas or R).
+
+- This pipeline may also apply to other countries macroeconomic data, or other kinds datasets (eg firm-level data, consumer behaviour, etc). 
+
+- Please share your view on this.
 
 Data pipeline / workflow 
 ========================
+
+0. Common namespace
+  - convention on how to name variables 
+  - convention on how to refer to original data sources  
 
 1. parsers on static files or other APIs
    - download data
@@ -30,15 +43,38 @@ Data pipeline / workflow
 
 5. end-user examples/solutions
    - data access examples for end-user API
-   - charting macroeconimic data
+   - [charting macroeconimic data](https://github.com/mini-kep/user-charts)
    - models in jupiter notebooks
    - *'maas'* - forecasting model as a service (experimental)
 
+Component status (2017-09-12)
+==============================
 
-What is happing now in the project
-==================================
+0. Naming convention
+- undocumented
+- used in 'kep' parser specification extensively
 
-#### 11-09-2017:
+1. Parsers:
+- tasks:
+  - [ ] [migrate parsers to github organisation](https://github.com/mini-kep/intro/issues/4) 
+  - [ ] common parser interface 
+  - [ ] common components (eg. download)
+  - [ ] API keys(?)
+
+2. Scheduler: 
+- discussed, does not exist, has [local mock]()
+- needs parser json (2) + db (3) + scheduling rules 
+
+3. Database:
+- repo: <https://github.com/mini-kep/db/>
+
+4. front end app
+- app: <https://github.com/epogrebnyak/mini-kep-app>
+- code: <https://github.com/epogrebnyak/mini-kep/frontend-app>
+- issues: <https://github.com/epogrebnyak/mini-kep/frontend-app/issues>
+
+
+#### Other comments 2017-09-11:
 
 - [ ] **dataset basis** - what is the minimum number of variables to keep in basis to reproduce end-user dataset (involves levelising rates and separating nominal and real variables), abstracting form rounding error and annual revisions; will be an input to seasonal adjustment and API interface planning, see below
 
@@ -48,12 +84,8 @@ What is happing now in the project
 
 - [ ] **charts** - making standartised charts for fronends and user notebooks and injecting them across project
 
-- [ ] **parser template** - component (1) needs standartisation on output, interface and some of internal structure
+- [ ] **github org migration** - moving various repos to here, adjusting frontend app and urls in access examples. See [issues](https://github.com/mini-kep/intro/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20migration)
 
-- [ ] **database** - making component (3) for the project based, with unit tests from a start. Doing component (2) after/with that. 
 
-- [ ] **github org migration** - moving various repos to here, adjusting frontend app and urls in access examples
-
-TODO (EP): provide links to issues/repos 
 
 
