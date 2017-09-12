@@ -44,40 +44,53 @@ Data pipeline / workflow
    - [charting macroeconimic data](https://github.com/mini-kep/user-charts)
    - models in jupiter notebooks
 
-Component status (2017-09-12)
-==============================
+#### Component status
 
-All pipeline [mocked here](https://github.com/mini-kep/db/blob/master/pipeline.py)
+| Component         | Status                         |
+| ----------------- | -------------------------------|
+| Naming convention |  undocumented                  |
+| Parsers           |  tasks pending                 |
+| Scheduler         |  discussed, does not exist     |
+| Database          |  prototyping                   |
+| Front end app     |  working + current maintenance |
+| User cases        |  stub                          |
 
-0. Naming convention
-   - undocumented
+
+# Repo list
+
+- Intro (this repo): <https://github.com/mini-kep/intro>
+- Parsers: 
+  - ```kep``` <https://github.com/mini-kep/parser-rosstat-kep>
+  - [list](https://github.com/mini-kep/db/#parser-results) *TODO: move to /parser-template*
+- Database: <https://github.com/mini-kep/db/>
+- Front end app: <https://github.com/mini-kep/frontend-app>
+
+All pipeline [mocked here](https://github.com/mini-kep/db/blob/master/pipeline.py) *TODO: move to intro*
+
+## Dev notes
+
+0. Naming convention: 
    - used in 'kep' parser specification extensively
    - descrition/tree dictionaries:
       - [ ] varname-description
       - [ ] units-description 
       - [ ] section-varname    
 
-1. Parsers:
-  - [ ] [migrate parsers to github organisation](https://github.com/mini-kep/intro/issues/4) 
+#### Parsers: migrate after templating
+  - [ ] make list of parsers 
   - [ ] common parser interface 
   - [ ] common components (eg. download)
-  - [ ] description template
+  - [ ] description template (json to markdown)
   - [ ] API keys(?)
+  - [ ] [migrate parsers to github organisation](https://github.com/mini-kep/intro/issues/4) 
 
-2. Scheduler: 
+
+#### Scheduler: 
 - discussed, does not exist
 - needs parser json (2) + db (3) + scheduling rules 
 
-3. Database:
-- repo: <https://github.com/mini-kep/db/>
 
-4. Front end app
-- app: <https://github.com/epogrebnyak/mini-kep-app>
-- code: <https://github.com/epogrebnyak/mini-kep/frontend-app>
-- issues: <https://github.com/epogrebnyak/mini-kep/frontend-app/issues>
-
-
-#### Other:
+#### other notes:
 
 - [ ] **dataset basis** - what is the minimum number of variables to keep in basis to reproduce end-user dataset (involves levelising rates and separating nominal and real variables), abstracting form rounding error and annual revisions; will be an input to seasonal adjustment and API interface planning, see below
 
