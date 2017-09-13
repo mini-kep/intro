@@ -8,12 +8,11 @@ Why another database for macroeconomic data?
   [EIA](https://www.eia.gov/opendata/)), but some data is left in the dark.
 
 - Russian macroeconomic statistics seems very fragmented (HTML, Word, Excel are common dessimination formats). 
-  This is a roadblock to reproducible analysis as dirty data escalates costs of modelling/forecasting.      
+  This is a roadblock to reproducible analysis as dirty data escalates costs of model maintenance.      
 
 - ```mini-kep``` aims to remove this roadblock by providing 
   [public API for Russian macroeconomic data](http://mini-kep.herokuapp.com/) 
-  and examples of problems solved in economic research/business planning/marketing 
-  (using python pandas or R).
+  and examples of economic research/business planning/marketing  problems solved in python pandas or R.
 
 User case
 =========
@@ -138,3 +137,5 @@ Other notes
 - *'maas'* - forecasting model as a service (experimental)
 
 - This pipeline may also apply to other countries macroeconomic data, or other kinds datasets (eg firm-level data, banking statistics). 
+
+- May want to condense all of the above in one repo for tasks in other domains. 
