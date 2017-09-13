@@ -20,13 +20,16 @@ User case
 
 Jane is well-versed in using FRED or quandl, and for Russian or custom statistics she wants:
 
-- a clean dataset with newest data from different sources at one place 
+- a clean dataset with latest data from different sources that she can access at one place 
 - browse what data is available
-- read this dataframe as pd.DataFrame on a local machine
+- read this data on a local machine:
+   - as pd.DataFrame 
+   - as R dataframe  
 
-Also she finds it useful to:
-- see others people code to use this data
-- make a dashboard for indicators that interest her (boss)
+Jane also finds it useful to:
+- see what other people code with this data
+- make a dashboard for macroeconomic indicators that interest her (boss)
+- view a dashboard on a smartphone / get notifications 
 - something else?
 
 
@@ -63,33 +66,29 @@ Data pipeline / workflow
 
 #### Component status
 
-| Component         | Status                         |
-| ----------------- | -------------------------------|
-| Naming convention |  undocumented                  |
-| Parsers           |  tasks pending                 |
-| Scheduler         |  discussed, does not exist     |
-| Database          |  prototyping                   |
-| Front end app     |  working + current maintenance |
-| User cases        |  stub                          |
+| Component         | What is happening              | 
+| ----------------- | -------------------------------| 
+| Naming convention |                                |
+| Parsers           |  making parser template        |
+| - kep             |  [working][kep]                |
+| Scheduler         |                                |
+| Database          |  CRUD tests for SQL Alchemy    |
+| Front end app     |  [working][frontend]           |
+| User cases        |                                |
 
+[kep]: https://github.com/mini-kep/parser-rosstat-kep
+[frontend]: https://github.com/mini-kep/frontend-app
 
 # Repo list
 
 - Intro (this repo): <https://github.com/mini-kep/intro>
-- Parsers: 
-  - ```kep``` <https://github.com/mini-kep/parser-rosstat-kep>
-  - [list](https://github.com/mini-kep/db/#parser-results) *TODO: move to /parser-template*
-- Database: <https://github.com/mini-kep/db/>
-- Front end app: <https://github.com/mini-kep/frontend-app>
+- Parsers:
+  - [master repo for parser templating](https://github.com/mini-kep/parser-template) (under development)  
+  - ```kep```: <https://github.com/mini-kep/parser-rosstat-kep> [![](https://travis-ci.org/mini-kep/parser-rosstat-kep.svg?branch=master)](https://travis-ci.org/mini-kep/parser-rosstat-kep)
+- Database: <https://github.com/mini-kep/db/> (under development)
+- Front end app: <https://github.com/mini-kep/frontend-app> [![Build Status](https://travis-ci.org/mini-kep/frontend-app.svg?branch=master)](https://travis-ci.org/mini-kep/frontend-app)
 
-All pipeline [mocked here](https://github.com/mini-kep/db/blob/master/pipeline.py) *TODO: move to intro*
-
-# Simple truths
-
-As of now:
-- the app just relays three CSV from 'kep' parser: end user API not implemented + no database layer
-- most work was done around 'kep' parser (> 700 commits): need to model other parsers + extract reposnibilitites from 'kep' (naming, charting, seasonality, etc)
-- much time goes to ETL work, not end use examples, shodl be other way around to prove profit to end user
+All pipeline [mocked here](https://github.com/mini-kep/db/tree/master/doc). 
 
 # Dev notes
 
@@ -138,4 +137,4 @@ Other notes
 
 - *'maas'* - forecasting model as a service (experimental)
 
-- This pipeline may also apply to other countries macroeconomic data, or other kinds datasets (eg firm-level data, consumer behaviour, etc). 
+- This pipeline may also apply to other countries macroeconomic data, or other kinds datasets (eg firm-level data, banking statistics). 
