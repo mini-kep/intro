@@ -1,10 +1,3 @@
-| Repo | Tests | Coverage |
-| ---- | ----- | -------- |
-| [parser-rosstat-kep](https://github.com/mini-kep/parser-rosstat-kep) | [![](https://travis-ci.org/mini-kep/parser-rosstat-kep.svg?branch=master)](https://travis-ci.org/mini-kep/parser-rosstat-kep) | [![](https://codecov.io/gh/mini-kep/parser-rosstat-kep/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/parser-rosstat-kep) |
-| [parser-template](https://github.com/mini-kep/parser-template) |  |  |
-| [db](https://github.com/mini-kep/db) |  |  |
-| [frontend-app](https://github.com/mini-kep/frontend-app) | [![](https://travis-ci.org/mini-kep/frontend-app.svg?branch=master)](https://travis-ci.org/mini-kep/frontend-app) | [![](https://codecov.io/gh/mini-kep/frontend-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/frontend-app) |
-
 Why another database for macroeconomic data?
 ============================================
 
@@ -70,23 +63,27 @@ Data pipeline / workflow
    - [charting macroeconimic data](https://github.com/mini-kep/user-charts)
    - models in jupiter notebooks
 
-#### Development status
+# Project repos
+
+| Repo | Tests | Coverage |
+| ---- | ----- | -------- |
+| [parser-rosstat-kep](https://github.com/mini-kep/parser-rosstat-kep) | [![](https://travis-ci.org/mini-kep/parser-rosstat-kep.svg?branch=master)](https://travis-ci.org/mini-kep/parser-rosstat-kep) | [![](https://codecov.io/gh/mini-kep/parser-rosstat-kep/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/parser-rosstat-kep) |
+| [parser-template](https://github.com/mini-kep/parser-template) |  |  |
+| [db](https://github.com/mini-kep/db) |  |  |
+| [frontend-app](https://github.com/mini-kep/frontend-app) | [![](https://travis-ci.org/mini-kep/frontend-app.svg?branch=master)](https://travis-ci.org/mini-kep/frontend-app) | [![](https://codecov.io/gh/mini-kep/frontend-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/frontend-app) |
+
+# Dev notes
 
 | Component         | What is happening              | 
 | ----------------- | -------------------------------| 
 | Naming convention |                                |
 | Parsers           |  making parser template        |
-| - kep             |  [works now][kep]              |
+| - kep             |                                |
 | Scheduler         |                                |
 | Database          |  CRUD tests for SQL Alchemy    |
 | Front end app     |  API example + indicator hp    |
 | User cases        |                                |
 
-[kep]: https://github.com/mini-kep/parser-rosstat-kep
-[frontend]: https://github.com/mini-kep/frontend-app
-
-
-# Dev notes
 
 All pipeline [mocked here](https://github.com/mini-kep/db/tree/master/doc). 
 
