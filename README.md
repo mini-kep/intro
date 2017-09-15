@@ -63,16 +63,16 @@ Data pipeline / workflow
    - [charting macroeconimic data](https://github.com/mini-kep/user-charts)
    - models in jupiter notebooks
 
-#### Component status
+#### Development status
 
 | Component         | What is happening              | 
 | ----------------- | -------------------------------| 
 | Naming convention |                                |
 | Parsers           |  making parser template        |
-| - kep             |  [working][kep]                |
+| - kep             |  [beta][kep]                   |
 | Scheduler         |                                |
 | Database          |  CRUD tests for SQL Alchemy    |
-| Front end app     |  [working][frontend]           |
+| Front end app     |  [beta][frontend]              |
 | User cases        |                                |
 
 [kep]: https://github.com/mini-kep/parser-rosstat-kep
@@ -80,14 +80,24 @@ Data pipeline / workflow
 
 # Repo list
 
-- Intro (this repo): <https://github.com/mini-kep/intro>
+- This repo: <https://github.com/mini-kep/intro>
 - Parsers:
   - [master repo for parser templating](https://github.com/mini-kep/parser-template) (under development)  
-  - ```kep```: <https://github.com/mini-kep/parser-rosstat-kep> [![](https://travis-ci.org/mini-kep/parser-rosstat-kep.svg?branch=master)](https://travis-ci.org/mini-kep/parser-rosstat-kep)
+  - ```kep```: <https://github.com/mini-kep/parser-rosstat-kep> 
 - Database: <https://github.com/mini-kep/db/> (under development)
-- Front end app: <https://github.com/mini-kep/frontend-app> [![Build Status](https://travis-ci.org/mini-kep/frontend-app.svg?branch=master)](https://travis-ci.org/mini-kep/frontend-app)
+- Front end app: <https://github.com/mini-kep/frontend-app> 
 
 All pipeline [mocked here](https://github.com/mini-kep/db/tree/master/doc). 
+
+#### Repo health
+
+| Repo | Tests | Coverage |
+| ---- | ----- | -------- |
+| parser-rosstat-kep | [![](https://travis-ci.org/mini-kep/parser-rosstat-kep.svg?branch=master)](https://travis-ci.org/mini-kep/parser-rosstat-kep) | [![](https://codecov.io/gh/mini-kep/parser-rosstat-kep/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/parser-rosstat-kep) |
+| parser-template | [![](https://travis-ci.org/mini-kep/parser-template.svg?branch=master)](https://travis-ci.org/mini-kep/parser-template) | [![](https://codecov.io/gh/mini-kep/parser-template/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/parser-template) |
+| db | [![](https://travis-ci.org/mini-kep/db.svg?branch=master)](https://travis-ci.org/mini-kep/db) | [![](https://codecov.io/gh/mini-kep/db/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/db) |
+| frontend-app | [![](https://travis-ci.org/mini-kep/frontend-app.svg?branch=master)](https://travis-ci.org/mini-kep/frontend-app) | [![](https://codecov.io/gh/mini-kep/frontend-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/frontend-app) |
+
 
 # Dev notes
 
