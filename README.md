@@ -1,8 +1,8 @@
 | Repo | Tests | Coverage |
 | ---- | ----- | -------- |
 | [parser-rosstat-kep](https://github.com/mini-kep/parser-rosstat-kep) | [![](https://travis-ci.org/mini-kep/parser-rosstat-kep.svg?branch=master)](https://travis-ci.org/mini-kep/parser-rosstat-kep) | [![](https://codecov.io/gh/mini-kep/parser-rosstat-kep/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/parser-rosstat-kep) |
-| [parser-template](https://github.com/mini-kep/parser-template) | [![](https://travis-ci.org/mini-kep/parser-template.svg?branch=master)](https://travis-ci.org/mini-kep/parser-template) | [![](https://codecov.io/gh/mini-kep/parser-template/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/parser-template) |
-| [db](https://github.com/mini-kep/db) | [![](https://travis-ci.org/mini-kep/db.svg?branch=master)](https://travis-ci.org/mini-kep/db) | [![](https://codecov.io/gh/mini-kep/db/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/db) |
+| [parser-template](https://github.com/mini-kep/parser-template) |  |  |
+| [db](https://github.com/mini-kep/db) |  |  |
 | [frontend-app](https://github.com/mini-kep/frontend-app) | [![](https://travis-ci.org/mini-kep/frontend-app.svg?branch=master)](https://travis-ci.org/mini-kep/frontend-app) | [![](https://codecov.io/gh/mini-kep/frontend-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/frontend-app) |
 
 Why another database for macroeconomic data?
