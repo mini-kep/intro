@@ -32,6 +32,14 @@ Jane also finds it useful to:
 - something else?
 
 
+Success criteria 
+================
+- [ ] seasonally adjusted data is provided
+- [ ] API tested by real users and gives a productivity increase (need Excel output?)
+- [ ] several use cases are provided (inflation, fx, bank provisions)
+
+
+
 Data pipeline / workflow 
 ========================
 
@@ -127,11 +135,3 @@ All pipeline [mocked here](https://github.com/mini-kep/db/tree/master/doc).
 See [issues](https://github.com/mini-kep/intro/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20migration)
 about moving various repos to here, adjusting frontend app and urls in access examples. 
 
-Other notes
-===========
-
-- *'maas'* - forecasting model as a service (experimental)
-
-- This pipeline may also apply to other countries macroeconomic data, or other kinds datasets (eg firm-level data, banking statistics). 
-
-- May want to condense all of the above in one repo for tasks in other domains. 
