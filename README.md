@@ -1,3 +1,10 @@
+| Repo | Tests | Coverage |
+| ---- | ----- | -------- |
+| [parser-rosstat-kep](https://github.com/mini-kep/parser-rosstat-kep) | [![](https://travis-ci.org/mini-kep/parser-rosstat-kep.svg?branch=master)](https://travis-ci.org/mini-kep/parser-rosstat-kep) | [![](https://codecov.io/gh/mini-kep/parser-rosstat-kep/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/parser-rosstat-kep) |
+| [parser-template](https://github.com/mini-kep/parser-template) | [![](https://travis-ci.org/mini-kep/parser-template.svg?branch=master)](https://travis-ci.org/mini-kep/parser-template) | [![](https://codecov.io/gh/mini-kep/parser-template/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/parser-template) |
+| [db](https://github.com/mini-kep/db) | [![](https://travis-ci.org/mini-kep/db.svg?branch=master)](https://travis-ci.org/mini-kep/db) | [![](https://codecov.io/gh/mini-kep/db/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/db) |
+| [frontend-app](https://github.com/mini-kep/frontend-app) | [![](https://travis-ci.org/mini-kep/frontend-app.svg?branch=master)](https://travis-ci.org/mini-kep/frontend-app) | [![](https://codecov.io/gh/mini-kep/frontend-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/frontend-app) |
+
 Why another database for macroeconomic data?
 ============================================
 
@@ -69,37 +76,19 @@ Data pipeline / workflow
 | ----------------- | -------------------------------| 
 | Naming convention |                                |
 | Parsers           |  making parser template        |
-| - kep             |  [beta][kep]                   |
+| - kep             |  [works now][kep]              |
 | Scheduler         |                                |
 | Database          |  CRUD tests for SQL Alchemy    |
-| Front end app     |  [beta][frontend]              |
+| Front end app     |  API example + indicator hp    |
 | User cases        |                                |
 
 [kep]: https://github.com/mini-kep/parser-rosstat-kep
 [frontend]: https://github.com/mini-kep/frontend-app
 
-# Repo list
-
-- This repo: <https://github.com/mini-kep/intro>
-- Parsers:
-  - [master repo for parser templating](https://github.com/mini-kep/parser-template) (under development)  
-  - ```kep```: <https://github.com/mini-kep/parser-rosstat-kep> 
-- Database: <https://github.com/mini-kep/db/> (under development)
-- Front end app: <https://github.com/mini-kep/frontend-app> 
-
-All pipeline [mocked here](https://github.com/mini-kep/db/tree/master/doc). 
-
-#### Repo health
-
-| Repo | Tests | Coverage |
-| ---- | ----- | -------- |
-| parser-rosstat-kep | [![](https://travis-ci.org/mini-kep/parser-rosstat-kep.svg?branch=master)](https://travis-ci.org/mini-kep/parser-rosstat-kep) | [![](https://codecov.io/gh/mini-kep/parser-rosstat-kep/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/parser-rosstat-kep) |
-| parser-template | [![](https://travis-ci.org/mini-kep/parser-template.svg?branch=master)](https://travis-ci.org/mini-kep/parser-template) | [![](https://codecov.io/gh/mini-kep/parser-template/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/parser-template) |
-| db | [![](https://travis-ci.org/mini-kep/db.svg?branch=master)](https://travis-ci.org/mini-kep/db) | [![](https://codecov.io/gh/mini-kep/db/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/db) |
-| frontend-app | [![](https://travis-ci.org/mini-kep/frontend-app.svg?branch=master)](https://travis-ci.org/mini-kep/frontend-app) | [![](https://codecov.io/gh/mini-kep/frontend-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/frontend-app) |
-
 
 # Dev notes
+
+All pipeline [mocked here](https://github.com/mini-kep/db/tree/master/doc). 
 
 #### naming convention: 
    - used in 'kep' parser specification extensively
