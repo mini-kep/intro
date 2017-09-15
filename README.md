@@ -35,8 +35,10 @@ Jane also finds it useful to:
 Success criteria 
 ================
 - [ ] seasonally adjusted data is provided
-- [ ] API tested by real users and gives a productivity increase (need Excel output?)
+- [ ] series API tested by real users and gives a productivity increase 
 - [ ] several use cases are provided (inflation, fx, bank provisions)
+- [ ] ```/forecast:<version>/2025``` provided
+
 
 
 
