@@ -51,8 +51,9 @@ We provide:
 Tenatative pipeline / workflow 
 ==============================
 
-This a target pipeline for the project, only parts of it are implemented now.  
-This target pipeline is illustarted by [local demo](https://github.com/mini-kep/intro/blob/master/pipeline_demo.py).
+This a target pipeline for the project, only parts of it are implemented now. 
+
+This target pipeline is illustarted by [local demo here](https://github.com/mini-kep/intro/blob/master/pipeline_demo.py).
 
 0. Common namespace
    - convention on how to name variables 
