@@ -34,11 +34,16 @@ Jane also finds it useful to:
 
 Success criteria 
 ================
-- [ ] seasonally adjusted data is provided
-- [ ] series API tested by real users and gives a productivity increase 
-- [ ] several use cases are provided (inflation, fx, bank provisions)
-- [ ] ```/forecast:<version>/2025``` provided
-
+We provide: 
+- [ ] (1) informative time series descriptions 
+- [ ] (2) full list/menu of time series with download links  
+- [ ] (3) seasonally adjusted time series data (with ```/sa:<method>``` modifier)   
+- [ ] (4) time series API  
+- [ ] (5) several descriptive/model use cases with (inflation, fx, bank provisions)
+---------
+- [ ] (6) dataset API to construct dataframes   
+- [ ] (7) ```/forecast:<version>/2025```
+- [ ] (8) ts and dataset APIs give a productivity increase to real users (feature/data requests, mentions, stars)
 
 
 
