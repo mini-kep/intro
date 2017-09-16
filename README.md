@@ -37,16 +37,10 @@ Success criteria
 
 We provide:
 
-- [ ] (1) full list/menu of time series with download links  
-- [ ] (2) time series API  
----------
-- [ ] (3) seasonally adjusted time series data (with ```/sa:<method>``` modifier)   
----------
-- [ ] (4) several descriptive/model use cases with (inflation, fx, bank provisions)
----------
-- [ ] (5) dataset API to construct dataframes   
-- [ ] (6) ```/forecast:<version>/2025```
-- [ ] (7) ts and dataset APIs give a productivity increase to real users (feature/data requests, mentions, stars)
+- [ ] time series API  
+- [ ] seasonally adjusted time series as ```/sa:<method>``` 
+- [ ] forecasts as ```/forecast:<version>/2025```
+- [ ] several descriptive/model use cases with (inflation, fx, bank provisions)
 
 
 Tenatative pipeline / workflow 
