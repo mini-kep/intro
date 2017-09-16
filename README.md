@@ -35,17 +35,18 @@ Jane also finds it useful to:
 Success criteria 
 ================
 
-We provide: 
-- [ ] (1) informative time series descriptions 
-- [ ] (2) full list/menu of time series with download links  
-- [ ] (3) seasonally adjusted time series data (with ```/sa:<method>``` modifier)   
-- [ ] (4) time series API  
-- [ ] (5) several descriptive/model use cases with (inflation, fx, bank provisions)
----------
-- [ ] (6) dataset API to construct dataframes   
-- [ ] (7) ```/forecast:<version>/2025```
-- [ ] (8) ts and dataset APIs give a productivity increase to real users (feature/data requests, mentions, stars)
+We provide:
 
+- [ ] (1) full list/menu of time series with download links  
+- [ ] (2) time series API  
+---------
+- [ ] (3) seasonally adjusted time series data (with ```/sa:<method>``` modifier)   
+---------
+- [ ] (4) several descriptive/model use cases with (inflation, fx, bank provisions)
+---------
+- [ ] (5) dataset API to construct dataframes   
+- [ ] (6) ```/forecast:<version>/2025```
+- [ ] (7) ts and dataset APIs give a productivity increase to real users (feature/data requests, mentions, stars)
 
 
 Tenatative pipeline / workflow 
@@ -144,4 +145,3 @@ This target pipeline is illustarted by [local demo here](https://github.com/mini
 
 See [issues](https://github.com/mini-kep/intro/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20migration)
 about moving various repos to here, adjusting frontend app and urls in access examples. 
-
