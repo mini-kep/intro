@@ -34,6 +34,7 @@ Jane also finds it useful to:
 
 Success criteria 
 ================
+
 We provide: 
 - [ ] (1) informative time series descriptions 
 - [ ] (2) full list/menu of time series with download links  
@@ -47,8 +48,11 @@ We provide:
 
 
 
-Data pipeline / workflow 
-========================
+Tenatative pipeline / workflow 
+==============================
+
+This a target pipeline for the project, only parts of it are implemented now.  
+This target pipeline is illustarted by [local demo](https://github.com/mini-kep/intro/blob/master/pipeline_demo.py).
 
 0. Common namespace
    - convention on how to name variables 
@@ -66,7 +70,7 @@ Data pipeline / workflow
    - upload to database
 
 3. database 
-   - flask app with RESTful API on top of SQLAlchemy with Postgres backend 
+   - flask app on top of SQLAlchemy with Postgres backend 
    - very generic component with little custom functionality
 
 4. front end app (flask)
@@ -91,7 +95,7 @@ Data pipeline / workflow
 
 | Component         | What is happening              | 
 | ----------------- | -------------------------------| 
-| Naming convention |                                |
+| Naming convention |  as needed for enduser API     |
 | Parsers           |  making parser template        |
 | - kep             |                                |
 | Scheduler         |                                |
@@ -99,8 +103,6 @@ Data pipeline / workflow
 | Front end app     |  API example + indicator hp    |
 | User cases        |                                |
 
-
-All pipeline [mocked here](https://github.com/mini-kep/db/tree/master/doc). 
 
 #### naming convention: 
    - used in 'kep' parser specification extensively
