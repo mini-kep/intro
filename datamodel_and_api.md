@@ -61,7 +61,7 @@ Suggested reading/code
 ======================
 
 - getter.py
-- df_check
+- [df_check](https://github.com/mini-kep/parser-rosstat-kep/blob/master/src/utils/df_check.py) This code contains utility functions to check the consistency of the results in the database. In particular, the monthly frequency dataframes are aggregated to an annual frequency, and checked against the published annual results. It would be desirable to have more functions checking for consistency in other frequencies as well, such as monthly to quarterly, quarterly to annual, etc.
 - [API design issue](https://github.com/mini-kep/frontend-app/issues/8)
 
 Glossary
