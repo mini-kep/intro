@@ -60,8 +60,11 @@ More to follow:
 Suggested reading/code
 ======================
 
-- getter.py
-- df_check
+- ```read_csv()``` in: 
+ - [getter.py](https://github.com/mini-kep/parser-rosstat-kep/blob/master/src/getter.py)
+ - [parser-rosstat-kep readme](https://github.com/mini-kep/parser-rosstat-kep/blob/master/README.md#how-do-i-download-macroeconomic-indicators-from-here)
+ - [app frontpage code](http://mini-kep.herokuapp.com/)
+- [dataframe consistency](https://github.com/mini-kep/parser-rosstat-kep/blob/master/src/utils/df_check.py)
 - [API design issue](https://github.com/mini-kep/frontend-app/issues/8)
 
 Glossary
@@ -71,6 +74,3 @@ Glossary
 - true dataset
 - reported dataset
 - enduser API
- 
-
-
