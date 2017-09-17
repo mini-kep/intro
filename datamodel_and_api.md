@@ -26,7 +26,7 @@ brent = pd.read_json('https://mini-kep.herokuapp.com/oil/series/BRENT/d')
 er = pd.read_json('https://mini-kep.herokuapp.com/ru/series/USDRUR/d')
 ```
 
-As of now the API fronend just shows how flask decodes long URL into a dict/json. You can click and see:
+As of now the API frontend just shows how flask decodes long URL into a dict/json. You can click and see:
 
 - <https://mini-kep.herokuapp.com/ru/series/BRENT/m/>
 - <https://mini-kep.herokuapp.com/ru/series/BRENT/m/eop/2015/2016/csv>
@@ -40,7 +40,7 @@ The functionaly described not implemented yet, but hopefully soon be. For this t
 - we are working on importing more parsing results (kep+exchange rate+oil) as flat rows 
   with datapoints
 - the datapoitnts are to be stored in a database   
-- the frintend app should be able to query the database and privide real data for 
+- the frontend app should be able to query the database and provide real data for 
   calls above.
   
 An important link that I propose to explore is what our datamodel for 
