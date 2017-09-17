@@ -57,3 +57,20 @@ More to follow:
 - translate API call to database call (this should be sample code with a lot of test)
 - API v.0.1 vs features for the future
 
+Suggested reading/code
+======================
+
+- getter.py
+- df_check
+- [API design issue](https://github.com/mini-kep/frontend-app/issues/8)
+
+Glossary
+========
+
+- data model
+- true dataset
+- reported dataset
+- enduser API
+ 
+
+
