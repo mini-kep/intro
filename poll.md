@@ -20,7 +20,7 @@ Thanks for answering the questions!
 - [ ] I allocate more time to other software for similar tasks
 - [ ] Excel is history now or soon will be
 
-3. What public data sources do you use?*
+3. What public data sources do you use? (*)
 - [ ] FRED
 - [ ] Quandl
 - [ ] OECD API
