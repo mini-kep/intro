@@ -35,12 +35,21 @@ Jane also finds it useful to:
 Success criteria 
 ================
 
-We provide:
+How do we know the project is working:
 
-- [ ] time series API  
+Basic level:
+
+- time series API:  
+  - [ ] API documentaion  
+  - [ ] API tests
+  - [ ] API menu (lsiting of allowed call based on db contents)  
+- [ ] several descriptive/model use cases with (inflation, fx, bank provisions)
+
+
+Advanced level:
 - [ ] seasonally adjusted time series as ```/sa:<method>``` 
 - [ ] forecasts as ```/forecast:<version>/2025```
-- [ ] several descriptive/model use cases with (inflation, fx, bank provisions)
+- [ ] dataset API with ```xl``` finaliser
 
 
 Tenatative pipeline / workflow 
@@ -86,6 +95,12 @@ This target pipeline is illustarted by [local demo here](https://github.com/mini
 | [parser-template](https://github.com/mini-kep/parser-template) |  |  |
 | [db](https://github.com/mini-kep/db) |  |  |
 | [frontend-app](https://github.com/mini-kep/frontend-app) | [![](https://travis-ci.org/mini-kep/frontend-app.svg?branch=master)](https://travis-ci.org/mini-kep/frontend-app) | [![](https://codecov.io/gh/mini-kep/frontend-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/frontend-app) |
+
+
+# New to project?
+
+Try [new user checklist](https://github.com/mini-kep/intro/blob/master/new_user_checklist.md).
+
 
 # Dev notes
 
