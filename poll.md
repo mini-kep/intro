@@ -50,4 +50,4 @@ Your affiliation:
 - [ ] other
 
 
-* questions has checkboxes (means user can choose more than one option).
+(*) questions has checkboxes (means user can choose more than one option).
