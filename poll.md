@@ -1,45 +1,45 @@
-Do you write code that imports macroeconomic time series data? 
+Machine readable data sources in economics
+
+We develop a public API for Russian macroeconomic data 
+at https://github.com/mini-kep/intro and would like to 
+learn/quantify about how APIs like FRED or Quandl are used 
+in economics. Our assumption that they are used extensively, 
+but not universally. 
+
+Thanks for answering the questions!
+
+1. Do you write code that imports time series data? 
 - [ ] all the time
 - [ ] once in a while
-- [ ] I don't but people around do a lot
-- [ ] I stay away from it 
-- [ ] I knew how
-
-Do you feel there is more better data available to work with?
-- [ ] yes
-- [ ] no
-
-Do you use Excel as much as 3 years ago?
-- [ ] even more
-- [ ] just the same
-- [ ] I allocate a bit more time to other software
-- [ ] Excel is history now
-
-Do you write code that imports  macroeconomic time series data? 
-- [ ] all the time
-- [ ] once in a while
-- [ ] I don't but people around do a lot
+- [ ] I don't, but people around do a lot
 - [ ] I stay away from it 
 
-What public sources do you use?
+2. Do you use Excel as much as 3 years ago?
+- [ ] I use Excel even more
+- [ ] just about the same
+- [ ] I allocate more time to other software for similar tasks
+- [ ] Excel is history now or soon will be
+
+3. What public data sources do you use?
 - [ ] FRED
 - [ ] Quandl
 - [ ] OECD API
-- [ ] IMF API
 - [ ] World bank API
-- [ ] national statistics agency any
-- [ ] oh, here is a cool link: __________________________
+- [ ] national statistics agency
+- [ ] aaah, here is a cool link: __________________________
 
-How do you import data?
+4. How do you import data?
 - [ ] R
-- [ ] python pandas
+- [ ] python/pandas
 - [ ] econometrics package
 - [ ] Excel plugin
+- [ ] other
 
-What is the nature of work you do macroeconomic data"
-- [ ] student assignments / excercises
-- [ ] descriptive statistics / visualisation
-- [ ] modelling/forecasting
+5. What is the nature of work you do economic data:
+- [ ] descriptive statistics 
+- [ ] visualisation
+- [ ] modelling and forecasting
+- [ ] other _____________
 
 Your affiliation:
 - [ ] university
