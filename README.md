@@ -37,19 +37,26 @@ Success criteria
 
 How do we know the project is working:
 
-Basic level:
+Basic level: time series API + use cases
 
-- time series API:  
+Time series API:  
   - [ ] API documentaion  
   - [ ] API tests
   - [ ] API menu (lsiting of allowed call based on db contents)  
-- [ ] several descriptive/model use cases with (inflation, fx, bank provisions)
+  
+Use cases: several descriptive use cases or model with API data in notebooks
+- [ ] gdp components
+- [ ] inflation
+- [ ] fx
+- [ ] bank provisions
 
-
-Advanced level:
+Advanced level :
 - [ ] seasonally adjusted time series as ```/sa:<method>``` 
 - [ ] forecasts as ```/forecast:<version>/2025```
+
+New APIs:
 - [ ] dataset API with ```xl``` finaliser
+- [ ] chart API via ```spline``` / ```chart``` finaliser
 
 
 Tenatative pipeline / workflow 
