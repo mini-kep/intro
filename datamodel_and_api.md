@@ -59,12 +59,25 @@ More to follow:
 Suggested reading/code
 ======================
 
-- ```read_csv()``` in: 
+- ```read_csv()```: 
    - [getter.py](https://github.com/mini-kep/parser-rosstat-kep/blob/master/src/getter.py)
    - [parser-rosstat-kep readme](https://github.com/mini-kep/parser-rosstat-kep/blob/master/README.md#how-do-i-download-macroeconomic-indicators-from-here)
    - [app frontpage code](http://mini-kep.herokuapp.com/)
-- [dataframe consistency](https://github.com/mini-kep/parser-rosstat-kep/blob/master/src/utils/df_check.py)
+
+> This is a data access function used across the project to read the output as dataframes from stable URLs
+> In end-user API the import function will be  ```pd.read_json``` as it will allow to bypass time index transformation.  
+
+- [dataframe consistency](https://github.com/mini-kep/parser-rosstat-kep/blob/master/src/utils/df_check.py):
+
+> This module checks consistency of the results in the database. In particular, the monthly frequency 
+> dataframes are aggregated to an annual frequency, and checked against the published annual results. 
+> More functions checking for consistency in other frequencies can be added (eg monthly to quarterly, quarterly to annual)
+> We found some inconsistencies were reported data on annual level is different that the log-sum on monthly rates,
+> even controlling for rounding error.
+
 - [API design issue](https://github.com/mini-kep/frontend-app/issues/8)
+
+> From here we need to extract the text on data rules and API documentation 
 
 Glossary
 ========
