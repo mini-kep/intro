@@ -20,7 +20,7 @@ Thanks for answering the questions!
 - [ ] I allocate more time to other software for similar tasks
 - [ ] Excel is history now or soon will be
 
-3. What public data sources do you use? (*)
+3. What public data sources do you use? (M)
 - [ ] FRED
 - [ ] Quandl
 - [ ] OECD API
@@ -28,14 +28,14 @@ Thanks for answering the questions!
 - [ ] national statistics agency
 - [ ] aaah, here is a cool link: __________________________
 
-4. How do you import data?
+4. How do you import data? (M)
 - [ ] R
 - [ ] python/pandas
 - [ ] econometrics package
 - [ ] Excel plugin
 - [ ] other
 
-5. What is the nature of work you do economic data:
+5. What is the nature of work you do economic data (M)
 - [ ] descriptive statistics 
 - [ ] visualisation
 - [ ] modelling and forecasting
@@ -50,4 +50,4 @@ Your affiliation:
 - [ ] other
 
 
-(*) questions has checkboxes (means user can choose more than one option).
+(M) questions has checkboxes (means user can choose more than one option).
