@@ -65,7 +65,11 @@ Suggested reading/code
    - [app frontpage code](http://mini-kep.herokuapp.com/)
 
 > This is a data access function used across the project to read the output as dataframes from stable URLs
-> In end-user API the import function will be  ```pd.read_json``` as it will allow to bypass time index transformation.  
+> In end-user API the import function will be  ```pd.read_json``` as it will allow to bypass time index transformation:
+
+```
+annual_CPI_rog = pd.read_json('http://mini-kep.herokuapp.com/ru/series/CPI/a/rog')
+```
 
 - [dataframe consistency](https://github.com/mini-kep/parser-rosstat-kep/blob/master/src/utils/df_check.py):
 
