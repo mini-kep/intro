@@ -37,10 +37,9 @@ The URL/API is styled around:
 - ```<mandatory part>/<modifier | aggregator>/<start_year>/<end_year>/<finaliser>``` - optional part
 
 The functionaly described not implemented yet, but hopefully soon be. For this to happen:
-- we are working on importing more parsing results (kep+exchange rate+oil) as flat rows 
-  with datapoints
-- the datapoitnts are to be stored in a database   
-- the frontend app should be able to query the database and provide real data for 
+- at [parser-template](https://github.com/mini-kep/parser-template) we are working on importing parsing results (kep+exchange rate+oil) as dictionaries with datapoints 
+- at [db](https://github.com/mini-kep/db) the datapoints are to be stored in a database   
+- [the frontend app](https://github.com/mini-kep/frontend-app) should be able to query the database and provide real data for 
   calls above.
   
 An important link that I propose to explore is what our datamodel for 
