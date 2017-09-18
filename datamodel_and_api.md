@@ -26,9 +26,9 @@ brent = pd.read_json('https://mini-kep.herokuapp.com/oil/series/BRENT/d')
 er = pd.read_json('https://mini-kep.herokuapp.com/ru/series/USDRUR/d')
 ```
 
-As of now the API fronend just shows how flask decodes long URL into a dict/json. You can click and see:
+As of now the API frontend just shows how flask decodes long URL into a dict/json. You can click and see:
 
-- <https://mini-kep.herokuapp.com/ru/series/BRENT/m/>
+- <https://mini-kep.herokuapp.com/ru/series/BRENT/m>
 - <https://mini-kep.herokuapp.com/ru/series/BRENT/m/eop/2015/2016/csv>
 - <https://mini-kep.herokuapp.com/ru/series/GDP/q/rog>
 
@@ -37,10 +37,9 @@ The URL/API is styled around:
 - ```<mandatory part>/<modifier | aggregator>/<start_year>/<end_year>/<finaliser>``` - optional part
 
 The functionaly described not implemented yet, but hopefully soon be. For this to happen:
-- we are working on importing more parsing results (kep+exchange rate+oil) as flat rows 
-  with datapoints
-- the datapoitnts are to be stored in a database   
-- the frintend app should be able to query the database and privide real data for 
+- at [parser-template](https://github.com/mini-kep/parser-template) we are working on importing parsing results (kep+exchange rate+oil) as dictionaries with datapoints 
+- at [db](https://github.com/mini-kep/db) the datapoints are to be stored in a database   
+- [the frontend app](https://github.com/mini-kep/frontend-app) should be able to query the database and provide real data for 
   calls above.
   
 An important link that I propose to explore is what our datamodel for 
@@ -60,9 +59,25 @@ More to follow:
 Suggested reading/code
 ======================
 
-- getter.py
-- [df_check](https://github.com/mini-kep/parser-rosstat-kep/blob/master/src/utils/df_check.py) This code contains utility functions to check the consistency of the results in the database. In particular, the monthly frequency dataframes are aggregated to an annual frequency, and checked against the published annual results. It would be desirable to have more functions checking for consistency in other frequencies as well, such as monthly to quarterly, quarterly to annual, etc.
+- ```read_csv()```: 
+   - [getter.py](https://github.com/mini-kep/parser-rosstat-kep/blob/master/src/getter.py)
+   - [parser-rosstat-kep readme](https://github.com/mini-kep/parser-rosstat-kep/blob/master/README.md#how-do-i-download-macroeconomic-indicators-from-here)
+   - [app frontpage code](http://mini-kep.herokuapp.com/)
+
+> This is a data access function used across the project to read the output as dataframes from stable URLs
+> In end-user API the import function will be  ```pd.read_json``` as it will allow to bypass time index transformation.  
+
+- [dataframe consistency](https://github.com/mini-kep/parser-rosstat-kep/blob/master/src/utils/df_check.py):
+
+> This module checks consistency of the results in the database. In particular, the monthly frequency 
+> dataframes are aggregated to an annual frequency, and checked against the published annual results. 
+> More functions checking for consistency in other frequencies can be added (eg monthly to quarterly, quarterly to annual)
+> We found some inconsistencies were reported data on annual level is different that the log-sum on monthly rates,
+> even controlling for rounding error.
+
 - [API design issue](https://github.com/mini-kep/frontend-app/issues/8)
+
+> From here we need to extract the text on data rules and API documentation 
 
 Glossary
 ========
@@ -71,6 +86,3 @@ Glossary
 - true dataset
 - reported dataset
 - enduser API
- 
-
-
