@@ -28,7 +28,7 @@ er = pd.read_json('https://mini-kep.herokuapp.com/ru/series/USDRUR/d')
 
 As of now the API frontend just shows how flask decodes long URL into a dict/json. You can click and see:
 
-- <https://mini-kep.herokuapp.com/ru/series/BRENT/m/>
+- <https://mini-kep.herokuapp.com/ru/series/BRENT/m>
 - <https://mini-kep.herokuapp.com/ru/series/BRENT/m/eop/2015/2016/csv>
 - <https://mini-kep.herokuapp.com/ru/series/GDP/q/rog>
 
