@@ -5,14 +5,16 @@ Why another database for macroeconomic data?
   [quandl](https://blog.quandl.com/api-for-economic-data), 
   [OECD](https://data.oecd.org/api), 
   [World Bank](https://datahelpdesk.worldbank.org/knowledgebase/topics/125589), 
-  [EIA](https://www.eia.gov/opendata/)), but some data is left in the dark.
+  [EIA](https://www.eia.gov/opendata/)). Please take a minute to fill [our poll about economics datasources](https://goo.gl/2wY43R) and see the results.  
 
-- Russian macroeconomic statistics seems very fragmented (HTML, Word, Excel are common dessimination formats). 
-  This is a roadblock to reproducible analysis as dirty data escalates costs of model maintenance.      
+- However, some data is still left in the dark. Russian macroeconomic statistics seems very fragmented (HTML, Word, Excel are common dessimination formats). This is a roadblock to reproducible analysis as dirty data escalates costs of model maintenance.      
 
 - ```mini-kep``` aims to remove this roadblock by providing 
   [public API for Russian macroeconomic data](http://mini-kep.herokuapp.com/) 
   and examples of economic research/business planning/marketing  problems solved in python pandas or R.
+  
+- Tentatively  ```mini-kep``` parsers->scheduler->database->user API pipleine can be used in other projects,
+  so our goal is also to pack the components nicely in a model Django or Flask app. 7*    
 
 User case
 =========
