@@ -13,9 +13,9 @@ Why another database for macroeconomic data?
   [public API for Russian macroeconomic data](http://mini-kep.herokuapp.com/) 
   and examples of economic research/business planning/marketing  problems solved in python pandas or R.
   
-- Tentatively  ```mini-kep``` parsers->scheduler->database->user API pipleine can be used in other projects,
-  so our goal is also to pack the components nicely in a model Django or Flask app. 7*    
-
+- Tentatively ```parsers -> scheduler -> database -> user API``` pipleine can be used in other projects,
+  so our goal is to pack the all components nicely in a model Django or Flask app. 
+  
 User case
 =========
 
