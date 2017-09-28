@@ -13,9 +13,7 @@ Why another database for macroeconomic data?
   [public API for Russian macroeconomic data](http://mini-kep.herokuapp.com/) 
   and examples of economic research/business planning/marketing  problems solved in python pandas or R.
   
-- Tentatively ```parsers -> scheduler -> database -> user API``` pipleine can be used in other projects,
-  so our goal is to pack the all components nicely in a model Django or Flask app. 
-  
+ 
 User case
 =========
 
@@ -34,10 +32,23 @@ Jane also finds it useful to:
 - something else?
 
 
-Tenatative pipeline / workflow 
-==============================
+Dataflow
+========
 
-This a target pipeline for the project, only parts of it are implemented now. 
+The project pipeline is as follows:
+
+```
+
+data sources -> parsers -> scheduler -> | -> database -> | -> custom API -> pandas dataframe
+                                        |                |
+                          (Optional:  REST API        REST API)
+
+``` 
+
+
+The latest about pipeline is [here](https://github.com/mini-kep/intro/blob/master/pipeline/pipeline.py)
+
+Earlier comments: 
 
 0. Common namespace
    - convention on how to name variables 
@@ -84,7 +95,14 @@ Try [new user checklist](https://github.com/mini-kep/intro/wiki/New-user-checkli
 
 
 # Changelog
+- **2017-09-28** new data pipeline description [open for comments](https://github.com/mini-kep/intro/issues/14) 
+- **2017-09-28** <https://github.com/mini-kep/parsers> provide data from three parsers (macro, oil, fx)
+- **2017-09-07** flask app <http://mini-kep.herokuapp.com/> relays parsing results from 
+                 <https://github.com/mini-kep/parser-rosstat-kep>  
 
-- **2017-09-28** <https://github.com/mini-kep/parsers> provide data from three parsers (macro, oil, fx).
+
+provide data from three parsers (macro, oil, fx).
+
+:
 
 
