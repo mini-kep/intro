@@ -5,10 +5,12 @@ This document mimics the data pipline from parsers to end-user API:
     
    1. parsers make data from different sources available
    2. database stores the data
-   3. standard (REST) API returns query results 
-   4. custom end-user API returns json readable by pd.read_json()
+   3. standard (REST) API returns query results for full-syntax query
+   4. custom end-user API returns json readable by pd.read_json(),
+      the query syntax is simplified for economists to understand
    
-   Questions and comments highly appreciated.
+   Questions, comments, concerns highly appreciated.
+   
 """
 
 
