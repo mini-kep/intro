@@ -1,6 +1,11 @@
 """This document mimics the data pipline from parsers to end-user API:
     
-- 
+   1. parsers make data from different sources available
+   2. database stores the data
+   3. standard (REST) API returns query results 
+   4. custom end-user API returns json readable by pd.read_json()
+   
+   Questions highly appreciated.
 
 """
 
@@ -38,6 +43,7 @@ def is_wanted(datapoint, user_query):
 def select(user_query_rest):
     # using global *data*
     return [d for d in data if is_wanted(d, user_query_rest)]
+
 
 # 3. Rest API 
 # - the query touches all fields 
