@@ -83,3 +83,8 @@ This a target pipeline for the project, only parts of it are implemented now.
 Try [new user checklist](https://github.com/mini-kep/intro/wiki/New-user-checklist).
 
 
+# Changelog
+
+- **2017-09-28** <https://github.com/mini-kep/parsers> provides data from three parsers (macro, oil, fx).
+
+
