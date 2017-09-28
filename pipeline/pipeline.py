@@ -5,8 +5,7 @@
    3. standard (REST) API returns query results 
    4. custom end-user API returns json readable by pd.read_json()
    
-   Questions highly appreciated.
-
+   Questions and comments highly appreciated.
 """
 
 
