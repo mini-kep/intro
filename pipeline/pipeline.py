@@ -8,9 +8,38 @@ This document mimics the data pipline from parsers to end-user API:
    3. standard (REST) API returns query results for full-syntax query
    4. custom end-user API returns json readable by pd.read_json(),
       the query syntax is simplified for economists to understand
+      
+You can also see it from the user end:
+   - the user wants an economic time series     
+   - she queries the api like 
+   
+   df = pd.read_json('http://mini-kep.herokuapp.com/ru/series/CPI/m/rog/2015')
+   
+   # that is deliever time series for Russian (ru) consumer price index (CPI)
+   # at monthly frequency (m) measured as rate of growth to previous period 
+   # (rog) starting from year (2015)
+   
+   - the query goes to flask app that decodes this into more standard 
+   select operation (a GET in REST API call to the database)
+   
+   - the database should contain such data
+   
+   - in the database the data was loaded from the parsers which read 
+     the original data sources (statuc files and other APIs). 
+   
    
    Questions, comments, concerns highly appreciated.
    
+   So far:
+       > what is implemented and what is not? - added comments along the lines, 
+         but we more or less have the parsers and end-user API, no database 
+         layer yet (there are prototypes but they are not workable yet)
+       > can we live without REST API around the database (#3) - yes we can, 
+         it is optional, but I think it is good abstration that can help build 
+         other services around the db
+       > can you go without jargon like REST and 'reddit'? - I tried and 
+         edited ;)    
+          
 """
 
 
@@ -31,7 +60,20 @@ names = set([d['name'] for d in data])
 # 2. the database accepted and stores the data 
 #    in whichever is most appropriate format 
 
-# code below mimicks a select performed by Django ORM or SQLAlchemy
+# what we have have for the database:
+    
+#    here we tried CRUD methods in pure SQL Alchemy:
+#    <https://github.com/mini-kep/db/blob/master/clientdb.py>
+#    that kind of hanged here:
+#    <https://github.com/mini-kep/db/issues/3>
+
+#    also there is Django app with a simple db schema inside
+#    <https://github.com/mini-kep/full-app>
+#    but it all stopped here:
+#    <https://github.com/mini-kep/full-app/issues/28>
+#    if you knwo Djngo well, youcan probablu speed up the process
+
+# code below mimicks a 'select' operation performed by Django ORM or SQLAlchemy
 
 def is_wanted(datapoint, user_query):
     """Does the datapoint comply with user query?"""
@@ -97,6 +139,7 @@ def server_response_custom(user_query_custom):
     return to_json(dicts=custom_select(user_query_custom))
 
 if __name__ == "__main__":
+    # this part is user scenario, getting some data inside dataframe    
     
     # the user sends a query to the database
     user_query_custom_sample = 'CPI/m/rog/2017'

@@ -101,8 +101,3 @@ Try [new user checklist](https://github.com/mini-kep/intro/wiki/New-user-checkli
                  <https://github.com/mini-kep/parser-rosstat-kep>  
 
 
-provide data from three parsers (macro, oil, fx).
-
-:
-
-
