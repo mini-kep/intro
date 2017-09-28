@@ -34,34 +34,10 @@ Jane also finds it useful to:
 - something else?
 
 
-Success criteria 
-================
-
-Use cases:
-- [ ] gdp components
-- [ ] inflation
-- [ ] fx
-- [ ] bank provisions model
-
-Time series API:  
-- [ ] listing of allowed API calls based on database contents  
-  
-Advanced level :
-- [ ] seasonally adjusted time series as ```/sa:<method>``` 
-- [ ] forecasts as ```/forecast:<version>/2025```
-
-New APIs:
-- [ ] dataset API - load several time series
-- [ ] Excel files delivered by ```xl``` finaliser
-- [ ] chart API with ```spline``` and ```chart``` finaliser
-
-
 Tenatative pipeline / workflow 
 ==============================
 
 This a target pipeline for the project, only parts of it are implemented now. 
-
-This target pipeline is illustarted by [local demo here](https://github.com/mini-kep/intro/blob/master/pipeline_demo.py).
 
 0. Common namespace
    - convention on how to name variables 
@@ -96,65 +72,19 @@ This target pipeline is illustarted by [local demo here](https://github.com/mini
 | Repo | Tests | Coverage |
 | ---- | ----- | -------- |
 | [parser-rosstat-kep](https://github.com/mini-kep/parser-rosstat-kep) | [![](https://travis-ci.org/mini-kep/parser-rosstat-kep.svg?branch=master)](https://travis-ci.org/mini-kep/parser-rosstat-kep) | [![](https://codecov.io/gh/mini-kep/parser-rosstat-kep/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/parser-rosstat-kep) |
-| [parser-template](https://github.com/mini-kep/parser-template) |  |  |
+| [parsers](https://github.com/mini-kep/parsers) | [![](https://travis-ci.org/mini-kep/parsers.svg?branch=master)](https://travis-ci.org/mini-kep/parsers) | [![](https://codecov.io/gh/mini-kep/parsers/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/parsers) |
 | [db](https://github.com/mini-kep/db) |  |  |
 | [frontend-app](https://github.com/mini-kep/frontend-app) | [![](https://travis-ci.org/mini-kep/frontend-app.svg?branch=master)](https://travis-ci.org/mini-kep/frontend-app) | [![](https://codecov.io/gh/mini-kep/frontend-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/frontend-app) |
+| [full-app](https://github.com/mini-kep/full-app) | [![](https://travis-ci.org/mini-kep/full-app.svg?branch=master)](https://travis-ci.org/mini-kep/full-app) | [![](https://codecov.io/gh/mini-kep/full-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/full-app) |
 
 
 # New to project?
 
-Try [new user checklist](https://github.com/mini-kep/intro/blob/master/new_user_checklist.md).
+Try [new user checklist](https://github.com/mini-kep/intro/wiki/New-user-checklist).
 
 
-# Dev notes
+# Changelog
 
-| Component         | What is happening              | 
-| ----------------- | -------------------------------| 
-| Naming convention |  as needed for enduser API     |
-| Parsers           |  making parser template        |
-| - kep             |                                |
-| Scheduler         |                                |
-| Database          |  CRUD tests for SQL Alchemy    |
-| Front end app     |  API example + indicator hp    |
-| User cases        |                                |
+- **2017-09-28** <https://github.com/mini-kep/parsers> provide data from three parsers (macro, oil, fx).
 
 
-#### naming convention: 
-   - used in 'kep' parser specification extensively
-   - descrition/tree dictionaries:
-      - [ ] varname-description
-      - [ ] units-description 
-      - [ ] section-varname    
-
-#### parsers: migrate after templating
-  - [ ] make list of parsers 
-  - [ ] common parser interface 
-  - [ ] common components (eg. download)
-  - [ ] description template (json to markdown)
-  - [ ] API keys(?)
-  - [ ] [migrate parsers to github organisation](https://github.com/mini-kep/intro/issues/4) 
-
-
-#### scheduler: 
-   - discussed, does not exist
-   - needs parser json (2) + db (3) + scheduling rules 
-
-#### charts
-
-> making standartised charts for fronends and user notebooks and injecting them across project
-
-
-#### dataset basis
-
-> what is the minimum number of variables to keep in basis to reproduce end-user dataset (involves levelising rates and 
-> separating nominal and real variables), abstracting form rounding error and annual revisions; will be an input to seasonal 
-> adjustment and API interface planning, see below
-
-#### seasonal adjustment
-> explore techniques and establish own procedure + variable naming + point of injection in dataflow 
-
-
-#### github org migration
-
-See [issues](https://github.com/mini-kep/intro/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20migration)
-about moving various repos to here, adjusting frontend app and urls in access examples. 
