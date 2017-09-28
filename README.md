@@ -85,6 +85,6 @@ Try [new user checklist](https://github.com/mini-kep/intro/wiki/New-user-checkli
 
 # Changelog
 
-- **2017-09-28** <https://github.com/mini-kep/parsers> provides data from three parsers (macro, oil, fx).
+- **2017-09-28** <https://github.com/mini-kep/parsers> provide data from three parsers (macro, oil, fx).
 
 
