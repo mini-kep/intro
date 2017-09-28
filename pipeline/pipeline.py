@@ -1,3 +1,10 @@
+"""This document mimics the data pipline from parsers to end-user API:
+    
+- 
+
+"""
+
+
 import json
 import pandas as pd
 
