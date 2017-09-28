@@ -34,34 +34,10 @@ Jane also finds it useful to:
 - something else?
 
 
-Success criteria 
-================
-
-Use cases:
-- [ ] gdp components
-- [ ] inflation
-- [ ] fx
-- [ ] bank provisions model
-
-Time series API:  
-- [ ] listing of allowed API calls based on database contents  
-  
-Advanced level :
-- [ ] seasonally adjusted time series as ```/sa:<method>``` 
-- [ ] forecasts as ```/forecast:<version>/2025```
-
-New APIs:
-- [ ] dataset API - load several time series
-- [ ] Excel files delivered by ```xl``` finaliser
-- [ ] chart API with ```spline``` and ```chart``` finaliser
-
-
 Tenatative pipeline / workflow 
 ==============================
 
 This a target pipeline for the project, only parts of it are implemented now. 
-
-This target pipeline is illustarted by [local demo here](https://github.com/mini-kep/intro/blob/master/pipeline_demo.py).
 
 0. Common namespace
    - convention on how to name variables 
@@ -96,28 +72,18 @@ This target pipeline is illustarted by [local demo here](https://github.com/mini
 | Repo | Tests | Coverage |
 | ---- | ----- | -------- |
 | [parser-rosstat-kep](https://github.com/mini-kep/parser-rosstat-kep) | [![](https://travis-ci.org/mini-kep/parser-rosstat-kep.svg?branch=master)](https://travis-ci.org/mini-kep/parser-rosstat-kep) | [![](https://codecov.io/gh/mini-kep/parser-rosstat-kep/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/parser-rosstat-kep) |
-| [parser-template](https://github.com/mini-kep/parser-template) |  |  |
+| [parsers](https://github.com/mini-kep/parsers) | [![](https://travis-ci.org/mini-kep/parsers.svg?branch=master)](https://travis-ci.org/mini-kep/parsers) | [![](https://codecov.io/gh/mini-kep/parsers/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/parsers) |
 | [db](https://github.com/mini-kep/db) |  |  |
 | [frontend-app](https://github.com/mini-kep/frontend-app) | [![](https://travis-ci.org/mini-kep/frontend-app.svg?branch=master)](https://travis-ci.org/mini-kep/frontend-app) | [![](https://codecov.io/gh/mini-kep/frontend-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/frontend-app) |
+| [full-app](https://github.com/mini-kep/full-app) | [![](https://travis-ci.org/mini-kep/full-app.svg?branch=master)](https://travis-ci.org/mini-kep/full-app) | [![](https://codecov.io/gh/mini-kep/full-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/full-app) |
 
 
 # New to project?
 
-Try [new user checklist](https://github.com/mini-kep/intro/blob/master/new_user_checklist.md).
+Try [new user checklist](https://github.com/mini-kep/intro/wiki/New-user-checklist).
 
 
 # Dev notes
-
-| Component         | What is happening              | 
-| ----------------- | -------------------------------| 
-| Naming convention |  as needed for enduser API     |
-| Parsers           |  making parser template        |
-| - kep             |                                |
-| Scheduler         |                                |
-| Database          |  CRUD tests for SQL Alchemy    |
-| Front end app     |  API example + indicator hp    |
-| User cases        |                                |
-
 
 #### naming convention: 
    - used in 'kep' parser specification extensively
@@ -125,15 +91,6 @@ Try [new user checklist](https://github.com/mini-kep/intro/blob/master/new_user_
       - [ ] varname-description
       - [ ] units-description 
       - [ ] section-varname    
-
-#### parsers: migrate after templating
-  - [ ] make list of parsers 
-  - [ ] common parser interface 
-  - [ ] common components (eg. download)
-  - [ ] description template (json to markdown)
-  - [ ] API keys(?)
-  - [ ] [migrate parsers to github organisation](https://github.com/mini-kep/intro/issues/4) 
-
 
 #### scheduler: 
    - discussed, does not exist
@@ -152,6 +109,16 @@ Try [new user checklist](https://github.com/mini-kep/intro/blob/master/new_user_
 
 #### seasonal adjustment
 > explore techniques and establish own procedure + variable naming + point of injection in dataflow 
+
+
+# Mostly done
+
+#### parsers: migrate after templating
+  - [x] make list of parsers 
+  - [x] common parser interface 
+  - [ ] common components (eg. download)
+  - [x] description template
+  - [x] separtate API keys from code
 
 
 #### github org migration
