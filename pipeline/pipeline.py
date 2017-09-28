@@ -1,4 +1,7 @@
-"""This document mimics the data pipline from parsers to end-user API:
+"""Fetch macroeconomic data from external sources and provide it to user 
+   in a clean, friendly way.
+
+This document mimics the data pipline from parsers to end-user API:
     
    1. parsers make data from different sources available
    2. database stores the data
@@ -45,8 +48,8 @@ def select(user_query_rest):
     return [d for d in data if is_wanted(d, user_query_rest)]
 
 
-# 3. Rest API 
-# - the query touches all fields 
+# 3. 'Rest' API for the database
+#    The database should accept/send data in json for read/write operations 
 
 # the user sends a query to the database
 user_query_rest_sample = dict(name='CPI_rog',
@@ -59,7 +62,11 @@ rest_reply = select(user_query_rest_sample)
 
 
 # 4. Custom API 
-# - uses reddit-like notation for API call, as in ***app address***
+# - uses custom, 'reddit-like' notation for end-user API call, as in 
+#   <http://mini-kep.herokuapp.com/ru/series/CPI/m/rog/2015>
+#    flask knows to decipher long URL and retruns a dict with parameters, try it!
+#    the next thing flask should do is return real data 
+#
 # - returns json readable by pd.read_json()  
 
 def to_json(dicts):    
