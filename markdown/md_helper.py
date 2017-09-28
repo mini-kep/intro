@@ -79,13 +79,15 @@ def row_with_link(repo_name):
 
 if __name__ == "__main__":
     repo_names = ['parser-rosstat-kep', 
-                  'parser-template',
+                  'parsers',
                   'db',
-                  'frontend-app']
+                  'frontend-app',
+                  'full-app']
     table = [['Repo', 'Tests', 'Coverage']]
     table.extend([row_with_badges('parser-rosstat-kep')])
-    table.extend([row_with_link('parser-template')])
+    table.extend([row_with_badges('parsers')])
     table.extend([row_with_link('db')])
     table.extend([row_with_badges('frontend-app')])
+    table.extend([row_with_badges('full-app')])
     md_table = to_markdown(table)
     print(md_table)
