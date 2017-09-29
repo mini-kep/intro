@@ -25,12 +25,6 @@ Jane is well-versed in using FRED or quandl, and for Russian or custom statistic
    - as pd.DataFrame 
    - as R dataframe  
 
-Jane also finds it useful to:
-- see what other people code with this data
-- make a dashboard for macroeconomic indicators that interest her (boss)
-- view a dashboard on a smartphone / get notifications 
-- something else?
-
 
 Dataflow
 ========
