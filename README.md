@@ -3,9 +3,8 @@
 | [parser-rosstat-kep](https://github.com/mini-kep/parser-rosstat-kep) | [![](https://travis-ci.org/mini-kep/parser-rosstat-kep.svg?branch=master)](https://travis-ci.org/mini-kep/parser-rosstat-kep) | [![](https://codecov.io/gh/mini-kep/parser-rosstat-kep/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/parser-rosstat-kep) |
 | [parsers](https://github.com/mini-kep/parsers) | [![](https://travis-ci.org/mini-kep/parsers.svg?branch=master)](https://travis-ci.org/mini-kep/parsers) | [![](https://codecov.io/gh/mini-kep/parsers/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/parsers) |
 | [db](https://github.com/mini-kep/db) |  |  |
-| [frontend-app](https://github.com/mini-kep/frontend-app) | [![](https://travis-ci.org/mini-kep/frontend-app.svg?branch=master)](https://travis-ci.org/mini-kep/frontend-app) | [![](https://codecov.io/gh/mini-kep/frontend-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/frontend-app) |
 | [full-app](https://github.com/mini-kep/full-app) | [![](https://travis-ci.org/mini-kep/full-app.svg?branch=master)](https://travis-ci.org/mini-kep/full-app) | [![](https://codecov.io/gh/mini-kep/full-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/full-app) |
-
+| [frontend-app](https://github.com/mini-kep/frontend-app) | [![](https://travis-ci.org/mini-kep/frontend-app.svg?branch=master)](https://travis-ci.org/mini-kep/frontend-app) | [![](https://codecov.io/gh/mini-kep/frontend-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/frontend-app) |
 
 Why another database for macroeconomic data?
 ============================================
@@ -52,7 +51,10 @@ The project data pipeline is the following:
 
 #### Data sources and parsers
 
-The main datasource is a parser for Rosstat KEP publication, supplemented by daily ruble exchange rate and oil prices from EIA. Responsiblility for parser data aggratation is at [parsers/runner.py]()
+The main datasource is a parser for Rosstat KEP publication [parser-rosstat-kep](https://github.com/mini-kep/parser-rosstat-kep), supplemented by daily ruble exchange rate from Bank of Russia and oil prices from EIA.
+
+Responsiblility for parser data aggratation is at [parsers/runner.py](https://github.com/mini-kep/parsers/blob/master/parsers/runner.py)
+
 
 #### Scheduler
 
@@ -62,7 +64,12 @@ Scheduler is not implemented yet, but it is a cron-like task list to invoke pars
 
 There is a specification for database layer and two implementations: in flask and in django, done at slightly different time by different people. Ideally, they should both comply to specification and simplified http POST/GET tests.
 
-The reason to have two apps is to try both flask and django, only one is likely to be a production database. 
+- db layer spec: <https://github.com/mini-kep/db/blob/master/SPEC.md>
+- http tests: <https://github.com/mini-kep/db/blob/master/requests_tests.py>
+- flask database: <https://github.com/mini-kep/db/tree/db-views>
+- django database: <https://github.com/mini-kep/full-app>
+
+The reason to have two apps is to try both flask and django, only one is likely to be a production database. With django the idea was that all components could go into one project, but that did not happen yet.
 
 #### Custom API 
 
@@ -71,10 +78,15 @@ by ```pd.read_json()```
 
 Frontend flask app also provides a showcase for the variables - the variable list and homepages for the individual indicators. This functionality is not implemented yet.
 
+Front and app is at <https://github.com/mini-kep/frontend-app> 
+
 #### Use cases
 
-There is a repo for use cases, but it is currently practically empty, as I'm busy constructing the data pipeline.
-The use cases can resemble datachart.cc  or datalab, add links.
+There is a [repo for use cases](https://github.com/mini-kep/user-charts), but it is practically empty, as I'm busy constructing the data pipeline.
+
+The use cases can resemble [datachart.cc](http://datachart.cc/)  or [datalab](https://github.com/epogrebnyak/data-lab).
+
+![][http://datachart.cc/images/rub_oil.png]
 
 
 # Changelog
