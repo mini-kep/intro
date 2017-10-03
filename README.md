@@ -1,11 +1,3 @@
-| Repo | Tests | Coverage |
-| ---- | ----- | -------- |
-| [parser-rosstat-kep](https://github.com/mini-kep/parser-rosstat-kep) | [![](https://travis-ci.org/mini-kep/parser-rosstat-kep.svg?branch=master)](https://travis-ci.org/mini-kep/parser-rosstat-kep) | [![](https://codecov.io/gh/mini-kep/parser-rosstat-kep/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/parser-rosstat-kep) |
-| [parsers](https://github.com/mini-kep/parsers) | [![](https://travis-ci.org/mini-kep/parsers.svg?branch=master)](https://travis-ci.org/mini-kep/parsers) | [![](https://codecov.io/gh/mini-kep/parsers/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/parsers) |
-| [db](https://github.com/mini-kep/db) |  |  |
-| [full-app](https://github.com/mini-kep/full-app) | [![](https://travis-ci.org/mini-kep/full-app.svg?branch=master)](https://travis-ci.org/mini-kep/full-app) | [![](https://codecov.io/gh/mini-kep/full-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/full-app) |
-| [frontend-app](https://github.com/mini-kep/frontend-app) | [![](https://travis-ci.org/mini-kep/frontend-app.svg?branch=master)](https://travis-ci.org/mini-kep/frontend-app) | [![](https://codecov.io/gh/mini-kep/frontend-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/frontend-app) |
-
 Why another database for macroeconomic data?
 ============================================
 
@@ -86,7 +78,16 @@ There is a [repo for use cases](https://github.com/mini-kep/user-charts), but it
 
 The use cases can resemble [datachart.cc](http://datachart.cc/)  or [datalab](https://github.com/epogrebnyak/data-lab).
 
-![][http://datachart.cc/images/rub_oil.png]
+![](http://datachart.cc/images/rub_oil.png)
+
+
+| Repo | Tests | Coverage |
+| ---- | ----- | -------- |
+| [parser-rosstat-kep](https://github.com/mini-kep/parser-rosstat-kep) | [![](https://travis-ci.org/mini-kep/parser-rosstat-kep.svg?branch=master)](https://travis-ci.org/mini-kep/parser-rosstat-kep) | [![](https://codecov.io/gh/mini-kep/parser-rosstat-kep/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/parser-rosstat-kep) |
+| [parsers](https://github.com/mini-kep/parsers) | [![](https://travis-ci.org/mini-kep/parsers.svg?branch=master)](https://travis-ci.org/mini-kep/parsers) | [![](https://codecov.io/gh/mini-kep/parsers/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/parsers) |
+| [db](https://github.com/mini-kep/db) |  |  |
+| [full-app](https://github.com/mini-kep/full-app) | [![](https://travis-ci.org/mini-kep/full-app.svg?branch=master)](https://travis-ci.org/mini-kep/full-app) | [![](https://codecov.io/gh/mini-kep/full-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/full-app) |
+| [frontend-app](https://github.com/mini-kep/frontend-app) | [![](https://travis-ci.org/mini-kep/frontend-app.svg?branch=master)](https://travis-ci.org/mini-kep/frontend-app) | [![](https://codecov.io/gh/mini-kep/frontend-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/frontend-app) |
 
 
 # Changelog
