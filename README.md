@@ -34,14 +34,13 @@ Dataflow
 ========
 
 The project data pipeline is the following:
-- data sources (static files and open APIs)
-- parsers (python code performing requests and emitting datapoints) 
-- scheduler (not implemented yet: periodically run parsers and upload to database)
-- database (flask/django apps that allow POST data in database and quiry it with GET method)
-- custom API (simplified interface for end-user queries)
-- use cases (sample visualisations / models using the data from custom API)
+1. data sources (static files and open APIs) -> parsers (python code performing requests and emitting datapoints) 
+2. scheduler (not implemented yet: periodically run parsers and upload to database)
+3.- database (flask/django apps that allow POST data in database and quiry it with GET method)
+4. custom API (simplified interface for end-user queries)
+5. use cases (sample visualisations / models using the data from custom API)
 
-#### Data sources and parsers
+#### 1. Data sources and parsers
 
 The main datasource is a parser for Rosstat KEP publication [parser-rosstat-kep](https://github.com/mini-kep/parser-rosstat-kep), supplemented by daily ruble exchange rate from Bank of Russia and oil prices from EIA.
 
@@ -55,11 +54,11 @@ Responsiblility for parser data aggratation is at [parsers/runner.py](https://gi
 [![](https://codecov.io/gh/mini-kep/parsers/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/parsers) 
 
 
-#### Scheduler
+#### 2. Scheduler
 
 Scheduler is not implemented yet, but it is a cron-like task list to invoke parsers and upload data to database. 
 
-#### Database
+#### 3. Database
 
 There is a specification for database layer and two implementations: in flask and in django, done at slightly different time by different people. Ideally, they should both comply to specification and simplified http POST/GET tests.
 
@@ -83,7 +82,7 @@ django [full-app](https://github.com/mini-kep/full-app):
 [![](https://codecov.io/gh/mini-kep/full-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/full-app) 
 
 
-#### Custom API 
+#### 4. Custom API 
 
 Custom API is a long URL at a frontend flask app that translates this URL to a database query and supplies data as json readable
 by ```pd.read_json()```
@@ -95,7 +94,7 @@ Front and app is at <https://github.com/mini-kep/frontend-app>
 [frontend-app](https://github.com/mini-kep/frontend-app):
 [![](https://travis-ci.org/mini-kep/frontend-app.svg?branch=master)](https://travis-ci.org/mini-kep/frontend-app)  [![](https://codecov.io/gh/mini-kep/frontend-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/frontend-app)
 
-#### Use cases
+#### 5. Use cases
 
 There is a [repo for use cases](https://github.com/mini-kep/user-charts), but it is practically empty, as I'm busy constructing the data pipeline.
 
