@@ -34,9 +34,9 @@ Dataflow
 ========
 
 The project data pipeline is the following:
-1. data sources (static files and open APIs) -> parsers (python code performing requests and emitting datapoints) 
+1. data sources (static files and open APIs) and parsers (python code performing requests and emitting datapoints) 
 2. scheduler (not implemented yet: periodically run parsers and upload to database)
-3.- database (flask/django apps that allow POST data in database and quiry it with GET method)
+3. database (flask/django apps that allow POST data in database and quiry it with GET method)
 4. custom API (simplified interface for end-user queries)
 5. use cases (sample visualisations / models using the data from custom API)
 
