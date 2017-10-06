@@ -7,7 +7,7 @@ The project data pipeline is the following:
  2. scheduler
  3. database 
  4. custom API
- 5. use cases (sample visualisations / models using the data from custom API)
+ 5. use cases 
 
 
 (1) Data sources and parsers
@@ -85,9 +85,11 @@ This functionality is not implemented yet.
 (5) Use cases
 -------------
 
+Use cases  are sample visualisations and models relying on data from custom API.
+
 There is a [repo for use cases](https://github.com/mini-kep/user-charts), but it is practically empty, as I'm busy constructing the data pipeline.
 
-The use cases can resemble [datachart.cc](http://datachart.cc/)  or [datalab](https://github.com/epogrebnyak/data-lab).
+The use cases may resemble [datachart.cc](http://datachart.cc/)  or [datalab](https://github.com/epogrebnyak/data-lab).
 
 
 Changelog
