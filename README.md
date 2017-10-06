@@ -35,4 +35,6 @@ Try [new user checklist](https://github.com/mini-kep/intro/wiki/New-user-checkli
 
 For contributors
 ================
-- See [development notes](https://github.com/mini-kep/intro/blob/master/DEV.md)
+
+See [development notes](https://github.com/mini-kep/intro/blob/master/DEV.md) 
+and [changelog](https://github.com/mini-kep/intro/blob/master/DEV.md#changelog)
