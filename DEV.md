@@ -1,3 +1,35 @@
+What happens next
+=================
+
+Critical path
+-------------
+
+1. custom api -> use cases
+
+2. scheduler -> db updates
+
+3. ```eop``` / ```avg``` aggregation for price data
+
+
+All tasks
+---------
+
+- [ ] custom API migrates to db layer, frontend-app does two things: relaying data + doing html views, flask db does no html views, but provides API endpoint 
+- [ ] db flask tests extended
+- [ ] consistency checks as in kep parser
+- [ ] new version of db spec reflects reuired changes, db API spec can be writetn in swagger/apiary
+- [ ] all specs found a new home somewhere - eg. intro/specification
+- [ ] need a simple scheduler to update info: the task to run + cron-like invoker
+- [ ] fronend should have indicator homepages
+- [ ] fronend should have indicator listing
+- [ ] django app frozen / renamed 
+- [ ] finished testing existing parsers
+- [ ] started parser-rosstat-isep
+- [ ] maintainer found for 806 parser
+- [ ] infra: herokus transferred, some paid
+
+
+
 Dataflow
 ========
 
