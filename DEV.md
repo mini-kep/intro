@@ -2,14 +2,17 @@ Dataflow
 ========
 
 The project data pipeline is the following:
-1. data sources and parsers 
-2. scheduler
-3. database 
-4. custom API (simplified interface for end-user queries)
-5. use cases (sample visualisations / models using the data from custom API)
 
-1. Data sources and parsers
+ 1. data sources and parsers 
+ 2. scheduler
+ 3. database 
+ 4. custom API
+ 5. use cases (sample visualisations / models using the data from custom API)
+
+
+(1) Data sources and parsers
 ----------------------------
+
 
 Data sources are static files (Word, PDF, html) and some open APIs. Parser is python code performing requests and emitting datapoints. 
 
@@ -27,12 +30,13 @@ Aggratation of parser data is made at [parsers/runner.py](https://github.com/min
 [![](https://codecov.io/gh/mini-kep/parsers/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/parsers) 
 
 
-2. Scheduler
-------------
+(2) Scheduler
+---------------
 
 Scheduler is not implemented yet, but it is a cron-like task list to invoke parsers and upload data to database. 
 
-3. Database
+
+(3) Database
 ------------
 
 Database is a flask/django app that allow POST data in database and quiry it with GET method. 
@@ -63,12 +67,11 @@ django [full-app](https://github.com/mini-kep/full-app):
 [![](https://codecov.io/gh/mini-kep/full-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/full-app) 
 
 
- 4. Custom API 
- --------------
+(4) Custom API 
+--------------
+Custom API simplified interface for end-user queries. 
 
-Custom API is a long URL at a frontend flask app that translates this URL to a database query and supplies data as json readable
-by ```pd.read_json()```
-
+Custom API endpoint is a long URL at a frontend flask app that translates this URL to a database query and supplies data as json readable by ```pd.read_json()```
 
 Example (returns its parameters, not implemented):
 - <http://mini-kep.herokuapp.com/ru/series/BRENT/m/eop/2017>
@@ -79,14 +82,17 @@ This functionality is not implemented yet.
 [frontend-app](https://github.com/mini-kep/frontend-app):
 [![](https://travis-ci.org/mini-kep/frontend-app.svg?branch=master)](https://travis-ci.org/mini-kep/frontend-app)  [![](https://codecov.io/gh/mini-kep/frontend-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/frontend-app)
 
-#### 5. Use cases
+(5) Use cases
+-------------
 
 There is a [repo for use cases](https://github.com/mini-kep/user-charts), but it is practically empty, as I'm busy constructing the data pipeline.
 
 The use cases can resemble [datachart.cc](http://datachart.cc/)  or [datalab](https://github.com/epogrebnyak/data-lab).
 
 
-# Changelog
+Changelog
+=========
+
 - **2017-10-06** db POST/GET implemented <https://minikep-db.herokuapp.com/api/datapoints?name=BRENT&freq=d>
 - **2017-09-28** new data pipeline description [open for comments](https://github.com/mini-kep/intro/issues/14) 
 - **2017-09-28** <https://github.com/mini-kep/parsers> provide data from three parsers (macro, oil, fx)
