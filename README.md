@@ -33,3 +33,6 @@ New to project?
 
 Try [new user checklist](https://github.com/mini-kep/intro/wiki/New-user-checklist).
 
+For contributors
+================
+- See [development notes](https://github.com/mini-kep/intro/blob/master/DEV.md)
