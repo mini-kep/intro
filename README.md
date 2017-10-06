@@ -24,7 +24,7 @@ Anna is well-versed in using FRED or quandl, and for Russian or custom statistic
 - read this data on a local machine:
    - as pd.DataFrame 
    - as R dataframe  
-- draw charts like below: 
+- quickly draw some charts like one below: 
 
 [![](http://datachart.cc/images/rub_oil.png)](http://datachart.cc/)
 
