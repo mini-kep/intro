@@ -7,10 +7,7 @@ macroeconomic data with public end-user API.
 Dataflow 
 ========
 ```mini-kep``` organises a data pipeline from sources 
-(static files in internet and public APIs) to database to end-user API.
-With this API the user download data шт R/pandas as dataframes.
-
-The pipeline is the following:
+(static files in internet and public APIs) to database to end-user API. The pipeline is the following:
 
  1. [data sources and parsers](https://github.com/mini-kep/) 
  2. *scheduler (not implemented)*
@@ -34,20 +31,18 @@ Read more at [specification](frontpage.md)
 Specifications
 ==============
 
-In due course of work we used follwoing specs:
+Finished spec:
 - [database layer](database.md)
 
 Under construction:
+- [usercase](usercase.md)
 - [parsers](parsers.md)
 - [custom API](custom_API.md)
 
 Will wait:
-- [usercase](usercase.md)
 - [scheduler](scheduler.md)
 - [frontpage](frontpage.md)
+- [django_app.md](django_app.md) - dormant
 
 For discussion:
 - [data model and namespace](datamodel_and_namespace.md)
-
-Dormant:
-- [django_app.md](django_app.md)
