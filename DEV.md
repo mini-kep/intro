@@ -13,6 +13,11 @@ Critical path
 
 5. custom API
 
+Open task listing
+------------
+  - [ ] restore visualisation at <https://github.com/mini-kep/intro/blob/master/specification/include/fx_brent_seaborn_chart_sample.py>
+  - [ ] <https://github.com/mini-kep/parser-rosstat-isep>
+
 Tasks - higher priority
 -----------------------
 
