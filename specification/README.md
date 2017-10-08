@@ -45,6 +45,8 @@ Frontpage is a stand-alone flask app that is used to:
 - make a list of indicators available in ```mini-kep``` database
 - show individual indicators homepages with charts, latest values 
   and instructions for download.
+  
+Read more at [specification](frontpage.md)  
 
 Specifications
 ==============
@@ -53,6 +55,7 @@ In due course of work following specifications are used:
 - parsers
 - database layer
 - custom API
+- frontpage
 
 For discussion:
 - data model and namespace
