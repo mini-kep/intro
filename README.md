@@ -17,7 +17,7 @@ Why another database for macroeconomic data?
 User case
 =========
 
-We assume an end-user wants:
+We assume an end user has some experience with data from FRED or quandl and for his work he wants:
 
 - a clean dataset with latest data from different sources
 - browse what data is available
@@ -28,7 +28,7 @@ We assume an end-user wants:
 
 [![](http://datachart.cc/images/rub_oil.png)](http://datachart.cc/)
 
-More on user case [here](speficiation/usercase.md)
+More on user case [here](specification/usercase.md)
 
 Read next
 =========
@@ -36,5 +36,5 @@ Read next
 - [specification pages](specification/readme.md)
 - [development notes](DEV.md) 
 - [changelog](changelog.md)
-- [new user checklist](https://github.com/mini-kep/intro/wiki/New-user-checklist)
+- [new user checklist](wiki/New-user-checklist)
 
