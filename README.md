@@ -17,7 +17,7 @@ Why another database for macroeconomic data?
 User case
 =========
 
-Anna is well-versed in using FRED or quandl, and for Russian or custom statistics she wants:
+We assume an end-user wants:
 
 - a clean dataset with latest data from different sources
 - browse what data is available
@@ -28,13 +28,13 @@ Anna is well-versed in using FRED or quandl, and for Russian or custom statistic
 
 [![](http://datachart.cc/images/rub_oil.png)](http://datachart.cc/)
 
-New to project?
-===============
+More on user case [here](speficiation/usercase.md)
 
-Try [new user checklist](https://github.com/mini-kep/intro/wiki/New-user-checklist).
+Read next
+=========
 
-For contributors
-================
+- [specification pages](specification/readme.md)
+- [development notes](DEV.md) 
+- [changelog](changelog.md)
+- [new user checklist](https://github.com/mini-kep/intro/wiki/New-user-checklist)
 
-See [development notes](https://github.com/mini-kep/intro/blob/master/DEV.md) 
-and [changelog](https://github.com/mini-kep/intro/blob/master/DEV.md#changelog)
