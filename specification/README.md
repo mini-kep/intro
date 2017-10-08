@@ -12,14 +12,14 @@ With this API the user download data шт R/pandas as dataframes.
 
 The pipeline is the following:
 
- 1. data sources and parsers 
- 2. *scheduler*
- 3. database and db API
- 4. *custom API*
- 5. *user cases* 
- 
-Elements in progress are in italic.
+ 1. [data sources and parsers](https://github.com/mini-kep/) 
+ 2. *scheduler (not implemented)*
+ 3. [database and db API](https://github.com/mini-kep/db)
+ 4. *custom API (draft)*
+ 5. *user cases (draft)* 
 
+Pipeline is illustrated by [pipeline.py](https://github.com/mini-kep/intro/blob/master/pipeline/pipeline.py)
+ 
 Frontpage
 =========
 
@@ -34,11 +34,20 @@ Read more at [specification](frontpage.md)
 Specifications
 ==============
 
-In due course of work following specifications are used:
-- parsers
-- database layer
-- custom API
-- frontpage
+In due course of work we used follwoing specs:
+- [database layer](database.md)
+
+Under construction:
+- [parsers](parsers.md)
+- [custom API](custom_API.md)
+
+Will wait:
+- [usercase](usercase.md)
+- [scheduler](scheduler.md)
+- [frontpage](frontpage.md)
 
 For discussion:
-- data model and namespace
+- [data model and namespace](datamodel_and_namespace.md)
+
+Dormant:
+- [django_app.md](django_app.md)

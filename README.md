@@ -33,8 +33,8 @@ More on user case [here](specification/usercase.md)
 Read next
 =========
 
-- [specification pages](specification/readme.md)
-- [development notes](DEV.md) 
-- [changelog](changelog.md)
-- [new user checklist](wiki/New-user-checklist)
+- [Specification pages](specification/readme.md)
+- [Development notes](DEV.md) 
+- [Changelog](changelog.md)
+- [New user checklist](wiki/New-user-checklist)
 
