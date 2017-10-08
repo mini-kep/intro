@@ -1,3 +1,8 @@
+User case notes
+================
+
+Easy data access
+----------------
 
 End-user API calls should be like:
   
@@ -16,8 +21,9 @@ cpi_us = pd.read_json('http://minikep.cc/us/series/CPI/m/rog/2017')
 
 ```
 
+We assume end-user is familiar with FRED or quandl and uses R or pandas for work. 
 
-We assume end-user is well-versed in FRED or quandl and for Russian or custom statistics he/she wants:
+For Russian or some other custom statistics he wants:
 
 - a clean dataset with latest data from different sources
 - browse what data is available
@@ -27,3 +33,24 @@ We assume end-user is well-versed in FRED or quandl and for Russian or custom st
 - quickly draw some charts like one below: 
 
 [![](http://datachart.cc/images/rub_oil.png)](http://datachart.cc/)
+
+
+Advanced usage
+--------------
+
+- services based on mini-kep API 
+- handout charts  
+
+
+Notebooks and code
+------------------
+
+Use cases  are sample visualisations and models relying on data from custom API.
+
+There is a [repo for use cases](https://github.com/mini-kep/user-charts), but it is practically empty, as I'm busy constructing the data pipeline.
+
+The use cases may resemble [datachart.cc](http://datachart.cc/)  
+or [datalab](https://github.com/epogrebnyak/data-lab)
+or [viz-demo](https://github.com/epogrebnyak/viz_demo)
+
+

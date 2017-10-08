@@ -1,6 +1,25 @@
+Notes
+=====
+
+Database is a flask/django app that allow POST data in database and quiry it with GET method. 
+
+GET example:
+
+- <https://minikep-db.herokuapp.com/api/datapoints?name=BRENT&freq=d&start_date=2017-01-01>
+
+Specification:
+- db layer spec: <https://github.com/mini-kep/db/blob/master/SPEC.md>
+- http tests: <https://github.com/mini-kep/db/blob/master/requests_tests.py>
+
+Flask implementation: 
+
+- flask database: <https://github.com/mini-kep/db/tree/flask_sqlalchemy> (active)
+
+flask [db](https://github.com/mini-kep/full-app): 
+[![Build Status](https://travis-ci.org/mini-kep/db.svg?branch=flask_sqlalchemy)](https://travis-ci.org/mini-kep/db)
+
 To discuss here: <https://github.com/mini-kep/db/issues/5>
 
----------------------
 
 
 Introduction 
