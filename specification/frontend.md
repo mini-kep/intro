@@ -1,3 +1,4 @@
+
 ## Overview
 
 Frontend is a stand-alone flask app that is used to:
@@ -8,7 +9,10 @@ Frontend is a stand-alone flask app that is used to:
  
 ##  Repository:
 
-<https://github.com/mini-kep/frontend-app>
+[frontend-app](https://github.com/mini-kep/frontend-app): 
+[![](https://travis-ci.org/mini-kep/frontend-app.svg?branch=master)](https://travis-ci.org/mini-kep/frontend-app) 
+[![](https://codecov.io/gh/mini-kep/frontend-app/branch/master/graphs/badge.svg)](https://codecov.io/gh/mini-kep/frontend-app)
+
 
 ##  Issues:
 
