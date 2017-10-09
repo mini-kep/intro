@@ -1,8 +1,21 @@
 User case notes
-================
+===============
 
-Easy data access
-----------------
+## From readme
+
+We assume an end user has some experience with data from FRED or quandl and for his work he wants:
+
+- a clean dataset with latest data from different sources
+- browse what data is available
+- read this data on a local machine:
+   - as pd.DataFrame 
+   - as R dataframe  
+- quickly draw some charts like one below: 
+
+[![](http://datachart.cc/images/rub_oil.png)](http://datachart.cc/)
+
+
+## Enduser code for data access
 
 End-user API calls should be like:
   
@@ -21,36 +34,22 @@ cpi_us = pd.read_json('http://minikep.cc/us/series/CPI/m/rog/2017')
 
 ```
 
-We assume end-user is familiar with FRED or quandl and uses R or pandas for work. 
+## Advanced usage
 
-For Russian or some other custom statistics he wants:
+Services based on mini-kep API: 
+- PDF handout charts  
+- datasets/presets
+- forcasts as a service (via API)
+- FB posts with data
 
-- a clean dataset with latest data from different sources
-- browse what data is available
-- read this data on a local machine:
-   - as pd.DataFrame 
-   - as R dataframe  
-- quickly draw some charts like one below: 
+## Notebooks catalog
 
-[![](http://datachart.cc/images/rub_oil.png)](http://datachart.cc/)
+We need to demonstarte usage of data from custom or standard API for visualisations and modelling.
 
-
-Advanced usage
---------------
-
-- services based on mini-kep API 
-- handout charts  
-
-
-Notebooks and code
-------------------
-
-Use cases  are sample visualisations and models relying on data from custom API.
-
-There is a [repo for use cases](https://github.com/mini-kep/user-charts), but it is practically empty, as I'm busy constructing the data pipeline.
+There is a [repo for use cases](https://github.com/mini-kep/user-charts), but it is practically empty yet.
 
 The use cases may resemble [datachart.cc](http://datachart.cc/)  
 or [datalab](https://github.com/epogrebnyak/data-lab)
-or [viz-demo](https://github.com/epogrebnyak/viz_demo)
+or [viz-demo](https://github.com/epogrebnyak/viz_demo) or some other repos (eg cmf-comovements). 
 
 
