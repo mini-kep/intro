@@ -57,3 +57,11 @@ Implementation
 4. We do not have conversion of existing GET output to pandas-readable format yet. May consult prototype at 
    <https://github.com/mini-kep/intro/blob/master/pipeline/pipeline.py> on how this may be done.
    
+   
+Uncertainties 
+=============
+
+- ```<domain>``` may conflict with some API prefixes
+- custom API should migrate to ```db``` instead of ```frontend-app```   
+   
+   
