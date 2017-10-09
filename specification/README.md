@@ -26,9 +26,9 @@ Finished spec:
 - [database layer](database.md)
 
 Under construction:
-- [usercase](usercase.md)
 - [parsers](parsers.md)
 - [custom API](custom_api.md)
+- [usercase](usercase.md)
 
 On hold:
 - [scheduler](scheduler.md)
