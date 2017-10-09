@@ -1,7 +1,6 @@
 Overview
 ========
 
-
 Custom API is a simplified interface for end-user queries. It is done in 'reddit' style: a long URL with slashes.
 
 ```
@@ -63,5 +62,15 @@ Uncertainties
 
 - ```<domain>``` may conflict with some API prefixes
 - custom API should migrate to ```db``` instead of ```frontend-app```   
-   
-   
+
+
+TODO
+====
+
+- [ ] in database we need a GET method to provide pandas-readable json
+- [ ] newer url decomposition
+- [ ] mount endpoint at frontend app (?)
+- [ ] mount endpoint at db app (?)
+- [ ] testing
+
+
