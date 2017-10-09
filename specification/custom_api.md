@@ -55,7 +55,7 @@ Such conversion is done at <https://github.com/mini-kep/intro/blob/master/pipeli
 Implementation 
 ===============
 
-1. Custom API design was originally discussed [here](https://github.com/mini-kep/frontend-app/issues/8). 
+1. Custom API design was originally discussed [here](https://github.com/mini-kep/frontend-app/issues/8) and [here](https://github.com/mini-kep/intro/issues/12).
    The result of the discussion is url format above. In discussion there are certain extras for future features.
 
 2. Initial veriosn of custom API is implemented as a part of fronetnd app at <https://github.com/mini-kep/frontend-app/blob/master/apps/views/time_series.py>. It is responsible for translating URLs into parameter dictionaries. Try and click: 
