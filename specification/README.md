@@ -28,12 +28,12 @@ Finished spec:
 Under construction:
 - [usercase](usercase.md)
 - [parsers](parsers.md)
-- [custom API](custom_API.md)
+- [custom API](custom_api.md)
 
-Will wait:
+On hold:
 - [scheduler](scheduler.md)
 - [frontend](frontend.md)
-- [django_app.md](django_app.md) - dormant
+- [django_app.md](django_app.md)
 
 For discussion:
 - [data model and namespace](datamodel_and_namespace.md)
