@@ -5,7 +5,7 @@ Custom API is a simplified interface for end-user queries. It is done in 'reddit
 
 ```
 # monthly consumer inflation time series for Russia in 2015-2017
-# 
+# rog is 'rate of growth'
 df = pd.read_json("http://mini-kep.herokuapp.com/ru/series/CPI/m/rog/2015/2017")
 
 # get daily oil prices for Brent, same period
