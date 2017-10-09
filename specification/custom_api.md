@@ -30,7 +30,7 @@ URL format
    ? - indicates optional parameter
 ```
 
-<suffix> can be unit of measurement or rate of change or aggregation command
+```<suffix>``` can be unit of measurement or rate of change or aggregation command
 
 We can relax restrictions of suffix and just query ```name:varname_suffix``` without prior checks.
 
