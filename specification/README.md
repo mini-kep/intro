@@ -11,7 +11,7 @@ Dataflow
 
 The data pipeline is the following:
 
- 1. [data sources and parsers](https://github.com/mini-kep/) 
+ 1. [data sources and parsers](https://github.com/mini-kep/parsers) 
  2. *scheduler (not implemented)*
  3. [database and db API](https://github.com/mini-kep/db)
  4. *custom API (draft)*
