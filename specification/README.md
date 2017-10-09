@@ -32,19 +32,8 @@ Under construction:
 
 Will wait:
 - [scheduler](scheduler.md)
-- [frontpage](frontpage.md)
+- [frontend](frontend.md)
 - [django_app.md](django_app.md) - dormant
 
 For discussion:
 - [data model and namespace](datamodel_and_namespace.md)
-
-Frontpage
-=========
-
-Frontpage is a stand-alone flask app that is used to:
-- relay some existing data in experimental mode 
-- make a list of indicators available in ```mini-kep``` database
-- show individual indicators homepages with charts, latest values 
-  and instructions for download.
-  
-Read more at [specification](frontpage.md)
