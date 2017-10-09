@@ -1,7 +1,7 @@
 Overview
 ========
 
-This document describes database layer in between parsers and end-user API:
+This document describes database layer in between parsers and end-user API.
 
 Expected fucntionality:
 - parser delivers a list of dicts, each dict is a datapoint
