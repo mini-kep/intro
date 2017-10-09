@@ -3,7 +3,7 @@ Overview
 
 This document describes database layer in between parsers and end-user API:
 
-We want the following to be happening:
+Expected fucntionality:
 - parser delivers a list of dicts, each dict is a datapoint
 - database should have a POST method at ```api\incoming``` and write incoming json to db
 - POST operation must have some authentication
@@ -78,8 +78,8 @@ GET api/datapoints?name=<name>&freq=<freq>&start_date=<start_date>&end_date=<end
 Parameters:
 name – name value to search like name=BRENT
 freq – freq value to search like freq=m
-start_date(optional) – should return results with date greater than this parameter
-end_date(optional) – should return results with date less than this parameter
+start_date(optional) –  return results with date greater than this parameter
+end_date(optional) – return results with date less than this parameter
 
 Returns:
 - JSON in format similar to incoming json with data sorted by date
@@ -100,60 +100,29 @@ Use combinations GET – POST – GET to validate data inserts and updates.
 [Example1](https://github.com/mini-kep/db/blob/master/demo/sqlalchemy/tests/test_clientdb_demo.py)
 [Example2](https://github.com/mini-kep/full-app/blob/master/datapoint/tests.py)
 
-Should we write some tests in curl/httpie? 
-
+Should we write some tests in curl/httpie? http tests: <https://github.com/mini-kep/db/blob/master/requests_tests.py>
 
 Tech stack
 ==========
-To discuss:
 
 Web-frameworks: Flask + SQLAlchemy or Django, may consider Falcon
 
-Rest frameworks: 
-- flask: 
-  - <https://github.com/flask-restful/flask-restful>
-  - <https://flask-restless.readthedocs.io/en/stable/quickstart.html>
-- django: <http://www.django-rest-framework.org/>
+Container: prototype deployed to Heroku, may also use AWS
 
-Container: prototype can be deployed to Heroku, for production it is rather expensive, may need to use  AWS
-
-Database: Postgres (default on Heroku) or other on AWS
+Database: Postgres (default on Heroku) or RDS on AWS
 
 Repositories
 ============
 
-- the database layer is to be developed here, at ```db``` repo: <https://github.com/mini-kep/db>
-- custom API (see below) is implemented at frontend app:  https://github.com/mini-kep/frontend-app> and <http://mini-kep.herokuapp.com/>
-- django app already has parts of functionality described in this document: <https://github.com/mini-kep/full-app>. the problem with it is that django @epogrebnyak is not well versed with django, so development there takes long time. 
-
-It is a bit complicated project structure, but it allows to experiment with different features. 
-
-
-Implemntation (to edit)
-=======================
-
-Flask implementation: 
-- flask database: <https://github.com/mini-kep/db/tree/flask_sqlalchemy> (active)
-
-
-Database is a flask/django app that allow POST data in database and quiry it with GET method. 
-
-GET example:
-
-- <https://minikep-db.herokuapp.com/api/datapoints?name=BRENT&freq=d&start_date=2017-01-01>
-
-Specification:
-- db layer spec: <https://github.com/mini-kep/db/blob/master/SPEC.md>
-- http tests: <https://github.com/mini-kep/db/blob/master/requests_tests.py>
+The database layer is to be developed here, at ```db``` repo: <https://github.com/mini-kep/db>
 
 
 flask [db](https://github.com/mini-kep/db): 
 [![Build Status](https://travis-ci.org/mini-kep/db.svg?branch=master)](https://travis-ci.org/mini-kep/db)
 
+There is also [django project for database](django_app.md),  but it is on hold now.
 
+Discussion
+==========
 
-
-
----------------------
-
-To discuss here: <https://github.com/mini-kep/db/issues/5>
+<https://github.com/mini-kep/db/issues/5>
