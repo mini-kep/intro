@@ -9,9 +9,7 @@ Critical path
 
 3. parser specification
 
-4. scheduler -> db updates
 
-5. custom API
 
 Open task listing
 ------------
