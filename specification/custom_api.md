@@ -27,17 +27,29 @@ URL format
 ```
 <domain>/series/<varname>/<frequency>/<?suffix>/<?start_year>/<?end_year>/<?finaliser>
 
-   <suffix> is either unit of measurement or rate of change or aggregation command 
-
    ? - indicates optional parameter
 ```
 
+<suffix> can be unit of measurement or rate of change or aggregation command
+
+We can relax restrictions of suffix and just query ```name:varname_suffix``` without prior checks.
 
 Functionality
 =============
 
-1. **Translate URL:** custom API must translate long url into parameters to database API GET call.
-2. **Provide pandas-readable data**: there should be database API GET method that returns json readable by ```pd.read_json()```.
+#### 1. Translate URL
+
+Custom API must translate long url into parameters to database API GET call. Done at:
+   - <https://github.com/mini-kep/frontend-app/blob/master/apps/views/time_series.py>
+   - <https://github.com/mini-kep/helpers/blob/master/custom_api.py> (newer)
+
+#### 2. Provide pandas-readable data
+
+Database GET method currently returns a json with a list of datapoints, and this data should be converted
+into json readable by ```pd.read_json()```.
+
+Such conversion is done at <https://github.com/mini-kep/intro/blob/master/pipeline/pipeline.py> .
+
 
 
 Implementation 
