@@ -1,7 +1,7 @@
-Comments
---------
-
 #### Django db app 
+
+Already has parts of functionality described in this document: <https://github.com/mini-kep/full-app>. the problem with it is that django @epogrebnyak is not well versed with django, so development there takes long time. 
+
 
 There is a supplementary dfango app for the db layer. We wanted to try both flask and django. With django the idea was that all components could go into one project, but django app seems slightly harder to maintain.
 
