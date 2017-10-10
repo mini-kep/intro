@@ -36,5 +36,5 @@ Read next
 - [Specification pages](specification/readme.md)
 - [Development notes](DEV.md) 
 - [Changelog](changelog.md)
-- [New user checklist](wiki/New-user-checklist)
+- [New user checklist](https://github.com/mini-kep/intro/wiki/New-user-checklist)
 
