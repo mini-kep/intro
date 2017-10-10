@@ -1,23 +1,28 @@
 Critical path
 -------------
 
-0. db api with json output
+0. db api with csv output -> use cases
 
-1. db api -> use cases
+1. parser specification -> more data -> richer use cases
 
-2. db api testing
-
-3. parser specification
-
+2. use cases discussion / dessemination
 
 
 Open task listing
-------------
-  - [ ] restore visualisation at <https://github.com/mini-kep/intro/blob/master/specification/include/fx_brent_seaborn_chart_sample.py>
-  - [ ] <https://github.com/mini-kep/parser-rosstat-isep>
+------------------
+  - [ ] restore visualisation at <https://github.com/mini-kep/intro/blob/master/specification/include/fx_brent_seaborn_chart_sample.py> (0.5h)
+  - [ ] new parser at <https://github.com/mini-kep/parser-rosstat-isep> (2-3h)
+  - [ ] restructure old parser <https://github.com/epogrebnyak/data-rosstat-806-regional> (3-4h) 
+  
 
 Tasks - higher priority
 -----------------------
+
+#### use cases:
+  - [ ] case thesis
+
+#### custom API:
+  - as in <https://github.com/mini-kep/helpers/issues/3>
 
 #### parsers
    - [ ] finished testing existing parsers
@@ -26,17 +31,12 @@ Tasks - higher priority
 
 #### new home for specification
    - [x] all specs and drafts found at intro/specification (EP)
+   - [ ] cleaner documentation 
 
-#### db specification 
+#### db layer
    - [ ] smaller test dataset for db API
    - [ ] db flask tests extended
-   - [ ] add new methods needed - as in issue
-
-#### django app (finishing work)
-   - [ ] 1 branch
-   - [ ] tranfer repo
-   - [ ] renamed?  
-   - [ ] learning @zarak repo?   
+   - [ ] add new methods needed - as in issue <https://github.com/mini-kep/db/issues/8>
 
 Tasks - lower priority
 -----------------------
@@ -48,7 +48,6 @@ Tasks - lower priority
    - [ ] infrastructure - minikep.cc domain
    
 #### frontend app
-   - [ ] edit frontend  spec using *frontend-app does two things: relaying data + doing html views, flask db does no html views, but provides API endpoint *
    - [ ] fronend should have indicator listing
    - [ ] fronend should have indicator homepages
    
@@ -58,4 +57,14 @@ Tasks - lower priority
 #### other:
    - [ ] started parser-rosstat-isep
    - [ ] maintainer found for 806 parser   
+
+
+Done
+----
+
+#### django app (finishing work)
+   - [ ] 1 branch
+   - [ ] tranfer repo
+   - [ ] renamed?  
+   - [ ] learning @zarak repo?   
 
