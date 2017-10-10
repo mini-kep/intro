@@ -17,7 +17,9 @@ Why another database for macroeconomic data?
 User case
 =========
 
-We assume an end user has some experience with data from FRED or quandl and for his work he wants:
+We assume an end user has some experience with data from FRED or quandl.
+
+The user wants:
 
 - a clean dataset with latest data from different sources
 - browse what data is available
@@ -28,7 +30,7 @@ We assume an end user has some experience with data from FRED or quandl and for 
 
 [![](http://datachart.cc/images/rub_oil.png)](http://datachart.cc/)
 
-More on user case [here](specification/usercase.md)
+More on user case [here](specification/usercase.md).
 
 Read next
 =========
