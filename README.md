@@ -35,7 +35,7 @@ More on user case [here](specification/usercase.md).
 Read next
 =========
 
-- [Specification pages](specification/readme.md)
+- [Specification pages](https://github.com/mini-kep/intro/blob/master/specification/README.md)
 - [Development notes](DEV.md) 
 - [Changelog](changelog.md)
 - [New user checklist](https://github.com/mini-kep/intro/wiki/New-user-checklist)
