@@ -19,10 +19,10 @@ Tasks - higher priority
 -----------------------
 
 #### use cases:
-  - [ ] case thesis
+   - [ ] case thesis
 
 #### custom API:
-  - as in <https://github.com/mini-kep/helpers/issues/3>
+   - [ ] as in <https://github.com/mini-kep/helpers/issues/3>
 
 #### parsers
    - [ ] finished testing existing parsers
@@ -63,8 +63,6 @@ Done
 ----
 
 #### django app (finishing work)
-   - [ ] 1 branch
-   - [ ] tranfer repo
-   - [ ] renamed?  
-   - [ ] learning @zarak repo?   
-
+   - [x] 1 branch
+   - [x] tranfer repo
+   - [ ] learning repo?   
