@@ -76,14 +76,15 @@ GET api/datapoints?name=<name>&freq=<freq>&start_date=<start_date>&end_date=<end
 ```
 
 Parameters:
-name – name value to search like name=BRENT
-freq – freq value to search like freq=m
-start_date(optional) –  return results with date greater than this parameter
-end_date(optional) – return results with date less than this parameter
+- name (required) – name value to search like name=BRENT
+- freq (required) – freq value to search like freq=m
+- start_date (optional) – should return results with date greater than this parameter
+- end_date (optional) – should return results with date less than this parameter
+- format (optional, possible values ```json, csv```, default ```csv```) – returns data in chosen format. CSV data can be read by pandas with ```pd.read_csv(url_to_api_request)```
 
 Returns:
-- JSON in format similar to incoming json with data sorted by date
-- empty JSON if there’s no data with such query.
+- CSV or JSON (default CSV) in format similar to incoming json with data sorted by date
+- empty CSV or JSON if there’s no data with such query.
 
 Method validates parameters and returns error 400 if there’s an error in parameters (like string in data parameter or empty parameter) 
 
