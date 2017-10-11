@@ -25,14 +25,44 @@ URL format
 ==========
 
 ```
-<domain>/series/<varname>/<frequency>/<?suffix>/<?start_year>/<?end_year>/<?finaliser>
+{domain}/series/{varname}/{freq}/{?suffix}/{?start}/{?end}/{?finaliser} 
 
    ? - indicates optional parameter
 ```
 
-```<suffix>``` can be unit of measurement or rate of change or aggregation command
-
 We can relax restrictions of suffix and just query ```name:varname_suffix``` without prior checks.
+
+Tokens:         
+`{domain}` is reserved, future use: 'all', 'ru', 'oil', 'ru:bank', 'ru:77'
+
+`{varname}` is GDP, GOODS_EXPORT, BRENT (capital letters with underscores)
+
+`{freq}` is any of:
+    a (annual)
+    q (quarterly)
+    m (monthly)
+    w (weekly)
+    d (daily)
+
+`{?suffix}` may be: 
+    unit of measurement (unit):
+        example: bln_rub, bln_usd, tkm
+        
+    rate of change for real variable (rate):
+        rog - change to previous period
+        yoy - change to year ago
+        base - base index
+        
+    aggregation command (agg): 
+        eop - end of period
+        avg - average
+
+
+Examples:
+```
+oil/series/BRENT/m/eop/2015/2017/csv
+ru/series/EXPORT_GOODS/m/bln_rub
+```
 
 Functionality
 =============
@@ -51,14 +81,13 @@ into json readable by ```pd.read_json()```.
 Such conversion is done at <https://github.com/mini-kep/intro/blob/master/pipeline/pipeline.py> .
 
 
-
 Implementation 
 ===============
 
 1. Custom API design was originally discussed [here](https://github.com/mini-kep/frontend-app/issues/8) and [here](https://github.com/mini-kep/intro/issues/12).
    The result of the discussion is url format above. In discussion there are certain extras for future features.
 
-2. Initial veriosn of custom API is implemented as a part of fronetnd app at <https://github.com/mini-kep/frontend-app/blob/master/apps/views/time_series.py>. It is responsible for translating URLs into parameter dictionaries. Try and click: 
+2. Initial version of custom API is implemented as a part of fronetnd app at <https://github.com/mini-kep/frontend-app/blob/master/apps/views/time_series.py>. It is responsible for translating URLs into parameter dictionaries. Try and click: 
    - <http://mini-kep.herokuapp.com/ru/series/CPI/m/rog/2017>
    - <http://mini-kep.herokuapp.com/oil/series/BRENT/d/2000/2005>
  
