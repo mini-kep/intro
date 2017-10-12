@@ -114,7 +114,15 @@ Test namin convention for tests with invalid parameters:
 ```test_FUNCTION_NAME_with_invalid_INPUT_ARGUMENTS_DOES_WHAT()```
 
 Practical example:
-Function to test:
+
+Function ```format_date(date_string: str, fmt)``` is accepting 2 positional input arguments, both as ```str``` type. First ```date_string``` argument reflects input date itself, second ```fmt``` argument tels function ```datetime.strptime``` which date format use to translate ```date_string``` into ```datetime type``` and then translate it again into ```str``` type with function ```strftime``` to return date with given date format. 
+
+Usage:
+
+```format_date('02.06.1993', fmt="%d.%m.%Y")```
+
+Definition:
+
 ```
 def format_date(date_string: str, fmt):
     return datetime.strptime(date_string, fmt).strftime("%Y-%m-%d")
