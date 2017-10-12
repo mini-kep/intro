@@ -1,6 +1,6 @@
 Parsers Guidelines
 ==================
-Parses in ```mini-kep``` are used to fetch data from various sources as raw data in Json, XML and csv formats, parse those data and yield them in common formated output.
+Parsers in ```mini-kep``` are used to fetch data from various sources as raw data in Json, XML and csv formats, parse those data and yield them in common formated output.
 
 Introduction
 ------------
