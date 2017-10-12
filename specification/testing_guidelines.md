@@ -57,6 +57,7 @@ Tests samples for function fetch(url)
 -----------------------------------
 Original function fetch(url) is simple method which takes one input argument with type ```str```. Input argument reflect URL which is accessed via ```requests.get``` method provided by ```requests``` package. ```requests.get``` method returns ```requests``` object which has available ```.text``` attribute to returns text from acceessed URL. This is stored in ```content``` variable. Function throws expections when ```Error``` or ```Error in parameters``` string is present in fetched content, else it returns text content of accessed URL.
 
+```
 def fetch(url):
     """Fetch content from *url* from internet."""
     content = requests.get(url).text
