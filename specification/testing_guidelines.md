@@ -20,6 +20,10 @@ When testing one must think of:
 - what conditions / arguments are most probable for the code under test?
 - what happens in program outside code under test?
 
+Tests should :
+- show where are bugs in the code
+- show where original code needs enhancements to cover possible edge situations
+
 Checklist
 ----------
 
@@ -35,9 +39,6 @@ Best tests:
 9. concentrate around practical, not fantasy situations  
 10. include just a few integration, end-to-end tests
 11. fail early and close to where problem is
-12. show where are bugs in the code
-13. show where original code needs enhancements to cover possible edge situations
-14. are well organized - tests for common function are grouped in one class, etc.
 
 Learning
 --------
@@ -52,10 +53,10 @@ Takeaways from <https://pylonsproject.org/community-unit-testing-guidelines.html
 References about:
 - testing is not the best technique to ensure code quality
 
-Sample Tests
-------------
-Original function:
-```
+Tests samples for function fetch(url)
+-----------------------------------
+Original function fetch(url) is simple method which takes one input argument with type ```str```. Input argument reflect URL which is accessed via ```requests.get``` method provided by ```requests``` package. ```requests.get``` method returns ```requests``` object which has available ```.text``` attribute to returns text from acceessed URL. This is stored in ```content``` variable. Function throws expections when ```Error``` or ```Error in parameters``` string is present in fetched content, else it returns text content of accessed URL.
+
 def fetch(url):
     """Fetch content from *url* from internet."""
     content = requests.get(url).text
@@ -153,6 +154,7 @@ Contributors
 ------------
 - ...
 - [Sergey Alexeev](https://www.upwork.com/freelancers/~013cff3deed9987cf5)
+- [Jaroslav Vojtek](https://www.upwork.com/freelancers/~01eeba06021f7e72ef?viewMode=1)
 
 
 Lots of good professional advice specifically in testing comes from:
