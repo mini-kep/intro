@@ -20,6 +20,16 @@ The intent is to allow:
 
 The data provided by custom API must be readable by ```pd.read_json()```
 
+In order to ensure data integrity, some options need to be enabled in the
+```pd.read_json``` command on the client side. This can be accomplished by
+wrapping the function call in a partial, as follows:
+
+```python
+from functools import partial
+read_csv = partial(pd.read_csv, converters={0: pd.to_datetime}, index_col=0)
+read_json = partial(pd.read_json, precise_float=True, orient='split')
+```
+
 
 URL format
 ==========
