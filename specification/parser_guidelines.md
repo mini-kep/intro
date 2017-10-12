@@ -1,6 +1,6 @@
 Parsers Guidelines
 ==================
-Parsers in ```mini-kep``` are used to fetch data from various sources as raw data in Json, XML and csv formats, parse those data and yield them in common formated output.
+Parsers in ```mini-kep``` are used to fetch data from various sources as RAW data in Json, XML and csv formats, parse those data and yield them in common formated output.
 
 Introduction
 ------------
@@ -25,7 +25,7 @@ Sources for fetching up RAW data can be:
 
 Fetch RAW content from source
 -----------------------------
-To Fetch Raw content from websource ```fetch()``` generic method is available in parsers repo ```parsers/getter/util.py```
+To Fetch RAW content from websource ```fetch()``` generic method is available in parsers repo ```parsers/getter/util.py```
 
 Parse fetched content
 ---------------------
