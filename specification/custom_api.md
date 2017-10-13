@@ -1,7 +1,25 @@
 Overview
 ========
 
-Custom API is a simplified interface for end-user queries. It is done as a long URL with slashes (similar to a 'reddit' style).
+Custom API is a simplified interface for end-user queries. 
+The syntax for it is long URL with slashes like below
+
+```
+http://mini-kep.herokuapp.com/ru/series/CPI/m/rog/2015/2017
+
+```
+The intent of cuspom API is to allow:
+1. intuitive construction of URL for user
+2. shorter notation than standard database API GET method 
+3. get similar data for different countries / regions just by changing little part of URL
+
+Custom API is mounted at <http://mini-kep.herokuapp.com/>, see below for details. 
+
+
+Client side code
+================
+
+> TODO: update with https://github.com/mini-kep/frontend-app/blob/master/apps/templates/home.md
 
 ```python
 # monthly consumer inflation time series for Russia in 2015-2017
@@ -13,16 +31,13 @@ df = pd.read_json("http://mini-kep.herokuapp.com/oil/series/BRENT/d/2015/2017")
 
 ```
 
-The intent is to allow:
-- intuitive construction of URL for user
-- shorter notation than standard database API GET method 
-- get similar data for different countries / regions just by changing little part of URL
-
 The data provided by custom API must be readable by ```pd.read_json()```
 
 In order to ensure data integrity, some options need to be enabled in the
 ```pd.read_json``` command on the client side. This can be accomplished by
 wrapping the function call in a partial, as follows:
+
+> TODO: partial is ok, can be a solution 
 
 ```python
 from functools import partial
@@ -39,10 +54,7 @@ URL format
 
    ? - indicates optional parameter
 ```
-
-We can relax restrictions of suffix and just query ```name:varname_suffix``` without prior checks.
-
-#### Tokens:         
+       
 `{domain}` is reserved, future use: 'all', 'ru', 'oil', 'ru:bank', 'ru:77'
 
 `{varname}` is GDP, GOODS_EXPORT, BRENT (capital letters with underscores)
@@ -66,10 +78,36 @@ We can relax restrictions of suffix and just query ```name:varname_suffix``` wit
 - aggregation command (agg): 
     - eop - end of period
     - avg - average
+    
+> TODO should we make a link to docstring?    
 
+Examples:
 
-#### Examples:
 ```
 oil/series/BRENT/m/eop/2015/2017/csv
 ru/series/EXPORT_GOODS/m/bln_rub
 ```
+
+How it works
+============
+
+> ideas on how it is implemented - with respect to flask 
+
+> or suggestions on implementation 
+
+
+Repositories
+------------
+
+At what repos work is done or issues where dicsussion goes on?
+
+
+What next
+---------
+
+What developpers are about to do next
+
+Changelog
+---------
+
+Big events / chnages
