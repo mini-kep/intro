@@ -4,7 +4,8 @@ Parsers in ```mini-kep``` are used to fetch data from various sources as RAW dat
 
 Introduction
 ------------
-Parsers gudelines provide detailed information how parsers are constructed. This guidelines should provide manual to speed up new parses development
+Parsers gudelines provide detailed information how parsers are constructed. 
+This guidelines should provide manual to speed up new parses development
 
 Checklist
 ---------

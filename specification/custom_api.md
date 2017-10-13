@@ -1,7 +1,24 @@
 Overview
 ========
 
-Custom API is a simplified interface for end-user queries. It is done in 'reddit' style: a long URL with slashes.
+Custom API is a simplified interface for end-user queries. 
+The syntax for it is long URL with slashes like below
+
+```
+http://mini-kep.herokuapp.com/ru/series/CPI/m/rog/2015/2017
+
+```
+The intent of cuspom API is to allow:
+1. intuitive construction of URL for user
+2. shorter notation than standard database API GET method 
+3. get similar data for different countries / regions just by changing little part of URL
+
+
+Usage example
+============
+
+*TODO same as in http://mini-kep.herokuapp.com* frontpage
+
 
 ```
 # monthly consumer inflation time series for Russia in 2015-2017
@@ -13,16 +30,12 @@ df = pd.read_json("http://mini-kep.herokuapp.com/oil/series/BRENT/d/2015/2017")
 
 ```
 
-The intent is to allow:
-- intuitive construction of URL for user
-- shorter notation than standard database API GET method 
-- get similar data for different countries / regions just by changing little part of URL
-
 The data provided by custom API must be readable by ```pd.read_json()```
 
 
 URL format
 ==========
+
 
 ```
 <domain>/series/<varname>/<frequency>/<?suffix>/<?start_year>/<?end_year>/<?finaliser>
@@ -32,7 +45,7 @@ URL format
 
 ```<suffix>``` can be unit of measurement or rate of change or aggregation command
 
-We can relax restrictions of suffix and just query ```name:varname_suffix``` without prior checks.
+
 
 Functionality
 =============
@@ -49,7 +62,6 @@ Database GET method currently returns a json with a list of datapoints, and this
 into json readable by ```pd.read_json()```.
 
 Such conversion is done at <https://github.com/mini-kep/intro/blob/master/pipeline/pipeline.py> .
-
 
 
 Implementation 
