@@ -15,8 +15,10 @@ will return same data as:
 The intent of cuspom API is to allow:
 1. intuitive construction of URL for user
 2. shorter notation than standard database API GET method 
-3. get similar data for different countries / regions just by changing little part of URL (eg
-'ru/series/CPI/m' is inflation for Russia, 'kz/series/CPI/m' for Kazakhstan)
+3. get similar data for different countries / regions just by changing little part of URL, for example: 
+ - 'ru/series/CPI/m/2017' is nationwide inflation for Russia 
+ - 'ru:77/series/CPI/m/2017' is nationwide inflation for Moscow region (from [here](http://www.gks.ru/bgd/regl/b16_17/IssWWW.exe/Stg/10-2-1.xls))  
+ - 'kz/series/CPI/m/2017' same national indicator for Kazakhstan
 
 
 How is it implemented
