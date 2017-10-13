@@ -2,18 +2,20 @@ Overview
 ========
 
 Custom API is a simplified interface for end-user queries. 
-The syntax for it is long URL with slashes like below
+It uses long URL with slashes and no other parameters.
 
-```
-http://mini-kep.herokuapp.com/ru/series/CPI/m/rog/2015/2017
+```http://mini-kep.herokuapp.com/ru/series/CPI/m/rog/2015/2017```
 
-```
 The intent of cuspom API is to allow:
 1. intuitive construction of URL for user
 2. shorter notation than standard database API GET method 
 3. get similar data for different countries / regions just by changing little part of URL
 
 Custom API is mounted at <http://mini-kep.herokuapp.com/>, see below for details. 
+
+> todo: where the code is 
+
+> todo: where the data is 
 
 
 Client side code
@@ -73,7 +75,7 @@ URL format
 - rate of change for real variable (rate):
     - rog - change to previous period
     - yoy - change to year ago
-        - base - base index
+    - base - base index
      
 - aggregation command (agg): 
     - eop - end of period
