@@ -11,6 +11,14 @@ The intent of cuspom API is to allow:
 2. shorter notation than standard database API GET method 
 3. get similar data for different countries / regions just by changing little part of URL
 
+
+How is it implemented
+=====================
+
+> ideas on how it is implemented - with respect to flask 
+
+> or suggestions on implementation 
+
 Custom API is mounted at <http://mini-kep.herokuapp.com/>, see below for details. 
 
 > todo: where the code is 
@@ -20,6 +28,8 @@ Custom API is mounted at <http://mini-kep.herokuapp.com/>, see below for details
 
 Client side code
 ================
+
+> this is a duplicte, will need to reference it to source
 
 > TODO: update with https://github.com/mini-kep/frontend-app/blob/master/apps/templates/home.md
 
@@ -47,9 +57,10 @@ read_csv = partial(pd.read_csv, converters={0: pd.to_datetime}, index_col=0)
 read_json = partial(pd.read_json, precise_float=True, orient='split')
 ```
 
-
 URL format
 ==========
+
+> this is a duplicte, will need to reference it to source
 
 ```
 {domain}/series/{varname}/{freq}/{?suffix}/{?start}/{?end}/{?finaliser} 
@@ -89,20 +100,6 @@ Examples:
 oil/series/BRENT/m/eop/2015/2017/csv
 ru/series/EXPORT_GOODS/m/bln_rub
 ```
-
-How it works
-============
-
-> ideas on how it is implemented - with respect to flask 
-
-> or suggestions on implementation 
-
-
-Repositories
-------------
-
-At what repos work is done or issues where dicsussion goes on?
-
 
 What next
 ---------
