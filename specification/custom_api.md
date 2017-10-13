@@ -1,10 +1,15 @@
 Overview
 ========
 
-Custom API is a simplified interface for end-user queries. 
+Custom API is a simplified interface for end-user queries from database. 
 It uses long URL with slashes and no other parameters.
 
+This call: 
 ```http://mini-kep.herokuapp.com/ru/series/CPI/m/rog/2015/2017```
+
+will return same data as:
+
+```...```
 
 The intent of cuspom API is to allow:
 1. intuitive construction of URL for user
