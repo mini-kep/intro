@@ -5,16 +5,18 @@ Custom API is a simplified interface for end-user queries from database.
 It uses long URL with slashes and no other parameters.
 
 This call: 
+
 ```http://mini-kep.herokuapp.com/ru/series/CPI/m/rog/2015/2017```
 
 will return same data as:
 
-```...```
+```https://minikep-db.herokuapp.com/api/datapoints?name=CPI_rog&freq=m&start_date=2015-01-01&end_date=2017-12-31```
 
 The intent of cuspom API is to allow:
 1. intuitive construction of URL for user
 2. shorter notation than standard database API GET method 
-3. get similar data for different countries / regions just by changing little part of URL
+3. get similar data for different countries / regions just by changing little part of URL (eg
+'ru/series/CPI/m' is inflation for Russia, 'kz/series/CPI/m' for Kazakhstan)
 
 
 How is it implemented
