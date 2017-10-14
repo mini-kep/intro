@@ -19,6 +19,10 @@ The data pipeline is the following:
 
 Pipeline is illustrated by [pipeline.py](https://github.com/mini-kep/intro/blob/master/pipeline/pipeline.py)
  
+How to implement
+================
+TODO: Description how install and use ```mini-kep```
+
 Specifications
 ==============
 
