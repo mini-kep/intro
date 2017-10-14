@@ -38,17 +38,17 @@ Client side code
 ================
 
 In order to ensure data integrity, some additional parameters need to be specified when importing data with ```pd.read_json``` or ```pd.read_csv```.
-See [here](https://github.com/mini-kep/frontend-app/blob/master/apps/templates/home.md) for examples on how to load data into a dataframe.
+See [here](custom_api_client_side_code.py) for examples on how to load data into a dataframe.
 
 URL format
 ==========
 
-See below for more examples illustrating the format of the URLs. For further details,
-refer to the [docstring in the custom_api.py file](https://github.com/mini-kep/helpers/blob/master/custom_api/custom_api.py#L1-L46).
+Some more examples illustrating the format of the URLs;
 ```
 oil/series/BRENT/m/eop/2015/2017/csv
 ru/series/EXPORT_GOODS/m/bln_rub
 ```
+For further details, refer to the [docstring](https://github.com/mini-kep/helpers/blob/master/custom_api/custom_api.py#L1-L46) in the custom_api.py file.
 
 What next
 ---------
