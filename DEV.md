@@ -8,13 +8,20 @@ Critical path
 2. use cases discussion / dessemination
 
 
-Open task listing
-------------------
-  - [ ] restore visualisation at <https://github.com/mini-kep/intro/blob/master/specification/include/fx_brent_seaborn_chart_sample.py> (0.5h)
-  - [ ] new parser at <https://github.com/mini-kep/parser-rosstat-isep> (2-3h)
-  - [ ] restructure old parser <https://github.com/epogrebnyak/data-rosstat-806-regional> (3-4h) 
-  
 
+  
+Advanced usage
+--------------
+
+Services based on mini-kep API: 
+
+- PDF handout charts  
+- datasets/presets
+- forcasts as a service (via API)
+- FB posts with data
+
+  
+  
 Tasks - higher priority
 -----------------------
 

@@ -30,13 +30,18 @@ The user wants:
 
 [![](http://datachart.cc/images/rub_oil.png)](http://datachart.cc/)
 
-More on user case [here](specification/usercase.md).
+More on user case [here](https://mini-kep.github.io/documentation/usercase/).
+
+
+Documentation 
+=============
+
+Project documentation is found at dedicatated repository
+<https://mini-kep.github.io/documentation> and subproject repo README.md files.
 
 Read next
 =========
 
-- [Specification pages](https://github.com/mini-kep/intro/blob/master/specification/README.md)
-- [Development notes](DEV.md) 
-- [Changelog](changelog.md)
 - [New user checklist](https://github.com/mini-kep/intro/wiki/New-user-checklist)
-
+- [Changelog](changelog.md)
+- [Development notes](DEV.md) 
