@@ -13,31 +13,14 @@ Why another database for macroeconomic data?
   [public API for Russian macroeconomic data](http://mini-kep.herokuapp.com/) 
   and examples of economic research/business planning/marketing  problems solved in python pandas or R.
   
- 
-User case
-=========
-
-We assume an end user has some experience with data from FRED or quandl.
-
-The user wants:
-
-- a clean dataset with latest data from different sources
-- browse what data is available
-- read this data on a local machine:
-   - as pd.DataFrame 
-   - as R dataframe  
-- quickly draw some charts like one below: 
-
-[![](http://datachart.cc/images/rub_oil.png)](http://datachart.cc/)
-
-More on user case [here](https://mini-kep.github.io/documentation/usercase/).
-
 
 Documentation 
 =============
 
-Project documentation is found at dedicatated repository
-<https://mini-kep.github.io/documentation> and subproject repo README.md files.
+Project documentation is found at 
+
+- dedicatated repository <https://mini-kep.github.io/documentation> 
+- individual repo README.md files
 
 Read next
 =========
