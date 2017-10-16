@@ -1,6 +1,7 @@
 Overview
 ========
 
+<<<<<<< HEAD
 Custom API is a simplified interface for end-user queries. 
 The syntax for it is long URL with slashes like below
 
@@ -19,8 +20,64 @@ Usage example
 
 *TODO same as in http://mini-kep.herokuapp.com* frontpage
 
+=======
+Custom API is a simplified interface for end-user queries from database. 
+It uses long URL with slashes and no other parameters.
+>>>>>>> a4b7885c2c3997f9f0c94dd54f2fa649b758720c
+
+This call: 
+
+```http://mini-kep.herokuapp.com/ru/series/CPI/m/rog/2015/2017```
+
+will return same data as:
+
+<<<<<<< HEAD
+The data provided by custom API must be readable by ```pd.read_json()```
+=======
+```https://minikep-db.herokuapp.com/api/datapoints?name=CPI_rog&freq=m&start_date=2015-01-01&end_date=2017-12-31```
+
+The intent of custom API is to allow:
+1. intuitive construction of URL for user
+2. shorter notation than standard database API GET method 
+3. get similar data for different countries / regions just by changing little part of URL, for example: 
+   - ```ru/series/CPI/m/2017``` is nationwide inflation for Russia 
+   - ```ru:77/series/CPI/m/2017``` is inflation for Moscow region (from [here](http://www.gks.ru/bgd/regl/b16_17/IssWWW.exe/Stg/10-2-1.xls))  
+   - ```kz/series/CPI/m/2017``` is same national indicator for Kazakhstan.
+>>>>>>> a4b7885c2c3997f9f0c94dd54f2fa649b758720c
+
+
+How is it implemented
+=====================
+
+<<<<<<< HEAD
 
 ```
+<domain>/series/<varname>/<frequency>/<?suffix>/<?start_year>/<?end_year>/<?finaliser>
+=======
+> ideas on how it is implemented - with respect to flask 
+>>>>>>> a4b7885c2c3997f9f0c94dd54f2fa649b758720c
+
+> or suggestions on implementation 
+
+Custom API is mounted at <http://mini-kep.herokuapp.com/>, see below for details. 
+
+> todo: where the code is 
+
+> todo: where the data is 
+
+
+<<<<<<< HEAD
+
+=======
+Client side code
+================
+>>>>>>> a4b7885c2c3997f9f0c94dd54f2fa649b758720c
+
+> this is a duplicte, will need to reference it to source
+
+> TODO: update with https://github.com/mini-kep/frontend-app/blob/master/apps/templates/home.md
+
+```python
 # monthly consumer inflation time series for Russia in 2015-2017
 # rog is 'rate of growth'
 df = pd.read_json("http://mini-kep.herokuapp.com/ru/series/CPI/m/rog/2015/2017")
@@ -32,69 +89,73 @@ df = pd.read_json("http://mini-kep.herokuapp.com/oil/series/BRENT/d/2015/2017")
 
 The data provided by custom API must be readable by ```pd.read_json()```
 
+In order to ensure data integrity, some options need to be enabled in the
+```pd.read_json``` command on the client side. This can be accomplished by
+wrapping the function call in a partial, as follows:
+
+> TODO: partial is ok, can be a solution 
+
+<<<<<<< HEAD
+Implementation 
+===============
+=======
+```python
+from functools import partial
+read_csv = partial(pd.read_csv, converters={0: pd.to_datetime}, index_col=0)
+read_json = partial(pd.read_json, precise_float=True, orient='split')
+```
 
 URL format
 ==========
+>>>>>>> a4b7885c2c3997f9f0c94dd54f2fa649b758720c
 
+> this is a duplicte, will need to reference it to source
 
 ```
-<domain>/series/<varname>/<frequency>/<?suffix>/<?start_year>/<?end_year>/<?finaliser>
+{domain}/series/{varname}/{freq}/{?suffix}/{?start}/{?end}/{?finaliser} 
 
    ? - indicates optional parameter
 ```
+       
+`{domain}` is reserved, future use: 'all', 'ru', 'oil', 'ru:bank', 'ru:77'
 
-```<suffix>``` can be unit of measurement or rate of change or aggregation command
+`{varname}` is GDP, GOODS_EXPORT, BRENT (capital letters with underscores)
 
+`{freq}` is any of:  
+- a (annual)
+- q (quarterly)
+- m (monthly)
+- w (weekly)
+- d (daily)
 
+`{?suffix}` may be: 
+- unit of measurement (unit):
+    - example: bln_rub, bln_usd, tkm
+     
+- rate of change for real variable (rate):
+    - rog - change to previous period
+    - yoy - change to year ago
+    - base - base index
+     
+- aggregation command (agg): 
+    - eop - end of period
+    - avg - average
+    
+> TODO should we make a link to docstring?    
 
-Functionality
-=============
+Examples:
 
-#### 1. Translate URL
+```
+oil/series/BRENT/m/eop/2015/2017/csv
+ru/series/EXPORT_GOODS/m/bln_rub
+```
 
-Custom API must translate long url into parameters to database API GET call. Done at:
-   - <https://github.com/mini-kep/frontend-app/blob/master/apps/views/time_series.py>
-   - <https://github.com/mini-kep/helpers/blob/master/custom_api.py> (newer)
+What next
+---------
 
-#### 2. Provide pandas-readable data
+What developpers are about to do next
 
-Database GET method currently returns a json with a list of datapoints, and this data should be converted
-into json readable by ```pd.read_json()```.
+Changelog
+---------
 
-Such conversion is done at <https://github.com/mini-kep/intro/blob/master/pipeline/pipeline.py> .
-
-
-Implementation 
-===============
-
-1. Custom API design was originally discussed [here](https://github.com/mini-kep/frontend-app/issues/8) and [here](https://github.com/mini-kep/intro/issues/12).
-   The result of the discussion is url format above. In discussion there are certain extras for future features.
-
-2. Initial veriosn of custom API is implemented as a part of fronetnd app at <https://github.com/mini-kep/frontend-app/blob/master/apps/views/time_series.py>. It is responsible for translating URLs into parameter dictionaries. Try and click: 
-   - <http://mini-kep.herokuapp.com/ru/series/CPI/m/rog/2017>
-   - <http://mini-kep.herokuapp.com/oil/series/BRENT/d/2000/2005>
- 
-3. New implemtation of URL translation is at <https://github.com/mini-kep/helpers/issues/3>  
-   and <https://github.com/mini-kep/helpers/blob/master/custom_api.py>.
-   
-4. We do not have conversion of existing GET output to pandas-readable format yet. May consult prototype at 
-   <https://github.com/mini-kep/intro/blob/master/pipeline/pipeline.py> on how this may be done.
-   
-   
-Uncertainties 
-=============
-
-- ```<domain>``` may conflict with some API prefixes
-- custom API should migrate to ```db``` instead of ```frontend-app```   
-
-
-TODO
-====
-
-- [ ] in database we need a GET method to provide pandas-readable json
-- [ ] newer url decomposition
-- [ ] mount endpoint at frontend app (?)
-- [ ] mount endpoint at db app (?)
-- [ ] testing
-
-
+Big events / chnages
