@@ -1,0 +1,17 @@
+Suggested checklist for new users/project contributors:
+
+1. read [intro](https://github.com/mini-kep/intro) and [specification](https://github.com/mini-kep/intro/blob/master/specification/README.md)
+2. visit [St Louis FRED](https://fred.stlouisfed.org/)
+3. try download three pandas dataframes from <http://mini-kep.herokuapp.com/>
+5. read [testing guidelines](https://github.com/mini-kep/intro/wiki/Testing-guidelines)
+
+Explore which area interests you most:
+- data parsing (read source and provide clean output) 
+- parsers dispatching / scheduling
+- database (store parser outputs)
+- frontend (creating end-user API and flask app)
+- using data to solve economic problems (making end-user examples)
+
+Consider if you see yourself in:
+- doing some isolated specific tasks in project (easier)
+- maintening some part of project (harder)
