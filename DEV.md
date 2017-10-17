@@ -65,11 +65,24 @@ Tasks - lower priority
    - [ ] started parser-rosstat-isep
    - [ ] maintainer found for 806 parser   
 
+Development ideas
+-----------------
 
-Done
-----
+Use cases:
+- [ ] gdp components
+- [ ] inflation
+- [ ] fx
+- [ ] bank provisions model
+  
+Advanced content:
+- [ ] seasonally adjusted time series as ```/sa:<method>``` 
+- [ ] forecasts as ```/forecast:<version>/2025```
 
-#### django app (finishing work)
-   - [x] 1 branch
-   - [x] tranfer repo
-   - [ ] learning repo?   
+New APIs:
+- [ ] dataset API - load several time series
+- [ ] Excel files delivered by ```xl``` finaliser
+- [ ] chart API with ```spline``` and ```chart``` finaliser
+
+Viewing:
+- make a dashboard for macroeconomic indicators 
+- view a dashboard on a smartphone / get notifications 
