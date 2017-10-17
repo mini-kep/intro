@@ -37,13 +37,13 @@ Best tests:
 3. cover at least all public methods/functions
 4. have long names with context and expected result (except very short tests)
 5. are as simple and readable as they can get
-6. one test tests one thing and better if it has one assert per test
+6. one test tests one thing and preferably has one assert per test
 7. have clear separation of setup, call of code under test and check 
 8. make good use of parametrisation, factories/fixtures, dependency injection, mocks and monkey-patching
 9. concentrate around practical risks in program execution, not fantasy situations  
 10. include just a few integration, end-to-end tests
-11. fail early and near where problem is
-12. are usually assmebled in one testcase class for a single class or model
+11. fail early and near to where problem is
+12. are assembled by testcase class, one for each for a single class or model
 
 Learning
 --------
@@ -55,7 +55,7 @@ Takeaways from <https://pylonsproject.org/community-unit-testing-guidelines.html
 - tests should be isolated
 - each test method should test Just One Thing
 
-Very consise guide: <https://gist.github.com/sloria/7001839#testing>
+Very concise guide: <https://gist.github.com/sloria/7001839#testing>
 
 Test naming
 -----------
@@ -77,9 +77,11 @@ Comments:
   - smaller tests can have simplier naming. Better a ```test_make_date()``` or
     ```test_to_float_accepts_commented_string``` than no test at all  
   - regression test (bugfixes) can have names stating what the problem was, eg ```test_CBR_USD_will_not_work_before_1992```
-  - read about *Arrange-Act-Assert* or *Given-When-Then* for more information, <https://stackoverflow.com/questions/155436/unit-test-naming-best-practices> is oftern cited for naming, but discussion has some controversies. 
+  - read about *Arrange-Act-Assert* or *Given-When-Then* for more information
+  - [this post](https://stackoverflow.com/questions/155436/unit-test-naming-best-practices) is oftern cited for naming, 
+    but discussion has some controversies. 
 
-To cover 
+To add 
 --------
 - testing is not the best technique to ensure code quality (eg reviews)
 - testing in flask with db
