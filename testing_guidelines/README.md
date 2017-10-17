@@ -40,7 +40,7 @@ Best tests:
 5. are as simple and readable as they can get
 6. one test tests one thing and preferably has one assert per test
 7. have clear separation of setup, call of code under test and check 
-8. make good use of parametrisation, factories/fixtures, dependency injection, mocks and monkey-patching
+8. make good use of test class inheritance, parametrisation, factories/fixtures, dependency injection, mocks and monkey-patching
 9. concentrate around practical risks in program execution, not fantasy situations  
 10. include just a few integration, end-to-end tests
 11. fail early and near to where problem is
