@@ -25,6 +25,7 @@ b) clean tests
 
 c) test efficiency
 - what conditions/arguements/contexts are most probable for the code under test?
+- what should I test for first?
 - what happens in program outside code under test?
 
 
@@ -83,6 +84,8 @@ Comments:
 
 To add 
 --------
+- tests control program structure before they validate program results
+- 'dirty hybrids'
 - testing is not the best technique to ensure code quality (eg reviews)
 - testing in flask with db
 
