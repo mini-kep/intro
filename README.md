@@ -17,14 +17,12 @@ Why another database for macroeconomic data?
 Documentation 
 =============
 
-Project documentation is found at 
-
-- dedicatated repository <https://mini-kep.github.io/documentation> 
-- individual repo README.md files
+Project documentation is found at <https://mini-kep.github.io/documentation>.
 
 Read next
 =========
 
 - [New user checklist](https://github.com/mini-kep/intro/wiki/New-user-checklist)
-- [Changelog](changelog.md)
+- [Testing guidelines](https://github.com/mini-kep/intro/blob/master/testing_guidelines/README.md)
 - [Development notes](DEV.md) 
+- [Changelog](changelog.md)
