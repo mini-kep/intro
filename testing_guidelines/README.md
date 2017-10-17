@@ -77,7 +77,7 @@ Comments:
   - smaller tests can have simplier naming. Better a ```test_make_date()``` or
     ```test_to_float_accepts_commented_string``` than no test at all  
   - regression test (bugfixes) can have names stating what the problem was, eg ```test_CBR_USD_will_not_work_before_1992```
-  - read about *Arrange-Act-Assert* or *Given-When-Then* for more information.
+  - read about *Arrange-Act-Assert* or *Given-When-Then* for more information, <https://stackoverflow.com/questions/155436/unit-test-naming-best-practices> is oftern cited for naming, but discussion has some controversies. 
 
 To cover 
 --------
