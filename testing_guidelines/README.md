@@ -44,7 +44,7 @@ Best tests:
 9. concentrate around practical risks in program execution, not fantasy situations  
 10. include just a few integration, end-to-end tests
 11. fail early and near to where problem is
-12. are assembled by testcase class, one for each for a single class or model
+12. when using classes in original code, tests are assembled by testcase classes, one for every single class or model
 
 Learning
 --------
