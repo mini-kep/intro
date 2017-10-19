@@ -39,12 +39,12 @@ Best tests:
 4. have long names with context and expected result (except very short tests)
 5. are as simple and readable as they can get
 6. one test tests one thing and preferably has one assert per test
-7. have clear separation of setup, call of code under test and check 
+7. have clear separation of setup, call of code under test and result check 
 8. make good use of test class inheritance, parametrisation, factories/fixtures, dependency injection, mocks and monkey-patching
 9. concentrate around practical risks in program execution, not fantasy situations  
 10. include just a few integration, end-to-end tests
 11. fail early and near to where problem is
-12. when using classes in original code, tests are assembled by testcase classes, one for every single class or model
+12. are assembled by testcase class for every single class in code under test
 
 Learning
 --------
