@@ -3,7 +3,7 @@ Testing guidelines
 
 These guidelines cover unit tests (being) developped at various parts of ```mini-kep``` project.
 
-We do not have functional (eg selenium) or load tests, which may have slightly different logic. 
+Here we do not describe functional (eg selenium) or load tests, which may have slightly different logic. 
 
 Introduction
 ------------
@@ -17,7 +17,6 @@ a) program behaviours
 - how the code under test may run with error
 - how to expose behaviours above in test setup and checks?
 
-
 b) clean tests
 - how to write test in a clean and understandable fashion? 
 - how to name tests better?
@@ -26,8 +25,20 @@ b) clean tests
 c) test efficiency
 - what conditions/arguements/contexts are most probable for the code under test?
 - what should I test for first?
+- how would readers inderstand what the code does?
 - what happens in program outside code under test?
 
+
+What is special about unittests?
+--------------------------------
+
+We treat unit tests as a tool to control program structure. They must 
+fail early and indicate what has changed in the code under test. 
+
+Unittests may also validate some of program behaviour, but it is a 
+costly - even with a lot of tests validation may not be complete. 
+The best way forward is to have limited amount of test cases, skillfully 
+designed about expected output and most probable risks.  
 
 Checklist
 ----------
@@ -79,16 +90,16 @@ Comments:
   - smaller tests can have simplier naming. Better a ```test_make_date()``` or
     ```test_to_float_accepts_commented_string``` than no test at all  
   - regression test (bugfixes) can have names stating what the problem was, eg ```test_CBR_USD_will_not_work_before_1992```
+  
+Reading:  
   - read about *Arrange-Act-Assert* or *Given-When-Then* for more information
   - [this post](https://stackoverflow.com/questions/155436/unit-test-naming-best-practices) is oftern cited for naming, 
     but discussion has some controversies. 
 
 To add 
 --------
-- tests control program structure before they validate program results
 - 'dirty hybrids'
 - testing is not the best technique to ensure code quality (eg reviews)
-- testing in flask with db
 
 Prior discussions
 -----------------
