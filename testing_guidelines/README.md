@@ -44,7 +44,8 @@ Best tests:
 9. concentrate around practical risks in program execution, not fantasy situations  
 10. include just a few integration, end-to-end tests
 11. fail early and near to where problem is
-12. are assembled by testcase class for every single class in code under test
+12. assembled by testcases (one testclass class for every single class in code under test)
+
 
 Learning
 --------
@@ -91,6 +92,7 @@ To add
 
 Prior discussions
 -----------------
+- Flask database testing: <https://github.com/mini-kep/db/issues/10>
 - Flask testing: <https://github.com/mini-kep/frontend-app/issues/7>
 - parsers testing: <https://github.com/mini-kep/parsers/issues/15>
 - earlier on parsers testing: <https://github.com/mini-kep/parser-rosstat-kep/issues/24>
