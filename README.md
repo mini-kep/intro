@@ -9,8 +9,8 @@ It is inspired by [St Louis FRED](https://fred.stlouisfed.org) and
 and aims to provide open, timely, machine-readable data for reproducible 
 analysis in economics.
 
-Please take a minute to [fill a poll](https://goo.gl/2wY43R)
-about your usage economics datasources to support our case.  
+To support our case please [fill a poll](https://goo.gl/2wY43R)
+about your usage of economics datasources.  
 
 
 Motivation: why another database for macroeconomic data?
