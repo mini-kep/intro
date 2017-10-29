@@ -8,8 +8,6 @@ Critical path
 2. use cases discussion / dessemination
 
 
-
-  
 Advanced usage
 --------------
 
@@ -18,8 +16,7 @@ Services based on mini-kep API:
 - PDF handout charts  
 - datasets/presets
 - forcasts as a service (via API)
-- FB posts with data
-
+- FB posts with charts
   
   
 Tasks - higher priority
