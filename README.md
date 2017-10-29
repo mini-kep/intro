@@ -19,9 +19,14 @@ Documentation
 
 Project documentation is found at <https://mini-kep.github.io/documentation>.
 
-See also [testing guidelines](https://github.com/mini-kep/intro/blob/master/testing_guidelines/README.md).
+Project map 
+===========
 
-Read next
-=========
-- [Development notes](DEV.md) 
-- [Changelog](changelog.md)
+![](https://user-images.githubusercontent.com/9265326/32145524-31dcb57e-bcdb-11e7-9cbe-f4e9e3315000.png)
+
+
+See also
+========
+- [development notes](DEV.md) 
+- [changelog](changelog.md)
+- [testing guidelines](https://github.com/mini-kep/intro/blob/master/testing_guidelines/README.md).
