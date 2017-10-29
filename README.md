@@ -49,16 +49,12 @@ er = read_ts('http://minikep-db.herokuapp.com/ru/series/USDRUR_CB/d/2017')
 assert er['2017-09-28'] == 58.01022
 ```  
   
-Documentation 
-=============
-
-See [project documentaion](https://mini-kep.github.io/documentation).
-
 Project map 
 ===========
 
-![](https://user-images.githubusercontent.com/9265326/32145726-59b4cec6-bcde-11e7-8d58-ef67f4224411.png)
+![](https://user-images.githubusercontent.com/9265326/32148668-a3cc9af2-bd0b-11e7-9530-3d4194419761.png)
 
+See [project documentaion](https://mini-kep.github.io/documentation).
 
 See also
 ========
