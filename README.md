@@ -22,7 +22,7 @@ Project documentation is found at <https://mini-kep.github.io/documentation>.
 Project map 
 ===========
 
-![](https://user-images.githubusercontent.com/9265326/32145524-31dcb57e-bcdb-11e7-9cbe-f4e9e3315000.png)
+![](https://user-images.githubusercontent.com/9265326/32145726-59b4cec6-bcde-11e7-8d58-ef67f4224411.png)
 
 
 See also
