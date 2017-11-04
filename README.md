@@ -6,32 +6,25 @@ Russian and global macroeconomic time series data with public end-user API.
 
 It is inspired by [St Louis FRED](https://fred.stlouisfed.org) and 
 [Data Science Cookiecutter](https://drivendata.github.io/cookiecutter-data-science)
-and aims to provide open, timely, machine-readable data for reproducible 
-analysis in economics.
+and aims to provide timely machine-readable data for reproducible analysis 
+in (macro)economics.
 
-To support our case please 
-[fill a poll about your usage of economics datasources](https://goo.gl/2wY43R).  
+Please [fill a poll about economics data sources](https://goo.gl/2wY43R)
+to support our case.  
 
+Project links
+=============
 
-Motivation: why another database for macroeconomic data?
-========================================================
- 
-- Machine-readable datafeeds for economic data are growing (
-  [FRED](https://research.stlouisfed.org/docs/api/fred/), 
-  [quandl](https://blog.quandl.com/api-for-economic-data), 
-  [OECD](https://data.oecd.org/api), 
-  [World Bank](https://datahelpdesk.worldbank.org/knowledgebase/topics/125589), 
-  [EIA](https://www.eia.gov/opendata/)).
+Data browser: <http://macrodash.herokuapp.com>
 
-- However, some data is still left in the dark. Russian macroeconomic statistics seems very 
-  fragmented (HTML, Word, Excel are common dessimination formats). 
-  This is a roadblock to reproducible analysis as dirty data escalates costs of model maintenance.      
+Key repositories:
+- [parsers](https://github.com/mini-kep/parsers)
+- [database](https://github.com/mini-kep/db)
+- [frontend](https://github.com/mini-kep/frontend-dash)
+- [user charts](https://github.com/mini-kep/user-charts)
 
-- ```mini-kep``` aims to remove this roadblock by providing 
-  [public API for Russian macroeconomic data](http://mini-kep.herokuapp.com/) 
-  and examples of economic research/business planning/marketing problems 
-  solved in python pandas or R.
-  
+Documentation: <https://mini-kep.github.io/documentation>
+
 How can I access the data? 
 ==========================
 
@@ -48,13 +41,11 @@ def read_ts(source_url):
 er = read_ts('http://minikep-db.herokuapp.com/ru/series/USDRUR_CB/d/2017')
 assert er['2017-09-28'] == 58.01022
 ```  
-  
+
 Project map 
 ===========
 
-![](https://user-images.githubusercontent.com/9265326/32148668-a3cc9af2-bd0b-11e7-9530-3d4194419761.png)
-
-See [project documentaion](https://mini-kep.github.io/documentation).
+![image](https://user-images.githubusercontent.com/9265326/32406266-57004848-c186-11e7-951e-2d40b4a3ffda.png)
 
 See also
 ========
