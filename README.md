@@ -51,4 +51,4 @@ See also
 ========
 - [development notes](DEV.md) 
 - [changelog](changelog.md)
-- [testing guidelines](https://github.com/mini-kep/intro/blob/master/testing_guidelines/README.md).
+- [testing guidelines](https://github.com/mini-kep/intro/blob/master/testing_guidelines/README.md)
