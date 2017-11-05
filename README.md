@@ -14,6 +14,8 @@ Poll
 
 Please [fill a poll about data sources](https://goo.gl/2wY43R) to support our case.  
 
+![image](https://user-images.githubusercontent.com/9265326/32418943-5fe31410-c283-11e7-9c18-b191def74316.png)
+
 Links
 =====
 
@@ -21,19 +23,16 @@ Data browser: <http://macrodash.herokuapp.com>
 
 Documentation: <https://mini-kep.github.io/documentation>
 
+Trello issues (many!): <https://trello.com/b/ioHBMwH7/minikep> and [development notes](DEV.md) 
+
 Repositories:
 - [parsers](https://github.com/mini-kep/parsers)
 - [database](https://github.com/mini-kep/db)
 - [data bowrser](https://github.com/mini-kep/frontend-dash)
 - [user charts](https://github.com/mini-kep/user-charts)
 
+Testing guidelines: <https://github.com/mini-kep/intro/blob/master/testing_guidelines/README.md>
+
 Project map 
 ===========
-
 ![image](https://user-images.githubusercontent.com/9265326/32406266-57004848-c186-11e7-951e-2d40b4a3ffda.png)
-
-See also
-========
-- [development notes](DEV.md) 
-- [changelog](changelog.md)
-- [testing guidelines](https://github.com/mini-kep/intro/blob/master/testing_guidelines/README.md)
