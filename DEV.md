@@ -1,7 +1,9 @@
 Trello
 ======
 
-See trello board for the ideas/tasks/issues: <https://trello.com/b/ioHBMwH7/minikep>
+See trello board for the ideas/tasks/issues: 
+
+<https://trello.com/b/ioHBMwH7/minikep>
 
 Not on board
 ============
