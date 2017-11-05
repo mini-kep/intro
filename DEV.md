@@ -25,16 +25,9 @@ Advanced content:
 - [ ] Excel files delivered by ```xl``` finaliser
 - [ ] chart API with ```spline``` and ```chart``` finaliser
 
-Links 
------
+Comments 
+--------
 - [ ] add new methods needed - as in issue <https://github.com/mini-kep/db/issues/8>
 - [ ] infrastructure - minikep.cc domain
-- [ ] rebuild regional-806 parser   
 
-User cases
-----------
-- [ ] gdp components
-- [ ] inflation
-- [ ] fx
-- [ ] bank provisions model
  
