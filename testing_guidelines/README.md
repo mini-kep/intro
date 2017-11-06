@@ -110,12 +110,6 @@ Prior discussions
 - <https://github.com/epogrebnyak/question-kep-unittest>
 
 
-Contributors 
-------------
-- [Sergey Alexeev](https://www.upwork.com/freelancers/~013cff3deed9987cf5)
-- [Jaroslav Vojtek](https://www.upwork.com/freelancers/~01eeba06021f7e72ef?viewMode=1)
-
-
 Specialised advice 
 ------------------
 I got lots of  professional advice specifically in testing from:
