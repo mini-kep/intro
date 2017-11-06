@@ -35,10 +35,12 @@ What is special about unittests?
 We treat unit tests as a tool to control program structure. They must 
 fail early and indicate what has changed in the code under test. 
 
-Unittests may also validate some of program behaviour, but it is a 
-costly - even with a lot of tests validation may not be complete. 
+Unittests are 'example tests', it is often costly to use them 
+to validate inteded program behaviour. Even with a lot of unittests validation 
+is never complete. 
+
 The best way forward is to have limited amount of test cases, skillfully 
-designed about expected output and most probable risks.  
+designed around expected output and most probable risks.  
 
 Checklist
 ----------
@@ -69,6 +71,8 @@ Takeaways from <https://pylonsproject.org/community-unit-testing-guidelines.html
 - each test method should test Just One Thing
 
 Very concise guide: <https://gist.github.com/sloria/7001839#testing>
+
+[Property testing](http://hypothesis.works/articles/what-is-property-based-testing/)
 
 Test naming
 -----------
