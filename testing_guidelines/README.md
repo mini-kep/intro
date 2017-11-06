@@ -16,6 +16,7 @@ a) program behaviours
 - how the code under test is supposed to run well 
 - how the code under test may run with error
 - how to expose behaviours above in test setup and checks?
+- what happens in program outside code under test?
 
 b) clean tests
 - how to write test in a clean and understandable fashion? 
@@ -26,7 +27,6 @@ c) test efficiency
 - what conditions/arguements/contexts are most probable for the code under test?
 - what should I test for first?
 - how would readers inderstand what the code does?
-- what happens in program outside code under test?
 
 
 What is special about unittests?
