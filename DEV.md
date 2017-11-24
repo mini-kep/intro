@@ -27,7 +27,6 @@ Advanced content:
 
 Comments 
 --------
-- [ ] add new methods needed - as in issue <https://github.com/mini-kep/db/issues/8>
 - [ ] infrastructure - minikep.cc domain
 
  
