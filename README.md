@@ -13,7 +13,7 @@ User links
 ==========
 
 - [Data browser](http://macrodash.herokuapp.com) - plot time series and get download links 
-- [User charts](https://github.com/mini-kep/user-charts) - ipython notebooks and cahrts using the dataset 
+- [User charts](https://github.com/mini-kep/user-charts) - ipython notebooks and charts using the dataset 
 - [API documentation](https://github.com/mini-kep/db/blob/master/README.md)
 - [Access code examples](https://github.com/mini-kep/user-charts/blob/master/access.py)
 
