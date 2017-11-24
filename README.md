@@ -33,15 +33,14 @@ Other repos:
 - [Testing guidelines](https://github.com/mini-kep/guidelines/blob/master/testing.md)
 
 
-Project map 
-===========
-
-
-![image](https://user-images.githubusercontent.com/9265326/33222482-b7af9242-d168-11e7-8d9f-1c76370e05eb.png)
-
-
-
 Poll
 ====
 
 Do you work with economic time series? Please fill out poll about [data sources](https://goo.gl/2wY43R).
+
+
+Project map 
+===========
+
+![image](https://user-images.githubusercontent.com/9265326/33222482-b7af9242-d168-11e7-8d9f-1c76370e05eb.png)
+
