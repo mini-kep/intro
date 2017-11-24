@@ -6,9 +6,9 @@ Russian and global macroeconomic time series with public end-user API.
 
 This work is inspired by [St Louis FRED](https://fred.stlouisfed.org) and 
 [Data Science Cookiecutter](https://drivendata.github.io/cookiecutter-data-science)
-and aims to provide open, timely, machine-readable data.
+and aims to provide open, timely, machine-readable macroeconomic data.
 
-Please fill out poll about [data sources](https://goo.gl/2wY43R).
+Do you work with economics time series? Please fill out poll about [data sources](https://goo.gl/2wY43R).
 
 User links
 ==========
