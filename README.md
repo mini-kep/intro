@@ -21,7 +21,7 @@ User links
 Developer links
 ===============
 
-Key code:
+Main code:
 - [parsers](https://github.com/mini-kep/parsers)
 - [database](https://github.com/mini-kep/db)
 - [data bowrser](https://github.com/mini-kep/frontend-dash)  
