@@ -2,7 +2,7 @@ Introduction
 ============
 
 ```mini-kep``` is a small ETL (extract, transform, load) framework with public end-user API.
-[Our dataset] has Russian and global macroeconomic time series. 
+[Our dataset](http://macrodash.herokuapp.com/) has Russian and some global macroeconomic time series. 
 
 This work is inspired by [St Louis FRED](https://fred.stlouisfed.org) and 
 [Data Science Cookiecutter](https://drivendata.github.io/cookiecutter-data-science)
