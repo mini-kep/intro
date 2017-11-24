@@ -24,8 +24,9 @@ Developer links
 Key code:
 - [parsers](https://github.com/mini-kep/parsers)
 - [database](https://github.com/mini-kep/db)
-- [data bowrser](https://github.com/mini-kep/frontend-dash)
+- [data bowrser](https://github.com/mini-kep/frontend-dash)  
 
+Other repos:
 - [Documentation](https://mini-kep.github.io/documentation)
 - [Trello issues](https://trello.com/b/ioHBMwH7/minikep) and [development notes](DEV.md) 
 - [Data map](https://github.com/mini-kep/datamap/blob/master/minikep_missing_values.ipynb) 
