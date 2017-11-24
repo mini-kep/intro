@@ -16,7 +16,7 @@ User links
 - [Data browser](http://macrodash.herokuapp.com) - plot any pair on timeseries and get download links 
 - [User charts](https://github.com/mini-kep/user-charts) - check some chart we develop with this dataset
 - [API documentation](https://github.com/mini-kep/db/blob/master/README.md) - read about how to use API to get data
-- [access code examples](https://github.com/mini-kep/user-charts/blob/master/access.py)
+- [Access code examples](https://github.com/mini-kep/user-charts/blob/master/access.py)
 
 
 Developer links
