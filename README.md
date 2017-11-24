@@ -36,7 +36,9 @@ Other repos:
 Project map 
 ===========
 
-![image](https://user-images.githubusercontent.com/9265326/33222198-70580fe8-d166-11e7-9fb7-6322ddabe20b.png)
+
+![image](https://user-images.githubusercontent.com/9265326/33222482-b7af9242-d168-11e7-8d9f-1c76370e05eb.png)
+
 
 
 Poll
