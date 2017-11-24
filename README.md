@@ -1,8 +1,8 @@
 Introduction
 ============
 
-```mini-kep``` is a small ETL (extract, transform, load) framework and a dataset for 
-Russian and global macroeconomic time series with public end-user API.
+```mini-kep``` is a small ETL (extract, transform, load) framework with public end-user API.
+[Our dataset] has Russian and global macroeconomic time series. 
 
 This work is inspired by [St Louis FRED](https://fred.stlouisfed.org) and 
 [Data Science Cookiecutter](https://drivendata.github.io/cookiecutter-data-science)
@@ -26,10 +26,12 @@ Developer links
 
 Trello issues (many!): <https://trello.com/b/ioHBMwH7/minikep> and [development notes](DEV.md) 
 
- Key code:
+Key code:
 - [parsers](https://github.com/mini-kep/parsers)
 - [database](https://github.com/mini-kep/db)
 - [data bowrser](https://github.com/mini-kep/frontend-dash)
+
+[Data map](https://github.com/mini-kep/datamap/blob/master/minikep_missing_values.ipynb) 
 
 Testing guidelines: <https://github.com/mini-kep/guidelines/blob/master/testing.md>
 
