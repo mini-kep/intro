@@ -8,29 +8,30 @@ This work is inspired by [St Louis FRED](https://fred.stlouisfed.org) and
 [Data Science Cookiecutter](https://drivendata.github.io/cookiecutter-data-science)
 and aims to provide open, timely, machine-readable data.
 
-Poll
-====
+Please fill out poll about [data sources](https://goo.gl/2wY43R).
 
-Please [fill a poll about data sources](https://goo.gl/2wY43R) to support our case for reproducible analysis.  
+User links
+==========
 
-![image](https://user-images.githubusercontent.com/9265326/32418943-5fe31410-c283-11e7-9c18-b191def74316.png)
+- [Data browser](http://macrodash.herokuapp.com) - plot any pair on timeseries and get download links 
+- [User charts](https://github.com/mini-kep/user-charts) - check some chart we develop with this dataset
+- [API documentation](https://github.com/mini-kep/db/blob/master/README.md) - read about how to use API to get data
+- [access code examples](https://github.com/mini-kep/user-charts/blob/master/access.py)
 
-Links
-=====
 
-Data browser: <http://macrodash.herokuapp.com>
+Developer links
+===============
 
-Documentation: <https://mini-kep.github.io/documentation>
+[Documentation](https://mini-kep.github.io/documentation)
 
 Trello issues (many!): <https://trello.com/b/ioHBMwH7/minikep> and [development notes](DEV.md) 
 
-Repositories:
+ Key code:
 - [parsers](https://github.com/mini-kep/parsers)
 - [database](https://github.com/mini-kep/db)
 - [data bowrser](https://github.com/mini-kep/frontend-dash)
-- [user charts](https://github.com/mini-kep/user-charts)
 
-Testing guidelines: <https://github.com/mini-kep/intro/blob/master/testing_guidelines/README.md>
+Testing guidelines: <https://github.com/mini-kep/guidelines/blob/master/testing.md>
 
 Project map 
 ===========
