@@ -8,14 +8,17 @@ This work is inspired by [St Louis FRED](https://fred.stlouisfed.org) and
 [Data Science Cookiecutter](https://drivendata.github.io/cookiecutter-data-science)
 and aims to provide open, timely, machine-readable macroeconomic data.
 
-Do you work with economics time series? Please fill out poll about [data sources](https://goo.gl/2wY43R).
+Poll
+====
+
+Do you work with economic time series? Please fill out poll about [data sources](https://goo.gl/2wY43R).
 
 User links
 ==========
 
-- [Data browser](http://macrodash.herokuapp.com) - plot any pair on timeseries and get download links 
-- [User charts](https://github.com/mini-kep/user-charts) - check some chart we develop with this dataset
-- [API documentation](https://github.com/mini-kep/db/blob/master/README.md) - read about how to use API to get data
+- [Data browser](http://macrodash.herokuapp.com) - plot time series and get download links 
+- [User charts](https://github.com/mini-kep/user-charts) - ipython notebooks and cahrts using the dataset 
+- [API documentation](https://github.com/mini-kep/db/blob/master/README.md)
 - [Access code examples](https://github.com/mini-kep/user-charts/blob/master/access.py)
 
 
