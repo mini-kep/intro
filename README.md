@@ -37,4 +37,5 @@ Do you often work with economic time series? Please fill out our poll about [dat
 Project map 
 ===========
 
-![image](https://user-images.githubusercontent.com/9265326/33222482-b7af9242-d168-11e7-8d9f-1c76370e05eb.png)
+![image](https://user-images.githubusercontent.com/9265326/33287084-956fcd52-d3c8-11e7-8b9c-42cff0cd5eed.png)
+
