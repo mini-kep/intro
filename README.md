@@ -4,7 +4,7 @@ Introduction
 ```mini-kep``` is a small ETL (extract, transform, load) framework with public end-user API.
 
 The dataset has Russian and global macroeconomic time series, it is available through:
-- [data browser](http://macrodash.herokuapp.com) - plot time series and get download links 
+- [data browser](http://macrodash.herokuapp.com)
 - [variable listing](https://github.com/mini-kep/db/blob/master/doc/listing.md)
 - [sample access code](https://github.com/mini-kep/user-charts/blob/master/access.py) 
 
