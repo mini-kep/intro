@@ -1,3 +1,5 @@
+[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/mini-kep/Lobby)
+
 Introduction
 ============
 
@@ -16,7 +18,7 @@ User cases
 ==========
 
 ipython notebooks and custom charts are collected in [this repo](https://github.com/mini-kep/user-charts).
-Feel free to contibute your code or task idea. 
+Feel free to contibute your code or task idea, for example via [gitter](https://gitter.im/mini-kep/Lobby).
 
 
 Developper links  
