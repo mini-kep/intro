@@ -12,22 +12,29 @@ This work is inspired by [St Louis FRED](https://fred.stlouisfed.org) and
 [Data Science Cookiecutter](https://drivendata.github.io/cookiecutter-data-science)
 and aims to provide open, timely, machine-readable macroeconomic data.
 
+User cases 
+==========
 
-Developer links
-===============
+ipython notebooks and custom charts are collected in [this repo](https://github.com/mini-kep/user-charts).
+Feel free to contibute your code or task idea. 
 
-Main code:
+
+Developper links  
+================
+
+#### Code:
 - [parsers](https://github.com/mini-kep/parsers)
 - [database](https://github.com/mini-kep/db)
 - [data browser](https://github.com/mini-kep/frontend-dash)  
-- [user cases](https://github.com/mini-kep/user-charts)
 
-Other repos:
+#### Documentation:
 - [Documentation](https://mini-kep.github.io/documentation)
 - [API documentation](https://github.com/mini-kep/db/blob/master/README.md)
+
+#### Workflow:
 - [Trello issues](https://trello.com/b/ioHBMwH7/minikep) and [development notes](DEV.md) 
-- [Data map](https://github.com/mini-kep/datamap/blob/master/minikep_missing_values.ipynb) 
-- [Testing guidelines](https://github.com/mini-kep/guidelines/blob/master/testing.md)
+- [missing data map](https://github.com/mini-kep/datamap/blob/master/minikep_missing_values.ipynb) 
+- [testing guidelines](https://github.com/mini-kep/guidelines/blob/master/testing.md)
 
 Poll
 ====
@@ -38,5 +45,4 @@ Project map
 ===========
 
 ![image](https://user-images.githubusercontent.com/9265326/33287171-de70bbf6-d3c8-11e7-8319-b4d69007fddb.png)
-
 
