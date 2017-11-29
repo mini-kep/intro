@@ -1,14 +1,16 @@
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/mini-kep/Lobby)
 
-Introduction
-============
-
-```mini-kep``` is a collection of data parsers and a database with public end-user API 
-that delivers macroeconomic time series.
-
+Goal
+====
 
 The project goal is to provide open, timely, machine-readable data for reproducible 
 (macro)economic research.
+
+Introduction
+============
+
+```mini-kep``` is a collection of data parsers + a database with public end-user API 
+that delivers macroeconomic time series.
 
 The current dataset has Russian and some global macroeconomic data. It is available through:
 - [data browser](http://macrodash.herokuapp.com)
