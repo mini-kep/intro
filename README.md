@@ -26,10 +26,10 @@ The current dataset has Russian and some global macroeconomic data. It is availa
 Feedback
 ========
 
+Feel free to contibute your opinion or ideas [by gitter](https://gitter.im/mini-kep/Lobby).
+
 If you work with economic time series, please fill our [poll about data sources](https://goo.gl/2wY43R)
 to help us understand user needs.
-
-Feel free to contibute your opinion or ideas [by gitter](https://gitter.im/mini-kep/Lobby).
 
 Project map 
 ===========
