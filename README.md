@@ -34,7 +34,7 @@ User cases
 ==========
 
 [This repo](https://github.com/mini-kep/user-charts) has notebooks and charts using the dataset.
-Feel free to contibute your economic analysis task or idea for it [by gitter](https://gitter.im/mini-kep/Lobby).
+Feel free to contibute your economic analysis idea [by gitter](https://gitter.im/mini-kep/Lobby).
 
 Project map 
 ===========
