@@ -4,7 +4,7 @@ Goal
 ====
 
 The project goal is to provide open, timely, machine-readable data for reproducible 
-(macro)economic research.
+macroeconomic research.
 
 Introduction
 ============
@@ -34,6 +34,7 @@ User cases
 ==========
 
 [This repo](https://github.com/mini-kep/user-charts) has notebooks and charts using the dataset.
+
 Feel free to contibute your economic analysis idea [by gitter](https://gitter.im/mini-kep/Lobby).
 
 Project map 
