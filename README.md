@@ -7,9 +7,9 @@ Introduction
 that delivers macroeconomic time series.
 
 
-```mini-kep``` aims to provide open, timely, machine-readable data for reproducible 
-macroeconomic research. It is inspired by [St Louis FRED](https://fred.stlouisfed.org) and 
-[Data Science Cookiecutter](https://drivendata.github.io/cookiecutter-data-science).
+The project goal is to provide open, timely, machine-readable data for reproducible 
+(macro)economic research. ```mini-kep``` is inspired by [St Louis FRED](https://fred.stlouisfed.org)
+and [Data Science Cookiecutter](https://drivendata.github.io/cookiecutter-data-science).
 
 
 The current dataset has Russian and some global macroeconomic data. It is available through:
