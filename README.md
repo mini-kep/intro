@@ -6,6 +6,10 @@ Goal
 The project goal is to provide open, timely, machine-readable data for reproducible 
 macroeconomic research.
 
+Influenced/inspired by:
+- [St Louis FRED](https://fred.stlouisfed.org) 
+- [Data Science Cookiecutter](https://drivendata.github.io/cookiecutter-data-science)
+
 Introduction
 ============
 
@@ -17,15 +21,15 @@ The current dataset has Russian and some global macroeconomic data. It is availa
 - [variable listing](https://github.com/mini-kep/db/blob/master/doc/listing.md)
 - [pandas access code](https://github.com/mini-kep/user-charts/blob/master/access.py) 
 
-If you work with economic time series, please fill our poll about [data sources](https://goo.gl/2wY43R)
+[This repo](https://github.com/mini-kep/user-charts) also has notebooks and charts based on the dataset. 
+
+Feedback
+========
+
+If you work with economic time series, please fill our [poll about data sources](https://goo.gl/2wY43R)
 to help us understand user needs.
 
-[This repo](https://github.com/mini-kep/user-charts) has notebooks and charts using the dataset. Feel free to contibute your economic analysis idea [by gitter](https://gitter.im/mini-kep/Lobby).
-
-The project idea is heavily influenced by:
-- [St Louis FRED](https://fred.stlouisfed.org) 
-- [Data Science Cookiecutter](https://drivendata.github.io/cookiecutter-data-science)
-
+Feel free to contibute your opinion or ideas [by gitter](https://gitter.im/mini-kep/Lobby).
 
 Project map 
 ===========
