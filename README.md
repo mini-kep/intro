@@ -21,9 +21,9 @@ Main code repositories are:
 - [data browser](https://github.com/mini-kep/frontend-dash)  
 
 If you work with economic time series, please fill our poll about [data sources](https://goo.gl/2wY43R)
-to help us understand user needs better.
+to help us understand user needs.
 
-The project idea is influenced by:
+The project idea is heavily influenced by:
 - [St Louis FRED](https://fred.stlouisfed.org) 
 - [Data Science Cookiecutter](https://drivendata.github.io/cookiecutter-data-science)
  
