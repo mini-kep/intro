@@ -23,19 +23,6 @@ The current dataset has Russian and some global macroeconomic data. It is availa
 
 [This repo](https://github.com/mini-kep/user-charts) also has notebooks and charts based on the dataset. 
 
-Feedback
-========
-
-Feel free to contibute your opinion or ideas [by gitter](https://gitter.im/mini-kep/Lobby).
-
-If you work with economic time series, please fill our [poll about data sources](https://goo.gl/2wY43R)
-to help us understand user needs.
-
-Project map 
-===========
-
-![image](https://user-images.githubusercontent.com/9265326/33287171-de70bbf6-d3c8-11e7-8319-b4d69007fddb.png)
-
 Developper links  
 ================
 
@@ -52,3 +39,18 @@ Developper links
 - [Trello issues](https://trello.com/b/ioHBMwH7/minikep) and [development notes](DEV.md) 
 - [missing data map](https://github.com/mini-kep/datamap/blob/master/minikep_missing_values.ipynb) 
 - [testing guidelines](https://github.com/mini-kep/guidelines/blob/master/testing.md)
+
+Project map 
+===========
+
+![image](https://user-images.githubusercontent.com/9265326/33287171-de70bbf6-d3c8-11e7-8319-b4d69007fddb.png)
+
+
+Feedback
+========
+
+Feel free to contibute your opinion or ideas [by gitter](https://gitter.im/mini-kep/Lobby).
+
+If you work with economic time series, please fill our [poll about data sources](https://goo.gl/2wY43R)
+to help us understand user needs.
+
