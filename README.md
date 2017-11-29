@@ -17,25 +17,15 @@ The current dataset has Russian and some global macroeconomic data. It is availa
 - [variable listing](https://github.com/mini-kep/db/blob/master/doc/listing.md)
 - [pandas access code](https://github.com/mini-kep/user-charts/blob/master/access.py) 
 
-Main code repositories are:
-- [parsers](https://github.com/mini-kep/parsers)
-- [database](https://github.com/mini-kep/db)
-- [data browser](https://github.com/mini-kep/frontend-dash)  
-
 If you work with economic time series, please fill our poll about [data sources](https://goo.gl/2wY43R)
 to help us understand user needs.
+
+[This repo](https://github.com/mini-kep/user-charts) has notebooks and charts using the dataset. Feel free to contibute your economic analysis idea [by gitter](https://gitter.im/mini-kep/Lobby).
 
 The project idea is heavily influenced by:
 - [St Louis FRED](https://fred.stlouisfed.org) 
 - [Data Science Cookiecutter](https://drivendata.github.io/cookiecutter-data-science)
- 
 
-User cases 
-==========
-
-[This repo](https://github.com/mini-kep/user-charts) has notebooks and charts using the dataset.
-
-Feel free to contibute your economic analysis idea [by gitter](https://gitter.im/mini-kep/Lobby).
 
 Project map 
 ===========
