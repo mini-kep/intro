@@ -3,18 +3,14 @@
 Goal
 ====
 
-The project goal is to provide open, timely, machine-readable data for reproducible 
+The project goal is to provide open, machine-readable data for reproducible 
 macroeconomic research.
-
-Influenced by:
-- [St Louis FRED](https://fred.stlouisfed.org) 
-- [Data Science Cookiecutter](https://drivendata.github.io/cookiecutter-data-science)
 
 Introduction
 ============
 
-```mini-kep``` is a collection of data parsers + a database with public end-user API 
-that delivers macroeconomic time series.
+```mini-kep``` is a collection of data parsers + database + public end-user API 
+to deliver macroeconomic time series to end user.
 
 The current dataset has Russian and some global macroeconomic data. It is available through:
 - [data browser](http://macrodash.herokuapp.com)
@@ -22,6 +18,14 @@ The current dataset has Russian and some global macroeconomic data. It is availa
 - [pandas access code](https://github.com/mini-kep/user-charts/blob/master/access.py) 
 
 [This repo](https://github.com/mini-kep/user-charts) also has notebooks and charts based on the dataset. 
+
+Inspiration  
+===========
+
+Project influenced by:
+- [St Louis FRED](https://fred.stlouisfed.org) 
+- [Data Science Cookiecutter](https://drivendata.github.io/cookiecutter-data-science)
+
 
 Developper links  
 ================
@@ -44,6 +48,8 @@ Project map
 ===========
 
 ![image](https://user-images.githubusercontent.com/9265326/33287171-de70bbf6-d3c8-11e7-8319-b4d69007fddb.png)
+
+
 
 
 Feedback
