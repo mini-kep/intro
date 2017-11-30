@@ -6,6 +6,9 @@ Goal
 The project goal is to provide open, machine-readable data for reproducible 
 macroeconomic research.
 
+[This](http://minikep-db.herokuapp.com/ru/series/GDP/a/yoy/1998/2017) is a lot quicker and cleaner
+than going through [this](http://www.gks.ru/wps/wcm/connect/rosstat_main/rosstat/ru/statistics/publications/catalog/doc_1140080765391).
+
 Introduction
 ============
 
@@ -48,8 +51,6 @@ Project map
 ===========
 
 ![image](https://user-images.githubusercontent.com/9265326/33287171-de70bbf6-d3c8-11e7-8319-b4d69007fddb.png)
-
-
 
 
 Feedback
