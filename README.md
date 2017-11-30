@@ -7,7 +7,7 @@ The project goal is to provide open, machine-readable data for reproducible
 macroeconomic research.
 
 [This :page_with_curl:](http://minikep-db.herokuapp.com/ru/series/GDP/a/yoy/1998/2017) is a lot quicker and cleaner
-than going through [this :page_with_curl:](http://www.gks.ru/wps/wcm/connect/rosstat_main/rosstat/ru/statistics/publications/catalog/doc_1140080765391).
+than going through [this :mountain_bicyclist:](http://www.gks.ru/wps/wcm/connect/rosstat_main/rosstat/ru/statistics/publications/catalog/doc_1140080765391).
 
 Introduction
 ============
