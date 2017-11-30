@@ -6,7 +6,7 @@ Goal
 The project goal is to provide open, timely, machine-readable data for reproducible 
 macroeconomic research.
 
-Influenced/inspired by:
+Influenced by:
 - [St Louis FRED](https://fred.stlouisfed.org) 
 - [Data Science Cookiecutter](https://drivendata.github.io/cookiecutter-data-science)
 
