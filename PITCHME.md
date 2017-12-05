@@ -1,15 +1,13 @@
+MiniKEP 
+=======
 
-
-# MiniKEP tools for macroeconomic time series
+#### Tools for macroeconomic time series
 
 This presentation can be found at:
 <https://gitpitch.com/mini-kep/intro>
 
-Project README:
-<https://gitpitch.com/mini-kep/intro>
-
-Blog (draft):
-https://mini-kep.github.io/blog/
+See also project [README](https://gitpitch.com/mini-kep/intro) 
+and [draft blog](https://mini-kep.github.io/blog)
 
 
 ---
