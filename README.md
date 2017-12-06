@@ -1,10 +1,7 @@
-[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/mini-kep/Lobby)
-
 Goal
 ====
 
-The project goal is to provide open, machine-readable data for reproducible 
-macroeconomic research.
+The project goal is to provide open, machine-readable data for [reproducible](http://replication.uni-goettingen.de/wiki/index.php/Main_Page) macroeconomic research.
 
 [This :page_with_curl:](http://minikep-db.herokuapp.com/ru/series/GDP/a/yoy/1998/2017) is a lot quicker and cleaner
 than going through [this :mountain_bicyclist:](http://www.gks.ru/wps/wcm/connect/rosstat_main/rosstat/ru/statistics/publications/catalog/doc_1140080765391).
@@ -12,7 +9,7 @@ than going through [this :mountain_bicyclist:](http://www.gks.ru/wps/wcm/connect
 Introduction
 ============
 
-```mini-kep``` is a collection of data parsers + database + public end-user API 
+```mini-kep``` is a collection of data parsers, a database and a public end-user API 
 to deliver macroeconomic time series to end user.
 
 The current dataset has Russian and some global macroeconomic data. It is available through:
@@ -55,8 +52,6 @@ Project map
 
 Feedback
 ========
-
-Feel free to contibute your opinion or ideas [by gitter](https://gitter.im/mini-kep/Lobby).
 
 If you work with economic time series, please fill our [poll about data sources](https://goo.gl/2wY43R)
 to help us understand user needs.
