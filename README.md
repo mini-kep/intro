@@ -10,14 +10,14 @@ Introduction
 ============
 
 ```mini-kep``` is a collection of data parsers, a database and a public end-user API 
-to deliver macroeconomic time series to end user.
+to deliver macroeconomic time series.
 
 The current dataset has Russian and some global macroeconomic data. It is available through:
 - [data browser](http://macrodash.herokuapp.com)
 - [variable listing](https://github.com/mini-kep/db/blob/master/doc/listing.md)
 - [pandas access code](https://github.com/mini-kep/user-charts/blob/master/access.py) 
 
-[This repo](https://github.com/mini-kep/user-charts) also has notebooks and charts based on the dataset. 
+[This repo](https://github.com/mini-kep/user-charts)  has notebooks and charts based on the dataset. 
 
 Inspiration  
 ===========
