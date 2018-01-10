@@ -3,18 +3,8 @@ Goal
 
 Provide open, machine-readable data for [reproducible](http://replication.uni-goettingen.de/wiki/index.php/Main_Page) macroeconomic research.
 
-This is a quicker and cleaner: 
-
-- <http://minikep-db.herokuapp.com/ru/series/GDP/a/yoy/1998/2017>
-
-than this:
-
-- <http://www.gks.ru/wps/wcm/connect/rosstat_main/rosstat/ru/statistics/publications/catalog/doc_1140080765391>
-
-
-[This :page_with_curl:](http://minikep-db.herokuapp.com/ru/series/GDP/a/yoy/1998/2017) is a lot quicker and cleaner
-than going through [this :mountain_bicyclist:](http://www.gks.ru/wps/wcm/connect/rosstat_main/rosstat/ru/statistics/publications/catalog/doc_1140080765391).
-
+Using data from [this API call](http://minikep-db.herokuapp.com/ru/series/GDP/a/yoy/1998/2017)
+should be quicker and cleaner than going through [a MS Word file published by a statistics agency.](http://www.gks.ru/wps/wcm/connect/rosstat_main/rosstat/ru/statistics/publications/catalog/doc_1140080765391)
 
 <table border=0>
 <tr><td align=center>:page_with_curl: :chart_with_upwards_trend: :wink:</td>
