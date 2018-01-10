@@ -1,10 +1,38 @@
 Goal
 ====
 
-The project goal is to provide open, machine-readable data for [reproducible](http://replication.uni-goettingen.de/wiki/index.php/Main_Page) macroeconomic research.
+Provide open, machine-readable data for [reproducible](http://replication.uni-goettingen.de/wiki/index.php/Main_Page) macroeconomic research.
+
+This is a quicker and cleaner: 
+
+- <http://minikep-db.herokuapp.com/ru/series/GDP/a/yoy/1998/2017>
+
+than this:
+
+- <http://www.gks.ru/wps/wcm/connect/rosstat_main/rosstat/ru/statistics/publications/catalog/doc_1140080765391>
+
 
 [This :page_with_curl:](http://minikep-db.herokuapp.com/ru/series/GDP/a/yoy/1998/2017) is a lot quicker and cleaner
 than going through [this :mountain_bicyclist:](http://www.gks.ru/wps/wcm/connect/rosstat_main/rosstat/ru/statistics/publications/catalog/doc_1140080765391).
+
+
+<table border=0>
+<tr><td align=center>:page_with_curl: :chart_with_upwards_trend: :wink:</td>
+       <td align=center>:mountain_bicyclist: :tired_face: :question: </td>
+</tr>
+
+<tr>
+<td valign=top>
+<img src="https://user-images.githubusercontent.com/9265326/34766088-61c4fc8a-f604-11e7-8bc4-1682121fbf88.png">
+</td>
+
+<td valign=top>
+<img src="https://user-images.githubusercontent.com/9265326/34765386-6790f30a-f602-11e7-90dc-5a5ca5c0bffd.png">
+
+</td>
+</tr></table>
+
+
 
 Introduction
 ============
