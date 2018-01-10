@@ -6,8 +6,7 @@ Provide open, machine-readable data for [reproducible](http://replication.uni-go
 Introduction
 ============
 
-```mini-kep``` is a collection of data parsers, database and a public end-user API that delivers macroeconomic time series.
-
+```mini-kep``` is a collection of data parsers, database and a public end-user API that delivers macroeconomic time series. 
 The current dataset includes Russian and some global macroeconomic data. 
 
 The dataset is available through:
@@ -18,10 +17,10 @@ The dataset is available through:
 [This repo](https://github.com/mini-kep/user-charts) has notebooks and charts based on the dataset. 
 
 
-Motivational example
-====================
+Example
+=======
 
-Using data from [this API call](http://minikep-db.herokuapp.com/ru/series/GDP/a/yoy/1998/2017)
+Using getting data from [an API call](http://minikep-db.herokuapp.com/ru/series/GDP/a/yoy/1998/2017)
 should be quicker and cleaner than going through [a MS Word file published by a statistics agency.](http://www.gks.ru/wps/wcm/connect/rosstat_main/rosstat/ru/statistics/publications/catalog/doc_1140080765391)
 
 <table border=0>
@@ -48,31 +47,7 @@ Project influenced by:
 - [Data Science Cookiecutter](https://drivendata.github.io/cookiecutter-data-science)
 
 
-Developper links  
-================
-
-#### Code:
-- [parsers](https://github.com/mini-kep/parsers)
-- [database](https://github.com/mini-kep/db)
-- [data browser](https://github.com/mini-kep/frontend-dash)  
-
-#### Documentation:
-- [Documentation](https://mini-kep.github.io/documentation)
-- [API documentation](https://github.com/mini-kep/db/blob/master/README.md)
-
-#### Workflow:
-- [Trello issues](https://trello.com/b/ioHBMwH7/minikep) and [development notes](DEV.md) 
-- [missing data map](https://github.com/mini-kep/datamap/blob/master/minikep_missing_values.ipynb) 
-- [testing guidelines](https://github.com/mini-kep/guidelines/blob/master/testing.md)
-
-Project map 
-===========
-
-![image](https://user-images.githubusercontent.com/9265326/33287171-de70bbf6-d3c8-11e7-8319-b4d69007fddb.png)
-
-
 Feedback
 ========
 
-If you work with economic time series, please fill our [poll about data sources](https://goo.gl/2wY43R)
-to help us understand user needs.
+If you work with economic time series, please fill our [poll about data sources](https://goo.gl/2wY43R).
