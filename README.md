@@ -3,8 +3,23 @@ Goal
 
 Provide open, machine-readable data for [reproducible](http://replication.uni-goettingen.de/wiki/index.php/Main_Page) macroeconomic research.
 
+Introduction
+============
 
-#### Motivational example
+```mini-kep``` is a collection of data parsers, database and a public end-user API that delivers macroeconomic time series.
+
+The current dataset includes Russian and some global macroeconomic data. 
+
+The dataset is available through:
+- [browser](http://macrodash.herokuapp.com)
+- [listings](https://github.com/mini-kep/db/blob/master/doc/listing.md)
+- [pandas access code](https://github.com/mini-kep/user-charts/blob/master/access.py) 
+
+[This repo](https://github.com/mini-kep/user-charts) has notebooks and charts based on the dataset. 
+
+
+Motivational example
+====================
 
 Using data from [this API call](http://minikep-db.herokuapp.com/ru/series/GDP/a/yoy/1998/2017)
 should be quicker and cleaner than going through [a MS Word file published by a statistics agency.](http://www.gks.ru/wps/wcm/connect/rosstat_main/rosstat/ru/statistics/publications/catalog/doc_1140080765391)
@@ -24,20 +39,6 @@ should be quicker and cleaner than going through [a MS Word file published by a 
 
 </td>
 </tr></table>
-
-
-Introduction
-============
-
-```mini-kep``` is a collection of data parsers, database and a public end-user API 
-that delivers macroeconomic time series.
-
-The current dataset includes Russian and some global macroeconomic data. It is available through:
-- [data browser](http://macrodash.herokuapp.com)
-- [variable listing](https://github.com/mini-kep/db/blob/master/doc/listing.md)
-- [pandas access code](https://github.com/mini-kep/user-charts/blob/master/access.py) 
-
-[This repo](https://github.com/mini-kep/user-charts) has notebooks and charts based on the dataset. 
 
 Inspiration  
 ===========
@@ -75,4 +76,3 @@ Feedback
 
 If you work with economic time series, please fill our [poll about data sources](https://goo.gl/2wY43R)
 to help us understand user needs.
-
