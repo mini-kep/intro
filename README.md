@@ -1,13 +1,13 @@
-Goal
-====
-
-Provide open, machine-readable data for [reproducible](http://replication.uni-goettingen.de/wiki/index.php/Main_Page) macroeconomic research.
-
 Introduction
 ============
 
 ```mini-kep``` is a collection of data parsers, database and a public end-user API that delivers macroeconomic time series. 
 The current dataset includes Russian and some global macroeconomic data. 
+
+The main goal is to provide open, machine-readable data for [reproducible](http://replication.uni-goettingen.de/wiki/index.php/Main_Page) macroeconomic research.
+
+Project links
+=============
 
 The dataset is available through:
 - [browser](http://macrodash.herokuapp.com)
@@ -50,4 +50,5 @@ Project influenced by:
 Feedback
 ========
 
-If you work with economic time series, please fill our [poll about data sources](https://goo.gl/2wY43R).
+If you work with economic time series, please fill our [poll about data sources](https://goo.gl/2wY43R). 
+Are you still relying on Excel or moving ahead?
