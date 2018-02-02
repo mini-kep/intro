@@ -14,7 +14,9 @@ The dataset is available through:
 - [listings](https://github.com/mini-kep/db/blob/master/doc/listing.md)
 - [pandas access code](https://github.com/mini-kep/user-charts/blob/master/access.py) 
 
-[This repo](https://github.com/mini-kep/user-charts) has notebooks and charts based on the dataset. 
+Please see workflow map, developments notes and documentation [here](https://github.com/mini-kep/intro/blob/master/DEV.md).
+
+[This repo](https://github.com/mini-kep/user-charts) has Jupiter notebooks and charts based on the dataset. 
 
 
 Example
