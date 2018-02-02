@@ -20,8 +20,8 @@ The dataset is available through:
 Example
 =======
 
-Using getting data from [an API call](http://minikep-db.herokuapp.com/ru/series/GDP/a/yoy/1998/2017)
-should be quicker and cleaner than going through [a MS Word file published by a statistics agency.](http://www.gks.ru/wps/wcm/connect/rosstat_main/rosstat/ru/statistics/publications/catalog/doc_1140080765391)
+Getting data from [a clean API](http://minikep-db.herokuapp.com/ru/series/GDP/a/yoy/1998/2017)
+should be a lot better than going through [a MS Word file published by statistics agency.](http://www.gks.ru/wps/wcm/connect/rosstat_main/rosstat/ru/statistics/publications/catalog/doc_1140080765391)
 
 <table border=0>
 <tr><td align=center>:page_with_curl: :chart_with_upwards_trend: :wink:</td>
