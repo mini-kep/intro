@@ -27,6 +27,10 @@ Example
 Getting data from [a clean API](http://minikep-db.herokuapp.com/ru/series/GDP/a/yoy/1998/2017)
 should be a lot better than going through [a MS Word file published by statistics agency.](http://www.gks.ru/wps/wcm/connect/rosstat_main/rosstat/ru/statistics/publications/catalog/doc_1140080765391)
 
+Link:
+
+- <http://minikep-db.herokuapp.com/ru/series/GDP/a/yoy/1998/2017>
+
 <table border=0>
 <tr><td align=center>:page_with_curl: :chart_with_upwards_trend: :wink:</td>
        <td align=center>:mountain_bicyclist: :tired_face: :question: </td>
