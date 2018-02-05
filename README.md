@@ -4,7 +4,9 @@ Introduction
 ```mini-kep``` is a collection of data parsers, database and a public end-user API that delivers macroeconomic time series. 
  Сurrent dataset includes Russian and some global macroeconomic data. 
 
-The project goal is to provide open, machine-readable data for [reproducible](http://replication.uni-goettingen.de/wiki/index.php/Main_Page) macroeconomic research.
+The project goal is to provide open, machine-readable data for [reproducible](http://replication.uni-goettingen.de/wiki/index.php/Main_Page) macroeconomic research. It is inspired by
+[St Louis FRED](https://fred.stlouisfed.org) and [Data Science Cookiecutter](https://drivendata.github.io/cookiecutter-data-science).
+
 
 Project links
 =============
@@ -40,13 +42,6 @@ should be a lot better than going through [a MS Word file published by statistic
 
 </td>
 </tr></table>
-
-Inspiration  
-===========
-
-Project influenced by:
-- [St Louis FRED](https://fred.stlouisfed.org) 
-- [Data Science Cookiecutter](https://drivendata.github.io/cookiecutter-data-science)
 
 
 Feedback
