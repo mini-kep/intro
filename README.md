@@ -13,7 +13,9 @@ Project links
 
 The dataset is available through:
 - [browser](http://macrodash.herokuapp.com)
+<!--
 - [listings](https://github.com/mini-kep/db/blob/master/doc/listing.md) *(TODO)*
+-->
 - [pandas access code](https://github.com/mini-kep/user-charts/blob/master/access.py) 
 
 Please see workflow map, developments notes and documentation [here](https://github.com/mini-kep/intro/blob/master/DEV.md).
